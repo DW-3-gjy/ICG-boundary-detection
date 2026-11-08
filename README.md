@@ -36,7 +36,11 @@ ICG-boundary-detection/
 
 ## 当前算法基线
 
-`model/` 是独立的 U-Net 前景分割 + Lucas–Kanade 光流研究原型，使用双类别 logits 的 softmax/argmax，并在视频中区分分割支持、光流传播与跟踪失败。当前没有临床训练/验证数据；荧光区域不应被直接等同于手术边界，系统也不能用于临床决策。安装、训练、推理、评估与四人交接事项见 [`model/README.md`](model/README.md) 和 [`model/HANDOFF.md`](model/HANDOFF.md)。
+`model/` 包含 U-Net / ResNet18-U-Net 区域分割、可见边界实验和 Farneback 光流研究原型。安装、通用推理、评估与交接事项见 [`model/README.md`](model/README.md) 和 [`model/HANDOFF.md`](model/HANDOFF.md)。荧光区域与所需显示界面的关系由标注定义，当前结果不构成临床有效性验证。
+
+2026-11-07 已完成新旧数据联合静态边界实验：12位患者129帧，9位开发患者106帧，另外3位患者23帧独立测试。五组方案完成45次患者级交叉验证训练及15次最终重训。相同Z及荧光可见L数据下，边界模块使20像素容差的患者宏平均F1从 **0.354 ± 0.022** 升至 **0.392 ± 0.026**；10像素指标下降，完整区域Dice基本持平。SD仅反映三个训练种子的波动。
+
+运行文件、匿名数据划分、逐次配置/历史、15份逐图测试表和标准库数值复核入口见[本轮实验档案](model/experiments/patient_boundary_20261105_01/README.md)、[训练流程](model/experiments/patient_boundary_20261105_01/TRAINING.md)及[完整数值结果](model/experiments/patient_boundary_20261105_01/RESULTS.md)。患者像素、坐标、mask和权重仅本地保存；本轮未验证连续视频中荧光消退后的动态保持。PR76是跟踪/评估修复，并未引入本轮的边界分支。
 
 ## 分支规则
 
@@ -53,8 +57,9 @@ ICG-boundary-detection/
 
 数据只放本地或网盘,位置在此说明(只写路径,不传数据):
 
-- 原始图像:`<填写网盘链接或本地路径>`
-- 标注图:`<填写位置>`
+- 本轮私有研究目录:`model/logs/patient_boundary_20261105_01/`（本地，Git忽略）
+- 公开匿名登记:[数据说明](model/experiments/patient_boundary_20261105_01/DATASET.md)及[划分清单](model/experiments/patient_boundary_20261105_01/split_manifest.csv)
+- 原图、原始标注和匿名映射由数据负责人另行提供；仓库不包含患者数据下载链接或模型权重。
 
 ## 协作约定
 

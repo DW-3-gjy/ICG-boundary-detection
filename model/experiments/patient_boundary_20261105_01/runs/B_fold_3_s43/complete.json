@@ -1,0 +1,13 @@
+{
+  "run": "B_fold_3_s43",
+  "group": "B",
+  "fold": "fold_3",
+  "seed": 43,
+  "updates": 2400,
+  "best_update": 1480,
+  "best_threshold": 0.8,
+  "best_validation_f1": 0.36534990161821673,
+  "checkpoint_sha256": "974f200125af055cbd62eca8a7a79352d27874b84496ca222f86d5d9199a4447",
+  "training_candidates": 59,
+  "completed_at": "2026-11-05 18:42:12"
+}

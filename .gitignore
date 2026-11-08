@@ -34,3 +34,7 @@ Thumbs.db
 
 model/reference/
 first_train/
+
+# Local patient/source mappings must never enter the public repository.
+*.private.csv
+*.private.json

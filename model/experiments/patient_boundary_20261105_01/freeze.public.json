@@ -1,0 +1,15 @@
+{
+  "protocol_sha256": "c3de51e27019273732fcadf1995a9cc963bf9716007de4f82e5fcb36be6e19be",
+  "candidate_manifest_sha256": "caf6ceed643ae77ff1e4af4db18f3763bd5258884330a4a5c622277609cb1772",
+  "cache_manifest_sha256": "e5916319ef5c60ee8ac94ab08e56a941f1e3467208f9058b221b730d645d4ae8",
+  "source_snapshot_manifest_sha256": "34592421be51963cd2495f937491306ca1eff8cda1651b6558eb9968d990686d",
+  "source_pairs": 129,
+  "preparation_reads_test_sources": true,
+  "test_model_predictions_made": false,
+  "test_labels_used_for_model_selection": false,
+  "publication": {
+    "original_freeze_sha256": "ef0c6e28519194c867661d9929bfb5dc0680e8ea8c7e115946d34ddca17d0de7",
+    "protocol_file_in_this_archive": "protocol.public.json",
+    "protocol_hash_above_identifies_original_private_protocol": true
+  }
+}

@@ -5,6 +5,8 @@ This directory contains a deliberately small, **experimental** baseline for segm
 For the two comparable U-Net / pretrained ResNet-18 pipelines, six loss configurations,
 seeded comparison runner, and lightweight gated tracking, see [the English experiment guide](EXPERIMENTS.md).
 
+The completed 2026-11-05 study has a separate [experiment archive](experiments/patient_boundary_20261105_01/README.md), [training walkthrough](experiments/patient_boundary_20261105_01/TRAINING.md), and [results](experiments/patient_boundary_20261105_01/RESULTS.md). It uses 12 locally held patients, patient-disjoint development/test sets, and mixed polygon/open-curve supervision. Its actual entry is the frozen `patient_boundary_study.py`, rather than the generic `train.py` below. The new boundary-head checkpoints are used by that study runner and analysis script; the generic `predict.py` video interface has not been adapted to them.
+
 It is not a validated medical device. It does not infer a surgical margin from arbitrary fluorescent regions and cannot recover an unobservable or arbitrarily deformed boundary. A propagated contour is explicitly labelled as an estimate, and is suppressed when basic tracking checks fail.
 
 ## Pipeline and interfaces
@@ -94,7 +96,7 @@ This conservative policy may stop display more often under partial occlusion.
 
 Image evaluation reports foreground Dice/IoU and configured boundary metrics in pixels. Video evaluation requires independent frame-level reference contours. Call `Evaluator.evaluate_tracking_sequence(results, reference_contours, elapsed_seconds=...)`; use `None` for frames without reference annotation. This reports symmetric nearest-contour distance, contour HD95, failure frequency, elapsed-since-ICG-loss drift grouped by supplied time, and latency/FPS when present. Never use tracker output as ground truth. FPS is measured by this implementation and is not a real-time guarantee.
 
-No suitable clinical videos, procedure identifiers, reviewed masks, or independently annotated tracking contours are included here. Consequently this repository contains **no clinical performance results**. The default synthetic generator creates random vessel-like shapes and cannot train or validate lung intersegmental-plane recognition.
+No patient images, masks, procedure identity mapping, or independently annotated tracking videos are included here. The experiment archive contains anonymous numerical results from a retrospective static-frame study, not clinical validation or proof of temporal boundary retention. The default synthetic generator creates random vessel-like shapes and cannot train or validate lung intersegmental-plane recognition.
 
 ## Known limitations
 

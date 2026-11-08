@@ -1,0 +1,2 @@
+# Preserve frozen evidence bytes: CRLF/LF conversion would invalidate SHA256.
+model/experiments/patient_boundary_20261105_01/** -text

@@ -1,0 +1,9 @@
+{
+  "torch": "2.7.1+cu128",
+  "numpy": "2.5.4",
+  "opencv": "5.0.0",
+  "gpu": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+  "vram_bytes": 12792037376,
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "created_at": "2026-11-05 10:11:50"
+}
