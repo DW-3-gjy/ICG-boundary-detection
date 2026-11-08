@@ -50,7 +50,7 @@ class ResNetUNet(nn.Module):
                     module.eval()
         return self
 
-    def forward(self, x):
+    def forward_features(self, x):
         size = x.shape[-2:]
         e = self.encoder
         stem = e.relu(e.bn1(e.conv1(x)))
@@ -62,7 +62,10 @@ class ResNetUNet(nn.Module):
             z = F.interpolate(z, size=skip.shape[-2:], mode='bilinear', align_corners=False)
             z = block(torch.cat((z, skip), dim=1))
         z = self.decoder[4](F.interpolate(z, size=size, mode='bilinear', align_corners=False))
-        return self.output(z)
+        return z
+
+    def forward(self, x):
+        return self.output(self.forward_features(x))
 
     def count_parameters(self):
         return sum(p.numel() for p in self.parameters() if p.requires_grad)

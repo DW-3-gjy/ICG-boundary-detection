@@ -1,0 +1,39 @@
+{
+  "publication_date": "2026-11-08",
+  "study_id": "patient_boundary_20261105_01",
+  "publication_only_no_patient_training_or_inference": true,
+  "software_tests": {
+    "tests": 101,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "public_numeric_verification": {
+    "passed": true,
+    "candidate_frames": 129,
+    "development_patients": 9,
+    "test_patients": 3,
+    "test_frames": 23,
+    "development_runs": 45,
+    "final_refits": 15,
+    "test_csv_files_reaggregated": 15,
+    "region_reference_frames": 11,
+    "scope": "recorded anonymous data, artifact hashes, selection rules and arithmetic; not private image inference"
+  },
+  "private_source_mapping_validation": {
+    "source_pairs": 129,
+    "all_source_hashes_match": true,
+    "source_pixels_decoded": false,
+    "output_cache_created": false,
+    "patient_training_or_inference_executed": false
+  },
+  "frozen_scientific_source_files": 14,
+  "frozen_scientific_source_byte_hashes_preserved": true,
+  "archive_privacy_scan": "text-only allowlist; no patient pixel/coordinate/mask/weight payload or actual local source paths",
+  "original_protocol_sha256": "c3de51e27019273732fcadf1995a9cc963bf9716007de4f82e5fcb36be6e19be",
+  "limitations": [
+    "Public verification cannot rerun private model inference or clinically adjudicate references.",
+    "Same-patient replay is not new independent validation.",
+    "New boundary head is not integrated into the generic video predictor."
+  ]
+}

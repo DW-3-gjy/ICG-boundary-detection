@@ -1,0 +1,785 @@
+{
+  "groups": {
+    "A": {
+      "metrics": {
+        "boundary_f1": {
+          "mean": 0.3139672626814312,
+          "seed_sd": 0.01197770732332028
+        },
+        "dice": {
+          "mean": 0.8007931514422291,
+          "seed_sd": 0.01306472371600695
+        },
+        "f1_10px": {
+          "mean": 0.20417873757306793,
+          "seed_sd": 0.006148096655529207
+        },
+        "f1_40px": {
+          "mean": 0.44002445777358506,
+          "seed_sd": 0.01851883196872682
+        }
+      },
+      "runs": [
+        {
+          "run": "A_refit_s42",
+          "group": "A",
+          "seed": 42,
+          "boundary_f1": 0.3260792120476264,
+          "per_patient": {
+            "new_04": 0.272883100671692,
+            "new_05": 0.43056591372182335,
+            "new_10": 0.2747886217493639
+          },
+          "dice": 0.794927618010103,
+          "region_patients": {
+            "new_05": 0.888342573322957,
+            "new_10": 0.701512662697249
+          },
+          "f1_10px": 0.21040094938767492,
+          "f1_40px": 0.4584842213083114,
+          "empty_predictions": 0,
+          "region_reference_frames": 11,
+          "undefined_hd95": 0,
+          "strata": {
+            "Z_label": 0.3673841364285224,
+            "L_visible_fluorescence": 0.34093254581177007,
+            "linestrip": 0.272883100671692,
+            "region_reference": 0.3526772677355936
+          }
+        },
+        {
+          "run": "A_refit_s43",
+          "group": "A",
+          "seed": 43,
+          "boundary_f1": 0.30212846994515546,
+          "per_patient": {
+            "new_04": 0.2521571182202167,
+            "new_05": 0.3535155584244793,
+            "new_10": 0.30071273319077035
+          },
+          "dice": 0.7916891559714307,
+          "region_patients": {
+            "new_05": 0.8602353060237845,
+            "new_10": 0.7231430059190771
+          },
+          "f1_10px": 0.19810753832494674,
+          "f1_40px": 0.42144711725170314,
+          "empty_predictions": 0,
+          "region_reference_frames": 11,
+          "undefined_hd95": 0,
+          "strata": {
+            "Z_label": 0.2920863179544023,
+            "L_visible_fluorescence": 0.3351766610835841,
+            "linestrip": 0.2521571182202167,
+            "region_reference": 0.3271141458076248
+          }
+        },
+        {
+          "run": "A_refit_s44",
+          "group": "A",
+          "seed": 44,
+          "boundary_f1": 0.3136941060515119,
+          "per_patient": {
+            "new_04": 0.236994689835041,
+            "new_05": 0.40930639553619563,
+            "new_10": 0.29478123278329893
+          },
+          "dice": 0.8157626803451533,
+          "region_patients": {
+            "new_05": 0.8880672070586695,
+            "new_10": 0.7434581536316371
+          },
+          "f1_10px": 0.20402772500658214,
+          "f1_40px": 0.4401420347607407,
+          "empty_predictions": 0,
+          "region_reference_frames": 11,
+          "undefined_hd95": 0,
+          "strata": {
+            "Z_label": 0.3246156122976541,
+            "L_visible_fluorescence": 0.3509450119507204,
+            "linestrip": 0.236994689835041,
+            "region_reference": 0.3520438141597473
+          }
+        }
+      ],
+      "strata": {
+        "Z_label": {
+          "mean": 0.32802868889352627,
+          "seed_sd": 0.03776476116205891
+        },
+        "L_visible_fluorescence": {
+          "mean": 0.34235140628202493,
+          "seed_sd": 0.00797935436252948
+        },
+        "linestrip": {
+          "mean": 0.2540116362423166,
+          "seed_sd": 0.01801593561033628
+        },
+        "region_reference": {
+          "mean": 0.34394507590098855,
+          "seed_sd": 0.014579453752248783
+        }
+      },
+      "per_patient_seed_mean": {
+        "new_04": 0.2540116362423166,
+        "new_05": 0.3977959558941661,
+        "new_10": 0.29009419590781105
+      }
+    },
+    "B": {
+      "metrics": {
+        "boundary_f1": {
+          "mean": 0.38056995964113965,
+          "seed_sd": 0.014921982069969118
+        },
+        "dice": {
+          "mean": 0.8219294543770962,
+          "seed_sd": 0.011566025123258923
+        },
+        "f1_10px": {
+          "mean": 0.206408796674563,
+          "seed_sd": 0.008126214716810768
+        },
+        "f1_40px": {
+          "mean": 0.5292872840727672,
+          "seed_sd": 0.008722582344446027
+        }
+      },
+      "runs": [
+        {
+          "run": "B_refit_s42",
+          "group": "B",
+          "seed": 42,
+          "boundary_f1": 0.38547541642783073,
+          "per_patient": {
+            "new_04": 0.26679725217764183,
+            "new_05": 0.5110194630308753,
+            "new_10": 0.3786095340749752
+          },
+          "dice": 0.8308164928403079,
+          "region_patients": {
+            "new_05": 0.8974166327911767,
+            "new_10": 0.764216352889439
+          },
+          "f1_10px": 0.21566530960033536,
+          "f1_40px": 0.5215628135554811,
+          "empty_predictions": 0,
+          "region_reference_frames": 11,
+          "undefined_hd95": 0,
+          "strata": {
+            "Z_label": 0.3421087180624335,
+            "L_visible_fluorescence": 0.47991422820929414,
+            "linestrip": 0.26679725217764183,
+            "region_reference": 0.44481449855292526
+          }
+        },
+        {
+          "run": "B_refit_s43",
+          "group": "B",
+          "seed": 43,
+          "boundary_f1": 0.3924217032472043,
+          "per_patient": {
+            "new_04": 0.2891069489604006,
+            "new_05": 0.5055659186400827,
+            "new_10": 0.38259224214112963
+          },
+          "dice": 0.8088523757597617,
+          "region_patients": {
+            "new_05": 0.9000817288328985,
+            "new_10": 0.7176230226866247
+          },
+          "f1_10px": 0.2031121152057979,
+          "f1_40px": 0.5387470955190404,
+          "empty_predictions": 0,
+          "region_reference_frames": 11,
+          "undefined_hd95": 0,
+          "strata": {
+            "Z_label": 0.39142053506397545,
+            "L_visible_fluorescence": 0.4485160044428058,
+            "linestrip": 0.2891069489604006,
+            "region_reference": 0.4440790803906062
+          }
+        },
+        {
+          "run": "B_refit_s44",
+          "group": "B",
+          "seed": 44,
+          "boundary_f1": 0.36381275924838397,
+          "per_patient": {
+            "new_04": 0.27446920008074666,
+            "new_05": 0.42602045896405993,
+            "new_10": 0.39094861870034536
+          },
+          "dice": 0.8261194945312189,
+          "region_patients": {
+            "new_05": 0.8704761835896899,
+            "new_10": 0.781762805472748
+          },
+          "f1_10px": 0.2004489652175557,
+          "f1_40px": 0.52755194314378,
+          "empty_predictions": 0,
+          "region_reference_frames": 11,
+          "undefined_hd95": 0,
+          "strata": {
+            "Z_label": 0.3347600122919221,
+            "L_visible_fluorescence": 0.42009815175506354,
+            "linestrip": 0.27446920008074666,
+            "region_reference": 0.40848453883220265
+          }
+        }
+      ],
+      "strata": {
+        "Z_label": {
+          "mean": 0.3560964218061103,
+          "seed_sd": 0.030811452452233535
+        },
+        "L_visible_fluorescence": {
+          "mean": 0.44950946146905446,
+          "seed_sd": 0.02992041056272193
+        },
+        "linestrip": {
+          "mean": 0.27679113373959635,
+          "seed_sd": 0.011334644880706846
+        },
+        "region_reference": {
+          "mean": 0.4324593725919114,
+          "seed_sd": 0.020766070892747592
+        }
+      },
+      "per_patient_seed_mean": {
+        "new_04": 0.27679113373959635,
+        "new_05": 0.480868613545006,
+        "new_10": 0.38405013163881674
+      }
+    },
+    "C": {
+      "metrics": {
+        "boundary_f1": {
+          "mean": 0.35368750058423865,
+          "seed_sd": 0.022241235055767482
+        },
+        "dice": {
+          "mean": 0.8413926614403717,
+          "seed_sd": 0.010290669581294992
+        },
+        "f1_10px": {
+          "mean": 0.2315260333611924,
+          "seed_sd": 0.01553384141763335
+        },
+        "f1_40px": {
+          "mean": 0.48068110251054685,
+          "seed_sd": 0.028443452110256038
+        }
+      },
+      "runs": [
+        {
+          "run": "C_refit_s42",
+          "group": "C",
+          "seed": 42,
+          "boundary_f1": 0.365699471621362,
+          "per_patient": {
+            "new_04": 0.26742119120335534,
+            "new_05": 0.44263440858596254,
+            "new_10": 0.3870428150747683
+          },
+          "dice": 0.8412383467980264,
+          "region_patients": {
+            "new_05": 0.9044733389714515,
+            "new_10": 0.7780033546246015
+          },
+          "f1_10px": 0.24262624905392652,
+          "f1_40px": 0.49543507113183854,
+          "empty_predictions": 0,
+          "region_reference_frames": 11,
+          "undefined_hd95": 0,
+          "strata": {
+            "Z_label": 0.28788149337187346,
+            "L_visible_fluorescence": 0.46519834172245456,
+            "linestrip": 0.26742119120335534,
+            "region_reference": 0.4148386118303654
+          }
+        },
+        {
+          "run": "C_refit_s43",
+          "group": "C",
+          "seed": 43,
+          "boundary_f1": 0.3280230067128445,
+          "per_patient": {
+            "new_04": 0.2699385601387966,
+            "new_05": 0.3810208366162962,
+            "new_10": 0.3331096233834408
+          },
+          "dice": 0.8311800169813952,
+          "region_patients": {
+            "new_05": 0.8925871009581919,
+            "new_10": 0.7697729330045985
+          },
+          "f1_10px": 0.21377391183390917,
+          "f1_40px": 0.44789210774441196,
+          "empty_predictions": 0,
+          "region_reference_frames": 11,
+          "undefined_hd95": 0,
+          "strata": {
+            "Z_label": 0.2943365998522258,
+            "L_visible_fluorescence": 0.38042255389385893,
+            "linestrip": 0.2699385601387966,
+            "region_reference": 0.3570652299998685
+          }
+        },
+        {
+          "run": "C_refit_s44",
+          "group": "C",
+          "seed": 44,
+          "boundary_f1": 0.36734002341850935,
+          "per_patient": {
+            "new_04": 0.2515957825403756,
+            "new_05": 0.4215630093241681,
+            "new_10": 0.4288612783909842
+          },
+          "dice": 0.8517596205416933,
+          "region_patients": {
+            "new_05": 0.8787748750532718,
+            "new_10": 0.8247443660301147
+          },
+          "f1_10px": 0.23817793919574157,
+          "f1_40px": 0.49871612865539,
+          "empty_predictions": 0,
+          "region_reference_frames": 11,
+          "undefined_hd95": 0,
+          "strata": {
+            "Z_label": 0.3174600251754841,
+            "L_visible_fluorescence": 0.439551671925167,
+            "linestrip": 0.2515957825403756,
+            "region_reference": 0.42521214385757616
+          }
+        }
+      ],
+      "strata": {
+        "Z_label": {
+          "mean": 0.29989270613319446,
+          "seed_sd": 0.01555233499087407
+        },
+        "L_visible_fluorescence": {
+          "mean": 0.42839085584716013,
+          "seed_sd": 0.04347592911180953
+        },
+        "linestrip": {
+          "mean": 0.26298517796084253,
+          "seed_sd": 0.009943491973250406
+        },
+        "region_reference": {
+          "mean": 0.39903866189593673,
+          "seed_sd": 0.03671824179519354
+        }
+      },
+      "per_patient_seed_mean": {
+        "new_04": 0.26298517796084253,
+        "new_05": 0.415072751508809,
+        "new_10": 0.38300457228306445
+      }
+    },
+    "D": {
+      "metrics": {
+        "boundary_f1": {
+          "mean": 0.392284415451021,
+          "seed_sd": 0.02619329816346057
+        },
+        "dice": {
+          "mean": 0.840961216727598,
+          "seed_sd": 0.013193248554124305
+        },
+        "f1_10px": {
+          "mean": 0.21141644439025528,
+          "seed_sd": 0.011087326761678647
+        },
+        "f1_40px": {
+          "mean": 0.5503630854796465,
+          "seed_sd": 0.038344310023335666
+        }
+      },
+      "runs": [
+        {
+          "run": "D_refit_s42",
+          "group": "D",
+          "seed": 42,
+          "boundary_f1": 0.41791842117872663,
+          "per_patient": {
+            "new_04": 0.29678862706401626,
+            "new_05": 0.47736324878325703,
+            "new_10": 0.4796033876889067
+          },
+          "dice": 0.8556953161171807,
+          "region_patients": {
+            "new_05": 0.9111499009756201,
+            "new_10": 0.8002407312587414
+          },
+          "f1_10px": 0.22398419488255494,
+          "f1_40px": 0.5844414392009146,
+          "empty_predictions": 0,
+          "region_reference_frames": 11,
+          "undefined_hd95": 0,
+          "strata": {
+            "Z_label": 0.34016564013806516,
+            "L_visible_fluorescence": 0.5136660415752605,
+            "linestrip": 0.29678862706401626,
+            "region_reference": 0.47848331823608187
+          }
+        },
+        {
+          "run": "D_refit_s43",
+          "group": "D",
+          "seed": 43,
+          "boundary_f1": 0.36556553568352984,
+          "per_patient": {
+            "new_04": 0.3075144570301049,
+            "new_05": 0.42993397460871335,
+            "new_10": 0.3592481754117711
+          },
+          "dice": 0.8302413258802426,
+          "region_patients": {
+            "new_05": 0.9052885877795801,
+            "new_10": 0.7551940639809052
+          },
+          "f1_10px": 0.20301891108455283,
+          "f1_40px": 0.5088436008819398,
+          "empty_predictions": 0,
+          "region_reference_frames": 11,
+          "undefined_hd95": 0,
+          "strata": {
+            "Z_label": 0.33125709916561036,
+            "L_visible_fluorescence": 0.4226914125005913,
+            "linestrip": 0.3075144570301049,
+            "region_reference": 0.39459107501024226
+          }
+        },
+        {
+          "run": "D_refit_s44",
+          "group": "D",
+          "seed": 44,
+          "boundary_f1": 0.39336928949080646,
+          "per_patient": {
+            "new_04": 0.2578839601357961,
+            "new_05": 0.4875898022251775,
+            "new_10": 0.4346341061114458
+          },
+          "dice": 0.8369470081853709,
+          "region_patients": {
+            "new_05": 0.917848851786335,
+            "new_10": 0.756045164584407
+          },
+          "f1_10px": 0.20724622720365807,
+          "f1_40px": 0.5578042163560851,
+          "empty_predictions": 0,
+          "region_reference_frames": 11,
+          "undefined_hd95": 0,
+          "strata": {
+            "Z_label": 0.33825393388670155,
+            "L_visible_fluorescence": 0.4869741646386506,
+            "linestrip": 0.2578839601357961,
+            "region_reference": 0.46111195416831163
+          }
+        }
+      ],
+      "strata": {
+        "Z_label": {
+          "mean": 0.336558891063459,
+          "seed_sd": 0.004689925713051967
+        },
+        "L_visible_fluorescence": {
+          "mean": 0.47444387290483414,
+          "seed_sd": 0.046763788790252295
+        },
+        "linestrip": {
+          "mean": 0.28739568140997246,
+          "seed_sd": 0.026114500311873932
+        },
+        "region_reference": {
+          "mean": 0.4447287824715452,
+          "seed_sd": 0.044280733445824415
+        }
+      },
+      "per_patient_seed_mean": {
+        "new_04": 0.28739568140997246,
+        "new_05": 0.46496234187238267,
+        "new_10": 0.4244952230707079
+      }
+    },
+    "E": {
+      "metrics": {
+        "boundary_f1": {
+          "mean": 0.36887701913082044,
+          "seed_sd": 0.03223388980840363
+        },
+        "dice": {
+          "mean": 0.7241767627467209,
+          "seed_sd": 0.025467436414943017
+        },
+        "f1_10px": {
+          "mean": 0.2250779985267124,
+          "seed_sd": 0.02049794730723412
+        },
+        "f1_40px": {
+          "mean": 0.4847903233604283,
+          "seed_sd": 0.033633368507842494
+        }
+      },
+      "runs": [
+        {
+          "run": "E_refit_s42",
+          "group": "E",
+          "seed": 42,
+          "boundary_f1": 0.33462832312394625,
+          "per_patient": {
+            "new_04": 0.2832289630366605,
+            "new_05": 0.35459181476322943,
+            "new_10": 0.3660641915719489
+          },
+          "dice": 0.7028307296458534,
+          "region_patients": {
+            "new_05": 0.7576018007781521,
+            "new_10": 0.6480596585135546
+          },
+          "f1_10px": 0.20201062449724905,
+          "f1_40px": 0.45081852889177276,
+          "empty_predictions": 0,
+          "region_reference_frames": 11,
+          "undefined_hd95": 0,
+          "strata": {
+            "Z_label": 0.2820128540496705,
+            "L_visible_fluorescence": 0.388001154305295,
+            "linestrip": 0.2832289630366605,
+            "region_reference": 0.3603280031675892
+          }
+        },
+        {
+          "run": "E_refit_s43",
+          "group": "E",
+          "seed": 43,
+          "boundary_f1": 0.3733802036161089,
+          "per_patient": {
+            "new_04": 0.3081459461548252,
+            "new_05": 0.4315161575903112,
+            "new_10": 0.38047850710319026
+          },
+          "dice": 0.7173326313931248,
+          "region_patients": {
+            "new_05": 0.7675458979363649,
+            "new_10": 0.6671193648498845
+          },
+          "f1_10px": 0.23201951444829247,
+          "f1_40px": 0.485477712607247,
+          "empty_predictions": 0,
+          "region_reference_frames": 11,
+          "undefined_hd95": 0,
+          "strata": {
+            "Z_label": 0.34539549418512805,
+            "L_visible_fluorescence": 0.4243240006123308,
+            "linestrip": 0.3081459461548252,
+            "region_reference": 0.40599733234675073
+          }
+        },
+        {
+          "run": "E_refit_s44",
+          "group": "E",
+          "seed": 44,
+          "boundary_f1": 0.3986225306524062,
+          "per_patient": {
+            "new_04": 0.3251721651544693,
+            "new_05": 0.47922581714873486,
+            "new_10": 0.39146960965401434
+          },
+          "dice": 0.7523669272011848,
+          "region_patients": {
+            "new_05": 0.7835530704099216,
+            "new_10": 0.721180783992448
+          },
+          "f1_10px": 0.24120385663459562,
+          "f1_40px": 0.5180747285822652,
+          "empty_predictions": 0,
+          "region_reference_frames": 11,
+          "undefined_hd95": 0,
+          "strata": {
+            "Z_label": 0.3736352600440806,
+            "L_visible_fluorescence": 0.4567705117320157,
+            "linestrip": 0.3251721651544693,
+            "region_reference": 0.43534771340137457
+          }
+        }
+      ],
+      "strata": {
+        "Z_label": {
+          "mean": 0.33368120275962637,
+          "seed_sd": 0.046921048451119614
+        },
+        "L_visible_fluorescence": {
+          "mean": 0.42303188888321386,
+          "seed_sd": 0.03440288207056797
+        },
+        "linestrip": {
+          "mean": 0.30551569144865165,
+          "seed_sd": 0.021094945623024268
+        },
+        "region_reference": {
+          "mean": 0.40055768297190486,
+          "seed_sd": 0.03780451785013569
+        }
+      },
+      "per_patient_seed_mean": {
+        "new_04": 0.30551569144865165,
+        "new_05": 0.42177792983409185,
+        "new_10": 0.3793374361097179
+      }
+    }
+  },
+  "contrasts": [
+    {
+      "name": "边界模块：仅Z",
+      "contrast": "B-A",
+      "mean_delta": 0.06660269695970844,
+      "per_patient_delta": {
+        "new_04": 0.022779497497279755,
+        "new_05": 0.08307265765083988,
+        "new_10": 0.09395593573100569
+      },
+      "patients_improved": 3
+    },
+    {
+      "name": "边界模块：Z及L",
+      "contrast": "D-C",
+      "mean_delta": 0.03859691486678235,
+      "per_patient_delta": {
+        "new_04": 0.024410503449129928,
+        "new_05": 0.049889590363573655,
+        "new_10": 0.04149065078764347
+      },
+      "patients_improved": 3
+    },
+    {
+      "name": "加入L：区域模型",
+      "contrast": "C-A",
+      "mean_delta": 0.03972023790280743,
+      "per_patient_delta": {
+        "new_04": 0.008973541718525935,
+        "new_05": 0.017276795614642904,
+        "new_10": 0.0929103763752534
+      },
+      "patients_improved": 3
+    },
+    {
+      "name": "加入L：边界模型",
+      "contrast": "D-B",
+      "mean_delta": 0.011714455809881341,
+      "per_patient_delta": {
+        "new_04": 0.010604547670376108,
+        "new_05": -0.015906271672623318,
+        "new_10": 0.04044509143189118
+      },
+      "patients_improved": 2
+    },
+    {
+      "name": "加入旧训练样本",
+      "contrast": "D-E",
+      "mean_delta": 0.023407396320200557,
+      "per_patient_delta": {
+        "new_04": -0.01812001003867919,
+        "new_05": 0.04318441203829082,
+        "new_10": 0.04515778696099004
+      },
+      "patients_improved": 2
+    }
+  ],
+  "aggregation_verified_from_all_15_csv_files": true,
+  "training_audit": {
+    "runs": 60,
+    "development_histories_checked": 45,
+    "updates_per_development_run": 2400,
+    "all_shared_initializations_matched_within_seed": true,
+    "all_initializations_official_imagenet_no_icg_warmstart": true,
+    "selection_first_validation_maximum_verified": true
+  },
+  "independent_test_patients": 3,
+  "boundary_test_frames": 23,
+  "region_test_patients": 2,
+  "region_test_frames": 11,
+  "replay_audit": {
+    "seed42_models": 5,
+    "frames_per_model": 23,
+    "metric_checks": 115,
+    "maximum_boundary_f1_absolute_error": 0.0,
+    "replay_is_visualization_not_new_model_selection": true
+  },
+  "gpu_forward_ms_replay": {
+    "A": {
+      "median": 13.080608367919922,
+      "p95": 17.73219108581543,
+      "excludes_preprocessing_postprocessing_transfer": true,
+      "first_two_frames_excluded": true
+    },
+    "B": {
+      "median": 12.430624008178711,
+      "p95": 18.547040939331055,
+      "excludes_preprocessing_postprocessing_transfer": true,
+      "first_two_frames_excluded": true
+    },
+    "C": {
+      "median": 12.154175758361816,
+      "p95": 14.643296241760254,
+      "excludes_preprocessing_postprocessing_transfer": true,
+      "first_two_frames_excluded": true
+    },
+    "D": {
+      "median": 13.783167839050293,
+      "p95": 14.334879875183105,
+      "excludes_preprocessing_postprocessing_transfer": true,
+      "first_two_frames_excluded": true
+    },
+    "E": {
+      "median": 13.714816093444824,
+      "p95": 14.674592018127441,
+      "excludes_preprocessing_postprocessing_transfer": true,
+      "first_two_frames_excluded": true
+    }
+  },
+  "cached_frame_pipeline_ms_replay": {
+    "A": {
+      "median": 24.974399973871186,
+      "p95": 30.27049999218434,
+      "includes_normalization_transfer_forward_boundary_postprocessing": true,
+      "excludes_source_frame_capture_decode_resize_and_metric_computation": true,
+      "is_not_live_video_end_to_end_latency": true
+    },
+    "B": {
+      "median": 32.21699999994598,
+      "p95": 37.84810000797734,
+      "includes_normalization_transfer_forward_boundary_postprocessing": true,
+      "excludes_source_frame_capture_decode_resize_and_metric_computation": true,
+      "is_not_live_video_end_to_end_latency": true
+    },
+    "C": {
+      "median": 23.445500002708286,
+      "p95": 27.969999995548278,
+      "includes_normalization_transfer_forward_boundary_postprocessing": true,
+      "excludes_source_frame_capture_decode_resize_and_metric_computation": true,
+      "is_not_live_video_end_to_end_latency": true
+    },
+    "D": {
+      "median": 31.73149999929592,
+      "p95": 35.77799999038689,
+      "includes_normalization_transfer_forward_boundary_postprocessing": true,
+      "excludes_source_frame_capture_decode_resize_and_metric_computation": true,
+      "is_not_live_video_end_to_end_latency": true
+    },
+    "E": {
+      "median": 31.859600014286116,
+      "p95": 35.79749999335036,
+      "includes_normalization_transfer_forward_boundary_postprocessing": true,
+      "excludes_source_frame_capture_decode_resize_and_metric_computation": true,
+      "is_not_live_video_end_to_end_latency": true
+    }
+  },
+  "publication": {
+    "original_report_data_sha256": "76fb136e93a96b47a1ebeb3afa272afb8e3b05c7c05fbdcf82005673b9aaffcc",
+    "case_image_paths_omitted": true,
+    "original_numeric_fields_preserved": true
+  }
+}
