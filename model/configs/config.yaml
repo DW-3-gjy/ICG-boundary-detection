@@ -66,6 +66,11 @@ inference:
   min_mean_probability: 0.55
 
 # Tracking Configuration
+refinement:
+  enabled: false
+  checkpoint: "checkpoints/refiner/best_refiner.pt"
+
+# Tracking Configuration
 tracking:
   enabled: true
   num_points: 100

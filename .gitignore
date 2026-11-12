@@ -1,5 +1,7 @@
 # ===== 患者数据(严禁上传) =====
 data/
+!model/src/icg_pipeline/data/
+!model/src/icg_pipeline/data/__init__.py
 model/data/
 model/predictions/
 model/logs/

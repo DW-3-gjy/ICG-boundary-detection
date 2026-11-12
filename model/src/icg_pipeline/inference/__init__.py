@@ -41,6 +41,11 @@ class ICGPredictor:
         self.save_overlay = bool(config["inference"].get("save_overlay", True))
         self.overlay_alpha = float(config["inference"].get("overlay_alpha", 0.5))
         self.tracker: Optional[OpticalFlowTracker] = None
+        self.boundary_refiner = None
+        refinement = config.get('refinement', {})
+        if refinement.get('enabled', False):
+            from ..refinement import load_refiner
+            self.boundary_refiner = load_refiner(refinement['checkpoint'], self.device)
 
     @torch.inference_mode()
     def predict_image(self, image: np.ndarray) -> Dict[str, Any]:
@@ -63,7 +68,7 @@ class ICGPredictor:
             for contour in contours
         ]
         accepted = next((contour for contour, score in ranked if score >= self.min_mean_probability), None)
-        return {
+        result = {
             "mask": mask,
             "probability_map": probability_map,
             "contours": contours,
@@ -74,6 +79,14 @@ class ICGPredictor:
             ),
             "original_size": original_size,
         }
+        if self.boundary_refiner is not None:
+            from ..refinement import refine_curves
+            # Dense region contours are proposals only; refined output stays open.
+            curves = [c.reshape(-1, 2).astype(np.float32)[::2] for c in contours if len(c) >= 4]
+            refined = refine_curves(self.boundary_refiner, image if image.ndim == 3 else cv2.cvtColor(image, cv2.COLOR_GRAY2BGR), probability_map, curves)
+            result['refined_boundary_fragments'] = refined['fragments']
+            result['boundary_refinement'] = refined
+        return result
 
     def create_overlay(self, image: np.ndarray, result: Dict[str, Any]) -> np.ndarray:
         """Use distinct colors and captions for segmentations, propagation, and failure."""
@@ -99,7 +112,11 @@ class ICGPredictor:
                         cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 220, 0), 2)
         if self.save_overlay:
             original = image if image.ndim == 3 else cv2.cvtColor(image, cv2.COLOR_GRAY2BGR)
-            return cv2.addWeighted(original, 1 - self.overlay_alpha, overlay, self.overlay_alpha, 0)
+            overlay = cv2.addWeighted(original, 1 - self.overlay_alpha, overlay, self.overlay_alpha, 0)
+        if 'refined_boundary_fragments' in result:
+            # Separate yellow open interfaces; never send to closed-contour tracker.
+            for fragment in result['refined_boundary_fragments']:
+                cv2.polylines(overlay, [np.rint(fragment).astype(np.int32).reshape(-1, 1, 2)], False, (0, 220, 255), 1)
         return overlay
 
     def predict_video(
@@ -255,4 +272,8 @@ def run_inference(
             raise OSError(f"Could not write overlay: {overlay_path}")
         result["overlay_path"] = str(overlay_path)
     result["mask_path"] = str(mask_path)
+    if 'boundary_refinement' in result:
+        boundary_path = predictor.output_dir / f'{path.stem}_boundary.json'
+        boundary_path.write_text(json.dumps(result['boundary_refinement'], indent=2), encoding='utf-8')
+        result['boundary_path'] = str(boundary_path)
     return result

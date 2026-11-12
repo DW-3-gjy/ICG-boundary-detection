@@ -22,6 +22,7 @@ def load_config(config_path: str) -> Dict[str, Any]:
         'training': ('checkpoint_dir',),
         'inference': ('model_path', 'output_dir'),
         'logging': ('log_dir',),
+        'refinement': ('checkpoint',),
     }.items():
         for key in keys:
             value = config.get(section, {}).get(key)
