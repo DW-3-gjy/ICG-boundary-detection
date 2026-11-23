@@ -5,8 +5,6 @@ This directory contains a deliberately small, **experimental** baseline for segm
 For the two comparable U-Net / pretrained ResNet-18 pipelines, six loss configurations,
 seeded comparison runner, and lightweight gated tracking, see [the English experiment guide](EXPERIMENTS.md).
 
-For the D model and bilateral refinement on static images, see the [static training and comparison guide](STATIC_BOUNDARY.md).
-
 It is not a validated medical device. It does not infer a surgical margin from arbitrary fluorescent regions and cannot recover an unobservable or arbitrarily deformed boundary. A propagated contour is explicitly labelled as an estimate, and is suppressed when basic tracking checks fail.
 
 ## Pipeline and interfaces
