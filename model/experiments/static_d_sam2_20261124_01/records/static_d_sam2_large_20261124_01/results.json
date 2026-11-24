@@ -1,0 +1,59 @@
+{
+  "scope": "development-only",
+  "frames": 66,
+  "patients": 5,
+  "overall": {
+    "lab": 0.8771110420407898,
+    "tiny_blend": 0.8876335198383757,
+    "large": 0.8906814453230781,
+    "large_flip_blend": 0.8914955858463541,
+    "tiny_large_blend": 0.8883684447047829,
+    "tiny_large_flip_blend": 0.8886195003490094
+  },
+  "paired_patients": [
+    {
+      "lab": 0.8158947679716253,
+      "tiny_blend": 0.8284428275567272,
+      "large": 0.837783124708845,
+      "large_flip_blend": 0.8364357745825722,
+      "tiny_large_blend": 0.8307196384934591,
+      "tiny_large_flip_blend": 0.8314949932247491
+    },
+    {
+      "lab": 0.8264396332055599,
+      "tiny_blend": 0.8308872499891682,
+      "large": 0.8373422468132996,
+      "large_flip_blend": 0.8388980872044807,
+      "tiny_large_blend": 0.8325265918038481,
+      "tiny_large_flip_blend": 0.8320967180119333
+    },
+    {
+      "lab": 0.8946004891721626,
+      "tiny_blend": 0.9056131547530956,
+      "large": 0.9029290466906094,
+      "large_flip_blend": 0.9045852598739627,
+      "tiny_large_blend": 0.9051711857697489,
+      "tiny_large_flip_blend": 0.9055431633633721
+    },
+    {
+      "lab": 0.917807477354279,
+      "tiny_blend": 0.9256829190617073,
+      "large": 0.9219059579485515,
+      "large_flip_blend": 0.9230814067003783,
+      "tiny_large_blend": 0.9234333008910804,
+      "tiny_large_flip_blend": 0.9233379087575417
+    },
+    {
+      "lab": 0.930812842500322,
+      "tiny_blend": 0.9475414478311801,
+      "large": 0.9534468504540851,
+      "large_flip_blend": 0.9544774008703767,
+      "tiny_large_blend": 0.9499915065657784,
+      "tiny_large_flip_blend": 0.9506247183874508
+    }
+  ],
+  "source_sha256": "4b552bba71303ea10742e2c0524426bdfa504cd3e84c7c1fa20f79878b5bec3a",
+  "control_sha256": "6a0afd02520459cfc35a431c96755210e2e654211192a2d9d27fedc09402ae4e",
+  "large_weight_sha256": "2647878d5dfa5098f2f8649825738a9345572bae2d4350a2468587ece47dd318",
+  "large_config_sha256": "1dbd6cb6dfebeaf588c7006ee222c6efbfa9049a7ad472a3cdfb2f5d919e8107"
+}

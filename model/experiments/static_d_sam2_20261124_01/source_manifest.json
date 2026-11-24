@@ -1,0 +1,18 @@
+{
+  "model/scripts/audit_independent_z_references.py": "52697ebd503f28995f5baa7458629f7a7a2d4652e083fb43a07680512a45be2d",
+  "model/scripts/evaluate_static_d_color_context.py": "a8ac115fe36672b97a6b1105a940c1d9e04f672364b59b324e1fd496a7dd7d6c",
+  "model/scripts/evaluate_static_d_locked_regions.py": "c4ebfad595898aef08e16ef45c19b3242b886395a4ac6ca3523dce553e92cc4d",
+  "model/scripts/evaluate_static_d_mask_geometry.py": "91607d8324306a7c05216d80b50a120f0cb7dfcc4d54fc1f2b3ec0aa2ec5aed2",
+  "model/scripts/evaluate_static_d_region_ensemble.py": "654492794a8d01afca2f87a014f304d8d5f5ec88aadbca911ec782eaaf389dec",
+  "model/scripts/evaluate_static_d_sam2_large.py": "4b552bba71303ea10742e2c0524426bdfa504cd3e84c7c1fa20f79878b5bec3a",
+  "model/scripts/evaluate_static_d_sam2_regions.py": "5a08c98120486e4f6a33af6f03919471f8a24f36a5ad07aa316bcf553d507a62",
+  "model/scripts/lock_static_d_sam2_large.py": "1154710ada701cf84358dd732a327cbe66c57da6a4ddeaadb9f62b2cb80c7213",
+  "model/scripts/refit_static_d_sam2_large_decoder.py": "a4515266816ba5715aba9f324872897ffe1a7e744073d4ca9399848dc276a508",
+  "model/scripts/refit_static_d_sam2_regions.py": "28727830df1838c6dfe53b2c694c03d6f73287b663ee898ace239b2887b6ac4f",
+  "model/scripts/static_d_baseline.py": "9083bce521bf00a0ce67659cac1792115698844237a7f02ff47a259f6e535785",
+  "model/scripts/train_static_d_region_dice.py": "766389e8ac79366aec45b17e2f84df56afb832fa8d8abdabf90bd667fa511475",
+  "model/scripts/train_static_d_region_refiner.py": "fa13585d9b3b75a2a29beb3d0bdae023385d29b9a93ad583df52125e7809db59",
+  "model/scripts/train_static_d_sam2_decoder.py": "c05bd602d4efbaf060ab07b906eb13905840d1ddb2bbf982e3b08c87ad8882d0",
+  "model/scripts/train_static_d_sam2_large_precision.py": "82bf6f16bc40c652f9a089cbf35507741aba17f34ec9223bc74096acca868be4",
+  "model/scripts/train_static_d_sam2_prompt_recovery.py": "33801b672dd17380296a6747bf50c0aa3a69096b56027df11ae9d480386d0521"
+}
