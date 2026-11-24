@@ -1,0 +1,214 @@
+{
+  "study_id": "patient_boundary_20261105_01",
+  "design_status": "frozen_ready_for_training",
+  "created_at": "2026-11-05T01:48:08.610009+00:00",
+  "training_started": false,
+  "final_test_started": false,
+  "code_reference": "9cb6f4e7873a2d502b8f9801b4190b9b96f52a08",
+  "data_freeze_status": "frozen_with_user_confirmed_identity_and_visible_boundary_completeness",
+  "candidate_images": 129,
+  "planned_development_candidates": 106,
+  "planned_test_candidates": 23,
+  "confirmed_new_batch_patients": 10,
+  "historical_patient_sources": 2,
+  "globally_distinct_patients_not_yet_confirmed": false,
+  "fixed_new_batch_test_patient_sources": [
+    "new_04",
+    "new_05",
+    "new_10"
+  ],
+  "planned_development_validation_folds": {
+    "fold_1": [
+      "old_01",
+      "new_02",
+      "new_03"
+    ],
+    "fold_2": [
+      "old_02",
+      "new_06",
+      "new_07"
+    ],
+    "fold_3": [
+      "new_01",
+      "new_08",
+      "new_09"
+    ]
+  },
+  "identity_resolution": {
+    "if_old_matches_test": "quarantine_all_matching_old_patient_data_from_development; retain fixed new test subjects",
+    "if_old_matches_development": "merge_source_ids_into_one_canonical_patient_and_one_validation_fold",
+    "if_unknown": "do_not_start_formal_training_or_independent_test_until_relationship_resolved",
+    "revisions": "record before any formal training, recompute counts and fold balance without examining model results"
+  },
+  "groups": [
+    {
+      "id": "A",
+      "boundary_head": false,
+      "include_l_training": false,
+      "include_old_training": true
+    },
+    {
+      "id": "B",
+      "boundary_head": true,
+      "include_l_training": false,
+      "include_old_training": true
+    },
+    {
+      "id": "C",
+      "boundary_head": false,
+      "include_l_training": true,
+      "include_old_training": true
+    },
+    {
+      "id": "D",
+      "boundary_head": true,
+      "include_l_training": true,
+      "include_old_training": true
+    },
+    {
+      "id": "E",
+      "boundary_head": true,
+      "include_l_training": true,
+      "include_old_training": false
+    }
+  ],
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "core_training_runs": {
+    "development": 45,
+    "final_refit": 15,
+    "total": 60
+  },
+  "initialization": "official ResNet18 IMAGENET1K_V1 encoder; fresh decoder, heads and optimizer; no ICG checkpoint warm start",
+  "input_width_height": [
+    768,
+    432
+  ],
+  "effective_batch_size": 4,
+  "encoder_batchnorm_running_statistics": "frozen_in_all_groups",
+  "optimizer": {
+    "name": "AdamW",
+    "decoder_lr": 0.0003,
+    "encoder_lr": 3e-05,
+    "weight_decay": 1e-05
+  },
+  "scheduler": {
+    "name": "cosine",
+    "minimum_lr": 1e-06
+  },
+  "development_updates": 2400,
+  "validation_interval_updates": 40,
+  "sampling": "uniform training patient then uniform eligible training frame; sampling with replacement",
+  "precision": {
+    "amp": true,
+    "tf32": false,
+    "deterministic_algorithms": "warn_only_with_recorded_warnings"
+  },
+  "refit_update_rule": "per-group median of 9 development best_update values, rounded to nearest positive 40-update multiple; cap 2400; no final refit checkpoint selection",
+  "primary_metric": {
+    "name": "patient_macro_boundary_F1",
+    "tolerance_fullres_pixels": 20,
+    "sensitivity_tolerances_fullres_pixels": [
+      10,
+      40
+    ],
+    "scope": "delivered visible-line references and polygon-derived region contours; includes instrument/contact/crop segments in polygons; not isolated anatomical-interface truth"
+  },
+  "boundary_probability_threshold_grid": [
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7,
+    0.8
+  ],
+  "threshold_selection": "for each development run select highest patient-macro F1 over the fixed update/threshold grid; ties earlier update then threshold closest to 0.5 then lower threshold; final per-group threshold median across 9 selected thresholds",
+  "secondary_metrics": [
+    "region Dice/IoU on complete region references only",
+    "HD95 and ASSD only where complete applicable boundary references exist",
+    "directed annotated-curve-to-prediction distances for incomplete curves",
+    "empty prediction rate",
+    "model and end-to-end latency"
+  ],
+  "label_rules": [
+    "polygon interior remains target; never invert by fluorescence color",
+    "Q/Z/H phase and L occluded target semantics retained; L is not instrument mask",
+    "no automatic linestrip closure and no unlabeled-to-background conversion",
+    "known boundary, confirmed non-boundary and unknown are distinct; incomplete-ROI false-positive rates are not full-image specificity"
+  ],
+  "loss": {
+    "region_complete_masks": {
+      "Tversky": 0.5,
+      "CE": 0.4,
+      "BoundaryCE": 0.1,
+      "fp_weight": 0.7,
+      "fn_weight": 0.3
+    },
+    "all_groups_partial_soft_region_contour_loss_weight": 0.1,
+    "boundary_head_groups_extra_partial_boundary_loss_weight": 0.1,
+    "boundary_head_groups_extra_valid_roi_consistency_weight": 0.05,
+    "unavailable_terms": "skip without inventing target values; normalize each per-frame loss by supervised pixel count"
+  },
+  "contrast_definitions": {
+    "boundary_module": [
+      "B-A",
+      "D-C"
+    ],
+    "L_training_examples": [
+      "C-A",
+      "D-B"
+    ],
+    "old_training_examples": [
+      "D-E"
+    ]
+  },
+  "interpretation": [
+    "B/D change a boundary-module package including its losses; not a pure head-parameter-count effect",
+    "L inclusion tests training-sample contribution, not causal instrument removal or zero instrument exposure",
+    "D-E shares validation/test; tests old gradient-training examples, not a pipeline with no old information",
+    "three seeds are not additional independent patients",
+    "not a prospective blinded external-site test; intake images were already viewed",
+    "sparse frames cannot validate temporal persistence after fluorescence disappearance"
+  ],
+  "test_release": "lock all 15 final checkpoints, protocol, labels, thresholds and hashes before one final test stage; never adapt based on final scores",
+  "public_archive": "code, configs, anonymous manifests, numeric logs and hashes through PR to develop; no patient pixels, raw coordinates, masks or weights",
+  "metadata_sources_sha256": {
+    "metadata_01": "56e0566345acfd2074cb1dde66bf592e7ceecdc2a585d6a172ddf261894acf55",
+    "metadata_02": "5808430e5f971ded3d31f8399afea021c69ea9732164814640efaf8e833151c6",
+    "metadata_03": "f29af58c0137891fbf7d3ae5c9f3b73245b91ee8f798c51180318d8e7635765f",
+    "metadata_04": "08dc596e366ca21796b5956651110a0c046a42702d8a4d4658e897b6fd56e8cc",
+    "metadata_05": "4fc7ed330e982d32ba23cca373fa8e5c329a7c71182bd4cdf3195c640f1573c7"
+  },
+  "references": {
+    "patient_partitioning": "https://rsna.github.io/claim/item-20.html",
+    "boundary_branch_prior_art": "https://arxiv.org/abs/1907.05740",
+    "metric_selection": "https://www.nature.com/articles/s41592-023-02151-z"
+  },
+  "user_confirmations_20261105": {
+    "old_and_new_patients_all_distinct": true,
+    "all_requested_visible_boundaries_annotated": true,
+    "missing_region_is_due_to_occlusion_or_incomplete_field_of_view": true,
+    "independent_clinical_double_annotation_performed": false,
+    "source": "explicit user answers in this conversation, 2026-11-05"
+  },
+  "protocol_amendment_before_training": {
+    "version": "1.1",
+    "reference_scope": "delivered visible-line references and polygon-derived region contours; includes instrument/contact/crop segments in polygons; not isolated anatomical-interface truth",
+    "boundary_negative_scope": "outside uncertainty bands of all delivered visible boundaries, based on user completeness confirmation; no amodal target is invented",
+    "boundary_geometry": "native-grid skeleton point centers mapped to original 4K coordinates, matched against full-resolution reference points; 5 original pixels per network grid cell",
+    "region_loss_normalization": "mean over complete-mask images in each microbatch; absent region references never evaluated"
+  },
+  "data_root": "${STUDY_ROOT}/data",
+  "official_encoder_weights_sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec",
+  "prepared_cache_manifest_sha256": "fcb342c084d7e2768aa58cdf5222189b13050203c5515549c87f408e3058675b",
+  "publication": {
+    "kind": "path_redacted_derivative_not_original_frozen_protocol",
+    "original_protocol_sha256": "c3de51e27019273732fcadf1995a9cc963bf9716007de4f82e5fcb36be6e19be",
+    "private_pixels_coordinates_masks_weights_included": false,
+    "original_private_records_not_modified": true
+  }
+}

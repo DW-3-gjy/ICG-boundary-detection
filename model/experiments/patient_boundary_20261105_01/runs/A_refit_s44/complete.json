@@ -1,0 +1,13 @@
+{
+  "run": "A_refit_s44",
+  "group": "A",
+  "fold": "refit",
+  "seed": 44,
+  "updates": 1880,
+  "best_update": 1880,
+  "best_threshold": 0.2,
+  "best_validation_f1": null,
+  "checkpoint_sha256": "899f525bf2562a97f379ea49bbe81346f107971edc1b80b2c5795187da9afd98",
+  "training_candidates": 81,
+  "completed_at": "2026-11-06 20:37:37"
+}

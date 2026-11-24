@@ -1,0 +1,13 @@
+{
+  "run": "D_fold_2_s44",
+  "group": "D",
+  "fold": "fold_2",
+  "seed": 44,
+  "updates": 2400,
+  "best_update": 2160,
+  "best_threshold": 0.8,
+  "best_validation_f1": 0.3834735879157527,
+  "checkpoint_sha256": "f97e521f7375c339e5706f91baa72e4dabb3f1de4d421aab63d6692cf15a7b07",
+  "training_candidates": 67,
+  "completed_at": "2026-11-06 15:47:50"
+}

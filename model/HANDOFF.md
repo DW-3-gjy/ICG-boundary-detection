@@ -2,6 +2,14 @@
 
 This work is an engineering baseline, not clinical validation. The code predicts the foreground class in the supplied masks. Before training, the clinical lead and project owner must agree whether that foreground is an ICG region, an intersegmental plane, or a specifically defined boundary representation. Do not treat one as another implicitly.
 
+## Completed static-boundary study (2026-11-07)
+
+Start with the [study archive](experiments/patient_boundary_20261105_01/README.md), [data definitions](experiments/patient_boundary_20261105_01/DATASET.md), [actual training sequence](experiments/patient_boundary_20261105_01/TRAINING.md), and [all-group results](experiments/patient_boundary_20261105_01/RESULTS.md). These records describe 45 development runs and 15 fresh final refits, followed by one locked test stage on 3 patients / 23 frames. They are separate from the generic pipeline commands below.
+
+Run `python model/scripts/patient_boundary_archive.py verify-public` from the repository root to verify anonymous numerical evidence without patient data, Torch, or GPU. This does not rerun inference or verify private checkpoint tensors. Authorized image-based reproduction uses the separate `replay_patient_boundary_study.py` entry and a private source map in a new directory; never restart or overwrite the completed original study.
+
+Q/Z/H are acquisition phases. L is an occluded target-region label, not an instrument mask. Polygon interiors retain their supplied foreground meaning; open curves never imply a filled region. The current boundary-head experiment is not yet wired into the generic video predictor. Static-frame metrics cannot establish boundary retention after fluorescence disappears.
+
 ## Work to complete before training
 
 1. **Clinical/data lead:** define annotation instructions with a thoracic surgeon; curate de-identified frames and videos; decide how ambiguous, occluded, and absent boundaries are labelled. Ensure ethics/consent and local data governance approvals.

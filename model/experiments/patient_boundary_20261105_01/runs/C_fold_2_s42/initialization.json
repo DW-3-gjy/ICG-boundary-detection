@@ -1,0 +1,6 @@
+{
+  "seed": 42,
+  "encoder_weights_sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec",
+  "shared_parameter_sha256": "0289c968575936f7b6652024efd2c4cd4865b2c3f59e99e5e201a5d9e195cc9a",
+  "warm_start_icg_checkpoint": false
+}
