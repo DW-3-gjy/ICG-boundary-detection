@@ -1,0 +1,13 @@
+{
+  "seed": 42,
+  "initial_epoch": 0,
+  "optimizer_initial_entries": 0,
+  "loaded_prior_ICG_checkpoint": false,
+  "encoder_weights": "IMAGENET1K_V1",
+  "model_state_sha256": "0979709eaad11989a03cb166405c2c98c352e44e775da453e877c3d6dc8ab1e7",
+  "nonencoder_state_sha256": "440503d61fbdf6f34f77a57778a3857c9fcd6e43a9212f05fd9fc32f6416f2db",
+  "parameters": 14339714,
+  "start_time": "2026-10-22T10:35:20.907923+08:00",
+  "encoder_state_sha256": "265e8731e35794cf541d09323b6c506ca37d5f1e6ed308644182bb37d24e4080",
+  "encoder_bn_frozen": true
+}

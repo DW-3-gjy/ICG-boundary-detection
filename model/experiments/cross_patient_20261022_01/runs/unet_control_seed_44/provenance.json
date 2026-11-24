@@ -1,0 +1,32 @@
+{
+  "python": "3.12.14",
+  "packages": {
+    "torch": "2.7.1+cu128",
+    "torchvision": "0.22.1+cu128",
+    "numpy": "2.5.4",
+    "opencv-python": "5.0.0.93",
+    "scipy": "1.18.1",
+    "PyYAML": "6.0.3"
+  },
+  "preprocessing": {
+    "normalization": "imagenet",
+    "image_size": [
+      288,
+      512
+    ],
+    "in_channels": 3
+  },
+  "encoder_weights": null,
+  "split_manifest": null,
+  "run_id": "unet_control_seed_44",
+  "condition_id": "unet_control",
+  "family": "primary_factorial",
+  "seed": 44,
+  "best_epoch": 22,
+  "best_validation_dice": 0.8281046748161316,
+  "optimizer_updates": 480,
+  "expected_updates": 480,
+  "training_seconds": 82.32441900000049,
+  "checkpoint_sha256": "a78c0a9fd974682d4afaa78ff9a9fcaea4ce1afeb5afbfb581de13e108ff1172",
+  "protocol_sha256": "0c00e48cfd63f5365be099b8dc27fd61d288f9841c431ffbeea1789123e3371c"
+}

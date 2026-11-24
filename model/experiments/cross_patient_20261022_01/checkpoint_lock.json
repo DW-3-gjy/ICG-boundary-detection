@@ -1,0 +1,31 @@
+{
+  "protocol_sha256": "0c00e48cfd63f5365be099b8dc27fd61d288f9841c431ffbeea1789123e3371c",
+  "checkpoints": {
+    "unet_resnet18_control_seed_42": "8f4376ccdda447f3dfa96f5e9b31413cea92a2986c6ea6ddefa7cd656477d520",
+    "unet_resnet18_combined_seed_42": "d4651bd7c89c9ebeb3a10f1cc1b1f586f01ed8f821949101956728c4a4c38783",
+    "unet_combined_seed_42": "e349423d2e63e75805bf7ff2d2960be639568cbc65e4f192ae4dc1da6873dd1f",
+    "unet_tversky_seed_42": "f3af246016ebc9f1a574d5203b228c8c54cbaa48a061e00809cb8c7541637a8b",
+    "unet_control_seed_42": "c6e607add0106a5fda50faeaa9e5ed6af1eb98067b389504d9474abd0049927a",
+    "resnet18_scratch_bn_train_seed_42": "47aabd25b02eee44a30ca6e563b9e8a6f0f7ea0608560e5dc328d9cac1a621ac",
+    "resnet18_imagenet_bn_train_seed_42": "db3c467b9ad1f8d5de58ccb05e67a9e42d3f99cbd13ac0068115b5de57bd182f",
+    "unet_resnet18_tversky_seed_42": "03c5a84a81270df4c914cf48793bbc6cf236a4aa79478137a1f5d77bcd9ad64a",
+    "unet_combined_seed_43": "ee30202ffad48cf24cb7d0d6b1e281fb2bbad707ffc79051a0c7cd37e0fa5ef5",
+    "unet_tversky_seed_43": "f2c721a83c739a18a406a0768835ded7abdebd1aa85617cdb151335dea82316a",
+    "resnet18_scratch_bn_train_seed_43": "434e0e762ead60d01e4a4601d3d547d45f1cdb99d3cc812336b14d0dfb6a58ae",
+    "resnet18_imagenet_bn_train_seed_43": "b881551ec50f75c0e3a7d798c2370b3e3d133a8dd0e29d189fc831e9e0d9b1bd",
+    "unet_control_seed_43": "279c6888725983e56fa3ef21d25f2751ec349ac391ee7930eb8f9f892524e3d0",
+    "unet_resnet18_combined_seed_43": "dfd7c8abb65e1f7bbe39ab48933606208100c5aa1eeb2c98670cce3eeca7c649",
+    "unet_resnet18_control_seed_43": "951f6c287638579014a622848aea88c56102581030865f5313d235a565e43731",
+    "unet_resnet18_tversky_seed_43": "0146643787b38bbf6f465919cefbe194561451b7fe8ce9a59e8c4fa1eb90cfb4",
+    "resnet18_imagenet_bn_train_seed_44": "3c2e420c044425f5447325946b7b01345f8a3a1f8fd59ad3db0aa157ea2e8a2c",
+    "resnet18_scratch_bn_train_seed_44": "ec1751a061bfbe65413d5a4d70b494ed14d95dbea354ff30b8a7bc96f6733c17",
+    "unet_resnet18_tversky_seed_44": "e3ca73fb6e78e4ec889add499262325fdbcf96139efb94de621804155e8f329c",
+    "unet_combined_seed_44": "eaaf4b8b97696912e852edae891a5d251fff0263eeabaefacd27b99cba159023",
+    "unet_resnet18_combined_seed_44": "d13dd6fd8c76fa727aeb147a28469df9b0ac8e7a72ecbc26dbb9e2cc3a529d3a",
+    "unet_tversky_seed_44": "61a19f4a9654a466298225eb442973252a90e1a0427de7854173fe395ee61f7d",
+    "unet_control_seed_44": "a78c0a9fd974682d4afaa78ff9a9fcaea4ce1afeb5afbfb581de13e108ff1172",
+    "unet_resnet18_control_seed_44": "76bccbff79c0ae3560f534f3586bd183018eb29fa979defa1413e66ce7904d37"
+  },
+  "selected_on": "patient1 resized validation Dice",
+  "test_data_used_for_selection": false
+}

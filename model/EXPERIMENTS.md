@@ -1,5 +1,13 @@
 # Comparing the two ICG pipelines
 
+For the **completed 2026-10-22 eight-condition / 24-run experiment**, use its
+[archive and reproducible commands](experiments/cross_patient_20261022_01/README.md),
+[dataset registration](experiments/cross_patient_20261022_01/DATASET.md), and
+[results with statistical definitions](experiments/cross_patient_20261022_01/RESULTS.md).
+The six-configuration commands below describe the generic runner and are not the
+entry point used for that archived study. PR76 fixes software tracking/reporting;
+it is not a new segmentation model or evidence of clinical temporal improvement.
+
 This experiment compares static segmentation algorithms. The common gated optical-flow
 tracker is a research prototype. Synthetic motion and brightness changes do not establish
 performance during real fluorescence disappearance, surgical manipulation, or occlusion.

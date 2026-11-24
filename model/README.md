@@ -5,6 +5,8 @@ This directory contains a deliberately small, **experimental** baseline for segm
 For the two comparable U-Net / pretrained ResNet-18 pipelines, six loss configurations,
 seeded comparison runner, and lightweight gated tracking, see [the English experiment guide](EXPERIMENTS.md).
 
+The completed 2026-10-22 two-patient study has a separate [auditable archive and commands](experiments/cross_patient_20261022_01/README.md), [anonymous dataset register](experiments/cross_patient_20261022_01/DATASET.md), and [three-seed results](experiments/cross_patient_20261022_01/RESULTS.md). Its eight conditions/24 runs used the archived `source_snapshot/run_study.py`, not this generic six-condition runner. Only numeric records and code are published; patient images, masks, coordinates and weights remain private.
+
 It is not a validated medical device. It does not infer a surgical margin from arbitrary fluorescent regions and cannot recover an unobservable or arbitrarily deformed boundary. A propagated contour is explicitly labelled as an estimate, and is suppressed when basic tracking checks fail.
 
 ## Pipeline and interfaces
@@ -94,7 +96,7 @@ This conservative policy may stop display more often under partial occlusion.
 
 Image evaluation reports foreground Dice/IoU and configured boundary metrics in pixels. Video evaluation requires independent frame-level reference contours. Call `Evaluator.evaluate_tracking_sequence(results, reference_contours, elapsed_seconds=...)`; use `None` for frames without reference annotation. This reports symmetric nearest-contour distance, contour HD95, failure frequency, elapsed-since-ICG-loss drift grouped by supplied time, and latency/FPS when present. Never use tracker output as ground truth. FPS is measured by this implementation and is not a real-time guarantee.
 
-No suitable clinical videos, procedure identifiers, reviewed masks, or independently annotated tracking contours are included here. Consequently this repository contains **no clinical performance results**. The default synthetic generator creates random vessel-like shapes and cannot train or validate lung intersegmental-plane recognition.
+No patient images, reviewed masks, procedure identifiers, or independently annotated clinical tracking sequences are included here. The anonymous retrospective static-segmentation results in the study archive cover only one held-out patient and do not establish clinical performance or dynamic tracking after fluorescence loss. The default synthetic generator creates random vessel-like shapes and cannot train or validate lung intersegmental-plane recognition.
 
 ## Known limitations
 

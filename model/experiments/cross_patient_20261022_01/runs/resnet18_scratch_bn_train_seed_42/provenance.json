@@ -1,0 +1,32 @@
+{
+  "python": "3.12.14",
+  "packages": {
+    "torch": "2.7.1+cu128",
+    "torchvision": "0.22.1+cu128",
+    "numpy": "2.5.4",
+    "opencv-python": "5.0.0.93",
+    "scipy": "1.18.1",
+    "PyYAML": "6.0.3"
+  },
+  "preprocessing": {
+    "normalization": "imagenet",
+    "image_size": [
+      288,
+      512
+    ],
+    "in_channels": 3
+  },
+  "encoder_weights": null,
+  "split_manifest": null,
+  "run_id": "resnet18_scratch_bn_train_seed_42",
+  "condition_id": "resnet18_scratch_bn_train",
+  "family": "matched_pretraining_ablation",
+  "seed": 42,
+  "best_epoch": 39,
+  "best_validation_dice": 0.7903856635093689,
+  "optimizer_updates": 479,
+  "expected_updates": 480,
+  "training_seconds": 185.97787649999373,
+  "checkpoint_sha256": "47aabd25b02eee44a30ca6e563b9e8a6f0f7ea0608560e5dc328d9cac1a621ac",
+  "protocol_sha256": "0c00e48cfd63f5365be099b8dc27fd61d288f9841c431ffbeea1789123e3371c"
+}

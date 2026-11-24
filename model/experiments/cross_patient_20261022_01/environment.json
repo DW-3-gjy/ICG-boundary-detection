@@ -1,0 +1,12 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "torch": "2.7.1+cu128",
+  "device": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+  "cuda_version": "12.8",
+  "cudnn": 90701,
+  "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+  "deterministic_algorithms": true,
+  "deterministic_warn_only": true,
+  "TF32": false,
+  "protocol_sha256": "0c00e48cfd63f5365be099b8dc27fd61d288f9841c431ffbeea1789123e3371c"
+}

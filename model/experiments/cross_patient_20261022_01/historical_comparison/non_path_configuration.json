@@ -1,0 +1,87 @@
+{
+  "data": {
+    "image_size": [
+      288,
+      512
+    ],
+    "in_channels": 3,
+    "out_channels": 2,
+    "annotation": "Z-only; confirmed existing polygon foreground; Q/H reserved as auxiliary, L excluded",
+    "batch_size": 5,
+    "num_workers": 0,
+    "pin_memory": true,
+    "augmentations": {
+      "horizontal_flip": 0.5,
+      "vertical_flip": 0.0,
+      "rotation": 8,
+      "brightness": 0.05,
+      "contrast": 0.1,
+      "gaussian_noise": 0.005
+    }
+  },
+  "model": {
+    "name": "unet",
+    "in_channels": 3,
+    "out_channels": 2,
+    "base_filters": 32,
+    "depth": 4,
+    "dropout": 0.1,
+    "use_batchnorm": true
+  },
+  "training": {
+    "epochs": 120,
+    "seed": 42,
+    "learning_rate": 0.0003,
+    "weight_decay": 1e-05,
+    "optimizer": "adamw",
+    "scheduler": "cosine_annealing",
+    "scheduler_params": {
+      "T_max": 120,
+      "eta_min": 1e-06
+    },
+    "loss_function": "dice_ce",
+    "loss_params": {
+      "dice_weight": 0.5,
+      "ce_weight": 0.5
+    },
+    "gradient_clip": 1.0,
+    "mixed_precision": true,
+    "early_stopping": {
+      "patience": 30,
+      "min_delta": 0.001
+    },
+    "save_top_k": 1,
+    "monitor_metric": "val_dice",
+    "monitor_mode": "max",
+    "overfit_only": false
+  },
+  "inference": {
+    "save_overlay": true,
+    "overlay_alpha": 0.5,
+    "min_contour_area": 100,
+    "min_mean_probability": 0.55
+  },
+  "tracking": {
+    "enabled": true,
+    "num_points": 100
+  },
+  "evaluation": {
+    "metrics": [
+      "dice",
+      "iou",
+      "precision",
+      "recall",
+      "hausdorff",
+      "hausdorff_95",
+      "surface_distance"
+    ]
+  },
+  "device": {
+    "use_cuda": true,
+    "device_id": 0
+  },
+  "publication": {
+    "private_path_fields_omitted": true,
+    "original_configuration_sha256": "4e2d3e63d96254a9880984a5476bfaee58d268a0af699981e04fa6e4b68a66e4"
+  }
+}

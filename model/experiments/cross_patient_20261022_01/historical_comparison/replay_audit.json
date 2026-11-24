@@ -1,0 +1,60 @@
+{
+  "replay_exact_old_five_masks": true,
+  "exact_replay_details": {
+    "all_five_historical_test_masks_reproduced_exactly": true,
+    "rows": [
+      {
+        "filename": "sample_00006.png",
+        "changed_pixels": 0,
+        "dice": 0.3980520604609377
+      },
+      {
+        "filename": "sample_00007.png",
+        "changed_pixels": 0,
+        "dice": 0.5456745897484829
+      },
+      {
+        "filename": "sample_00008.png",
+        "changed_pixels": 0,
+        "dice": 0.6857848736433182
+      },
+      {
+        "filename": "sample_00009.png",
+        "changed_pixels": 0,
+        "dice": 0.6973008620764158
+      },
+      {
+        "filename": "sample_00010.png",
+        "changed_pixels": 0,
+        "dice": 0.5377379270880536
+      }
+    ],
+    "cudnn_TF32": true,
+    "deterministic_algorithms": false,
+    "purpose": "compatibility audit, not model selection or a new test estimate"
+  },
+  "source_audit_sha256": "e3a9c2ff2d90691a0b8fd7871b189ed41513a040aa631d6bbcfd59687c2de666",
+  "mask_metric_audit": {
+    "saved_prediction_masks_checked": 75,
+    "independently_recomputed_metrics": [
+      "dice",
+      "iou",
+      "precision",
+      "recall",
+      "area_ratio",
+      "hausdorff_95",
+      "mean_surface_distance"
+    ],
+    "maximum_absolute_difference": {
+      "dice": 0.0,
+      "iou": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "area_ratio": 0.0,
+      "hausdorff_95": 0.0,
+      "mean_surface_distance": 0.0
+    },
+    "all_75_masks_agree": true,
+    "source_data_or_weights_modified": false
+  }
+}

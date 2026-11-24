@@ -1,0 +1,195 @@
+{
+  "verified_at": "2026-10-22T15:51:13.162102+08:00",
+  "passed": true,
+  "protocol_sha256": "0c00e48cfd63f5365be099b8dc27fd61d288f9841c431ffbeea1789123e3371c",
+  "runs_checked": 24,
+  "test_masks_independently_recomputed": 1656,
+  "metrics_recomputed_from_saved_binary_masks": [
+    "dice",
+    "iou",
+    "precision",
+    "recall",
+    "area_ratio"
+  ],
+  "maximum_absolute_metric_error": {
+    "dice": 0.0,
+    "iou": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "area_ratio": 0.0
+  },
+  "aggregation_verified_all_conditions_subgroups_seeds": true,
+  "training_checkpoint_selection_matches_first_maximum_validation_dice": true,
+  "all_frozen_data_and_source_sha256_checked": true,
+  "distance_metric_values_reaggregated_but_not_recomputed_from_masks": true,
+  "run_checks": [
+    {
+      "run_id": "unet_resnet18_control_seed_42",
+      "history_epochs": 120,
+      "best_epoch_matches_history": true,
+      "checkpoint_hash_matches_lock": true,
+      "test_samples": 69
+    },
+    {
+      "run_id": "unet_resnet18_combined_seed_42",
+      "history_epochs": 120,
+      "best_epoch_matches_history": true,
+      "checkpoint_hash_matches_lock": true,
+      "test_samples": 69
+    },
+    {
+      "run_id": "unet_combined_seed_42",
+      "history_epochs": 120,
+      "best_epoch_matches_history": true,
+      "checkpoint_hash_matches_lock": true,
+      "test_samples": 69
+    },
+    {
+      "run_id": "unet_tversky_seed_42",
+      "history_epochs": 120,
+      "best_epoch_matches_history": true,
+      "checkpoint_hash_matches_lock": true,
+      "test_samples": 69
+    },
+    {
+      "run_id": "unet_control_seed_42",
+      "history_epochs": 120,
+      "best_epoch_matches_history": true,
+      "checkpoint_hash_matches_lock": true,
+      "test_samples": 69
+    },
+    {
+      "run_id": "resnet18_scratch_bn_train_seed_42",
+      "history_epochs": 120,
+      "best_epoch_matches_history": true,
+      "checkpoint_hash_matches_lock": true,
+      "test_samples": 69
+    },
+    {
+      "run_id": "resnet18_imagenet_bn_train_seed_42",
+      "history_epochs": 120,
+      "best_epoch_matches_history": true,
+      "checkpoint_hash_matches_lock": true,
+      "test_samples": 69
+    },
+    {
+      "run_id": "unet_resnet18_tversky_seed_42",
+      "history_epochs": 120,
+      "best_epoch_matches_history": true,
+      "checkpoint_hash_matches_lock": true,
+      "test_samples": 69
+    },
+    {
+      "run_id": "unet_combined_seed_43",
+      "history_epochs": 120,
+      "best_epoch_matches_history": true,
+      "checkpoint_hash_matches_lock": true,
+      "test_samples": 69
+    },
+    {
+      "run_id": "unet_tversky_seed_43",
+      "history_epochs": 120,
+      "best_epoch_matches_history": true,
+      "checkpoint_hash_matches_lock": true,
+      "test_samples": 69
+    },
+    {
+      "run_id": "resnet18_scratch_bn_train_seed_43",
+      "history_epochs": 120,
+      "best_epoch_matches_history": true,
+      "checkpoint_hash_matches_lock": true,
+      "test_samples": 69
+    },
+    {
+      "run_id": "resnet18_imagenet_bn_train_seed_43",
+      "history_epochs": 120,
+      "best_epoch_matches_history": true,
+      "checkpoint_hash_matches_lock": true,
+      "test_samples": 69
+    },
+    {
+      "run_id": "unet_control_seed_43",
+      "history_epochs": 120,
+      "best_epoch_matches_history": true,
+      "checkpoint_hash_matches_lock": true,
+      "test_samples": 69
+    },
+    {
+      "run_id": "unet_resnet18_combined_seed_43",
+      "history_epochs": 120,
+      "best_epoch_matches_history": true,
+      "checkpoint_hash_matches_lock": true,
+      "test_samples": 69
+    },
+    {
+      "run_id": "unet_resnet18_control_seed_43",
+      "history_epochs": 120,
+      "best_epoch_matches_history": true,
+      "checkpoint_hash_matches_lock": true,
+      "test_samples": 69
+    },
+    {
+      "run_id": "unet_resnet18_tversky_seed_43",
+      "history_epochs": 120,
+      "best_epoch_matches_history": true,
+      "checkpoint_hash_matches_lock": true,
+      "test_samples": 69
+    },
+    {
+      "run_id": "resnet18_imagenet_bn_train_seed_44",
+      "history_epochs": 120,
+      "best_epoch_matches_history": true,
+      "checkpoint_hash_matches_lock": true,
+      "test_samples": 69
+    },
+    {
+      "run_id": "resnet18_scratch_bn_train_seed_44",
+      "history_epochs": 120,
+      "best_epoch_matches_history": true,
+      "checkpoint_hash_matches_lock": true,
+      "test_samples": 69
+    },
+    {
+      "run_id": "unet_resnet18_tversky_seed_44",
+      "history_epochs": 120,
+      "best_epoch_matches_history": true,
+      "checkpoint_hash_matches_lock": true,
+      "test_samples": 69
+    },
+    {
+      "run_id": "unet_combined_seed_44",
+      "history_epochs": 120,
+      "best_epoch_matches_history": true,
+      "checkpoint_hash_matches_lock": true,
+      "test_samples": 69
+    },
+    {
+      "run_id": "unet_resnet18_combined_seed_44",
+      "history_epochs": 120,
+      "best_epoch_matches_history": true,
+      "checkpoint_hash_matches_lock": true,
+      "test_samples": 69
+    },
+    {
+      "run_id": "unet_tversky_seed_44",
+      "history_epochs": 120,
+      "best_epoch_matches_history": true,
+      "checkpoint_hash_matches_lock": true,
+      "test_samples": 69
+    },
+    {
+      "run_id": "unet_control_seed_44",
+      "history_epochs": 120,
+      "best_epoch_matches_history": true,
+      "checkpoint_hash_matches_lock": true,
+      "test_samples": 69
+    },
+    {
+      "run_id": "unet_resnet18_control_seed_44",
+      "history_epochs": 120,
+      "best_epoch_matches_history": true,
+      "checkpoint_hash_matches_lock": true,
+      "test_samples": 69
+    }
+  ]
+}

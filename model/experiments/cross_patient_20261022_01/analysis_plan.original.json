@@ -1,0 +1,75 @@
+{
+  "frozen_at": "2026-10-22T10:47:45.186694+08:00",
+  "training_protocol_sha256": "0c00e48cfd63f5365be099b8dc27fd61d288f9841c431ffbeea1789123e3371c",
+  "condition_order": [
+    "unet_control",
+    "unet_tversky",
+    "unet_combined",
+    "unet_resnet18_control",
+    "unet_resnet18_tversky",
+    "unet_resnet18_combined",
+    "resnet18_scratch_bn_train",
+    "resnet18_imagenet_bn_train"
+  ],
+  "contrasts": [
+    [
+      "完整方案对基础方案",
+      "unet_resnet18_combined",
+      "unet_control"
+    ],
+    [
+      "U-Net Tversky组合",
+      "unet_tversky",
+      "unet_control"
+    ],
+    [
+      "U-Net 边界组合调整",
+      "unet_combined",
+      "unet_tversky"
+    ],
+    [
+      "ResNet Tversky组合",
+      "unet_resnet18_tversky",
+      "unet_resnet18_control"
+    ],
+    [
+      "ResNet 边界组合调整",
+      "unet_resnet18_combined",
+      "unet_resnet18_tversky"
+    ],
+    [
+      "配对预训练消融",
+      "resnet18_imagenet_bn_train",
+      "resnet18_scratch_bn_train"
+    ],
+    [
+      "编码器BN冻结敏感性",
+      "unet_resnet18_control",
+      "resnet18_imagenet_bn_train"
+    ]
+  ],
+  "primary_population": "patient2 primary_Z_all 25 images",
+  "primary_contrast": "unet_resnet18_combined minus unet_control",
+  "primary_metric": "mean foreground Dice across images, then mean across seeds",
+  "uncertainty": "sample SD across three seeds is algorithm variability conditional on one patient; no patient CI or p-value",
+  "precision_convention": "Report precision with zero_division=0 for empty predictions; preserve legacy smoothed precision in raw files.",
+  "nonfinite_distances": "nonfinite retained; mean undefined if any failing frame, finite-only values separately labelled",
+  "image_case_selection": {
+    "seed": 42,
+    "models": [
+      "unet_control",
+      "unet_resnet18_combined"
+    ],
+    "rules": [
+      "largest Dice gain",
+      "largest Dice loss",
+      "median Dice change",
+      "lowest proposed Dice in Z+L subgroup"
+    ],
+    "tie_break": "filename",
+    "deduplicate": "choose next eligible rank for a distinct case"
+  },
+  "all_test_metrics_are_descriptive": true,
+  "no_model_selection_on_test": true,
+  "script_sha256": "702fb17dc4e3e685708926946732b2627fb99a0468ec3236fb71459ff69507e7"
+}

@@ -36,7 +36,9 @@ ICG-boundary-detection/
 
 ## 当前算法基线
 
-`model/` 是独立的 U-Net 前景分割 + Lucas–Kanade 光流研究原型，使用双类别 logits 的 softmax/argmax，并在视频中区分分割支持、光流传播与跟踪失败。当前没有临床训练/验证数据；荧光区域不应被直接等同于手术边界，系统也不能用于临床决策。安装、训练、推理、评估与四人交接事项见 [`model/README.md`](model/README.md) 和 [`model/HANDOFF.md`](model/HANDOFF.md)。
+`model/` 包含普通 U-Net / ResNet18-U-Net 前景分割与 Farneback 光流研究原型，使用双类别 logits 的 softmax/argmax，并在视频中区分分割支持、光流传播与跟踪失败。安装、推理、评估与交接事项见 [`model/README.md`](model/README.md) 和 [`model/HANDOFF.md`](model/HANDOFF.md)。
+
+2026-10-22 已完成两患者回顾性静态分割探索：患者一训练20张、验证5张；患者二主测试为 Z12张 + Z且L13张。8组各3个种子共24次训练的匿名划分、完整配置、每轮历史、逐图指标与复算入口见[本轮实验档案](model/experiments/cross_patient_20261022_01/README.md)及[主结果](model/experiments/cross_patient_20261022_01/RESULTS.md)。基础UD测试Dice为 **0.690 ± 0.015**，完整RB为 **0.771 ± 0.029**；SD是训练种子间标准差，独立测试患者只有1位，不代表患者置信区间。PR76是跟踪和评估修复，不能把这些训练差异全部归因于PR76。静态结果尚不能证明荧光消退后的动态跟踪或临床有效性。
 
 ## 分支规则
 
@@ -53,8 +55,9 @@ ICG-boundary-detection/
 
 数据只放本地或网盘,位置在此说明(只写路径,不传数据):
 
-- 原始图像:`<填写网盘链接或本地路径>`
-- 标注图:`<填写位置>`
+- 本轮私有配对目录:`model/data/cross_patient_20261022_01/`（本地，已被Git忽略）
+- 匿名登记与本地接收格式:[数据集说明](model/experiments/cross_patient_20261022_01/DATASET.md)、[划分清单](model/experiments/cross_patient_20261022_01/split_manifest.csv)
+- 原始图像、LabelMe坐标及身份映射由数据负责人通过获批准渠道另行提供；仓库不包含患者数据下载或权重。
 
 ## 协作约定
 

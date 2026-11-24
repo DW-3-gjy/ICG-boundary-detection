@@ -1,0 +1,11 @@
+{
+  "seed": 43,
+  "initial_epoch": 0,
+  "optimizer_initial_entries": 0,
+  "loaded_prior_ICG_checkpoint": false,
+  "encoder_weights": null,
+  "model_state_sha256": "282a6417962abfcbf0d2408e08299e42edabf7c1b30e753d1060d58900c19f7e",
+  "nonencoder_state_sha256": "282a6417962abfcbf0d2408e08299e42edabf7c1b30e753d1060d58900c19f7e",
+  "parameters": 7763074,
+  "start_time": "2026-10-22T10:58:15.286990+08:00"
+}

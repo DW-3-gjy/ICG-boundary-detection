@@ -1,0 +1,12 @@
+{
+  "historical_1019": {
+    "sha256": "19acf548e3bd5268a5e219d609ba632f3969a54481f446d7323c33a032afdee6"
+  },
+  "current_UD": {
+    "sha256": "c6e607add0106a5fda50faeaa9e5ed6af1eb98067b389504d9474abd0049927a"
+  },
+  "current_RB": {
+    "sha256": "d4651bd7c89c9ebeb3a10f1cc1b1f586f01ed8f821949101956728c4a4c38783"
+  },
+  "original_protocol_sha256": "675deea78359a496dae07c6de90af40fed9992f93260ac82e3af6d8648253ca6"
+}

@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "reporting_revision_only": true,
+  "no_training_or_inference_executed": true,
+  "same_primary_test_filenames_verified": true,
+  "test_patients": 1,
+  "test_frames": 25,
+  "all_24_checkpoint_hashes_match_frozen_lock": true,
+  "all_24_run_csv_primary_aggregates_checked": true,
+  "maximum_csv_aggregate_error": 1.1368683772161603e-13,
+  "independently_recomputed_saved_masks": 175,
+  "independently_recomputed_metrics": [
+    "dice",
+    "iou",
+    "precision",
+    "recall",
+    "hausdorff_95",
+    "mean_surface_distance",
+    "area_ratio"
+  ],
+  "maximum_absolute_mask_metric_error": {
+    "dice": 0.0,
+    "iou": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "hausdorff_95": 0.0,
+    "mean_surface_distance": 0.0,
+    "area_ratio": 0.0
+  },
+  "primary_reporting_rule": "Within each seed: mean of 25 per-image metrics. Across seeds42/43/44: arithmetic mean and sample SD (ddof=1). No ensembling, no pooled-pixel Dice.",
+  "precision_empty_prediction_convention": "zero_division=0, as explicitly documented in the original frozen analysis; raw legacy smoothed precision=1 is preserved in source CSVs.",
+  "SD_is_not_patient_uncertainty": true,
+  "historical_only_one_run_no_SD": true,
+  "seed42_RB_is_highest_of_three_and_not_overall_estimate": true,
+  "historical_comparison_posthoc_no_new_blind_test": true,
+  "no_patient_level_significance_claim": true,
+  "deltas": {
+    "RB_three_seed_minus_UD_three_seed_Dice_pp": 8.095825157023818,
+    "RB_three_seed_minus_historical_single_Dice_pp_descriptive_only": 2.8501774898667787,
+    "RB_seed42_minus_historical_seed42_Dice_pp_single_run_only": 6.142561032959481,
+    "RB_three_seed_minus_UD_three_seed_Recall_pp": -6.542304404426858
+  },
+  "private_audit_source_sha256": "ca141c1ac13c61bc0ea72d39effa579f3222a93d67341a61e53d0029b6c3abde"
+}

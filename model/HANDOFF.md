@@ -1,5 +1,11 @@
 # Four-person research handoff
 
+The completed 2026-10-22 training handoff is available in the
+[study archive](experiments/cross_patient_20261022_01/README.md). It maps the actual
+training file to all 24 configurations, anonymous splits, epoch histories,
+per-image metrics, historical-checkpoint comparison and runnable numeric checks.
+The planning checklist below still applies to new data and sequence studies.
+
 This work is an engineering baseline, not clinical validation. The code predicts the foreground class in the supplied masks. Before training, the clinical lead and project owner must agree whether that foreground is an ICG region, an intersegmental plane, or a specifically defined boundary representation. Do not treat one as another implicitly.
 
 ## Work to complete before training

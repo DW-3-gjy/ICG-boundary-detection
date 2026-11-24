@@ -1,0 +1,4 @@
+# Preserve the byte hashes of the original experiment evidence on all systems.
+model/experiments/cross_patient_20261022_01/** -text whitespace=cr-at-eol
+# Frozen code retains its original spacing as well as its byte hashes.
+model/experiments/cross_patient_20261022_01/source_snapshot/** -whitespace

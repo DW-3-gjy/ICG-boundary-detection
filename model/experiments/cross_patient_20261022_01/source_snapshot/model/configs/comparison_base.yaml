@@ -1,0 +1,71 @@
+# Inherited by the six independently runnable comparison configurations.
+data:
+  train_data_dir: data/z_holdout_20261019_01/fullres/train
+  val_data_dir: data/z_holdout_20261019_01/fullres/val
+  test_data_dir: data/z_holdout_20261019_01/fullres/test
+  image_size: [288, 512]
+  in_channels: 3
+  out_channels: 2
+  normalization: imagenet
+  annotation: existing polygon interior; no foreground reversal
+  batch_size: 5
+  num_workers: 0
+  pin_memory: true
+  augmentations:
+    horizontal_flip: 0.5
+    vertical_flip: 0.0
+    rotation: 8
+    brightness: 0.05
+    contrast: 0.1
+    gaussian_noise: 0.005
+model:
+  name: unet
+  in_channels: 3
+  out_channels: 2
+  base_filters: 32
+  depth: 4
+  dropout: 0.1
+  use_batchnorm: true
+training:
+  epochs: 120
+  seed: 42
+  learning_rate: 0.0003
+  encoder_learning_rate: 0.00003
+  weight_decay: 0.00001
+  optimizer: adamw
+  scheduler: cosine_annealing
+  scheduler_params: {T_max: 120, eta_min: 0.000001}
+  loss_function: dice_ce
+  loss_params: {dice_weight: 0.5, ce_weight: 0.5, include_background: false}
+  gradient_clip: 1.0
+  mixed_precision: true
+  early_stopping: {enabled: false}
+  save_top_k: 0
+inference:
+  save_overlay: true
+  overlay_alpha: 0.5
+  min_contour_area: 100
+  min_mean_probability: 0.55
+tracking:
+  enabled: true
+  correction_policy: gated
+  working_size: [288, 512]
+  min_probability: 0.75
+  min_temporal_iou: 0.5
+  num_points: 100
+  optical_flow:
+    min_valid_fraction: 0.8
+    max_forward_backward_error: 2.0
+    max_displacement: 50.0
+    min_local_std: 2.0
+    min_valid_points: 8
+evaluation:
+  metrics: [dice, iou, precision, recall, hausdorff_95, surface_distance, area_ratio]
+logging:
+  level: INFO
+  use_tensorboard: false
+device: {use_cuda: true, device_id: 0}
+experiment:
+  scope: retrospective_source_group_holdout_not_independent_patients
+  primary_phase: Z
+  split_manifest_path: ../first_train/Z阶段训练过程与代码复核材料_20261019/03_划分与结果/split_manifest.json

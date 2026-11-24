@@ -1,0 +1,538 @@
+{
+  "scope": "same P2 Z25, historical snapshot vs current checkpoints; single-seed42 comparison",
+  "groups": {
+    "all_Z25": {
+      "historical_1019": {
+        "dice": {
+          "mean": 0.7427237894206837,
+          "n": 25,
+          "undefined": 0
+        },
+        "iou": {
+          "mean": 0.605504760607354,
+          "n": 25,
+          "undefined": 0
+        },
+        "precision": {
+          "mean": 0.6852178046759186,
+          "n": 25,
+          "undefined": 0
+        },
+        "recall": {
+          "mean": 0.8607996883270116,
+          "n": 25,
+          "undefined": 0
+        },
+        "hausdorff_95": {
+          "mean": 1046.2254906781618,
+          "n": 25,
+          "undefined": 0
+        },
+        "mean_surface_distance": {
+          "mean": 301.6986981298694,
+          "n": 25,
+          "undefined": 0
+        },
+        "area_ratio": {
+          "mean": 1.3321948210082877,
+          "n": 25,
+          "undefined": 0
+        }
+      },
+      "current_UD": {
+        "dice": {
+          "mean": 0.7021750040418074,
+          "n": 25,
+          "undefined": 0
+        },
+        "iou": {
+          "mean": 0.5717813165346637,
+          "n": 25,
+          "undefined": 0
+        },
+        "precision": {
+          "mean": 0.6336678107960866,
+          "n": 25,
+          "undefined": 0
+        },
+        "recall": {
+          "mean": 0.860542786772459,
+          "n": 25,
+          "undefined": 0
+        },
+        "hausdorff_95": {
+          "mean": 1077.931649667934,
+          "n": 25,
+          "undefined": 0
+        },
+        "mean_surface_distance": {
+          "mean": 350.5638087594128,
+          "n": 25,
+          "undefined": 0
+        },
+        "area_ratio": {
+          "mean": 1.402283208526154,
+          "n": 25,
+          "undefined": 0
+        }
+      },
+      "current_RB": {
+        "dice": {
+          "mean": 0.8041493997502784,
+          "n": 25,
+          "undefined": 0
+        },
+        "iou": {
+          "mean": 0.6940023874886307,
+          "n": 25,
+          "undefined": 0
+        },
+        "precision": {
+          "mean": 0.8608978752169857,
+          "n": 25,
+          "undefined": 0
+        },
+        "recall": {
+          "mean": 0.8062280295625506,
+          "n": 25,
+          "undefined": 0
+        },
+        "hausdorff_95": {
+          "mean": 531.0504827457345,
+          "n": 25,
+          "undefined": 0
+        },
+        "mean_surface_distance": {
+          "mean": 126.11837638869089,
+          "n": 25,
+          "undefined": 0
+        },
+        "area_ratio": {
+          "mean": 0.9618047006996213,
+          "n": 25,
+          "undefined": 0
+        }
+      }
+    },
+    "Z12": {
+      "historical_1019": {
+        "dice": {
+          "mean": 0.7607041618107444,
+          "n": 12,
+          "undefined": 0
+        },
+        "iou": {
+          "mean": 0.6322087838364089,
+          "n": 12,
+          "undefined": 0
+        },
+        "precision": {
+          "mean": 0.7590199315513,
+          "n": 12,
+          "undefined": 0
+        },
+        "recall": {
+          "mean": 0.7960548883765663,
+          "n": 12,
+          "undefined": 0
+        },
+        "hausdorff_95": {
+          "mean": 1041.9520200232898,
+          "n": 12,
+          "undefined": 0
+        },
+        "mean_surface_distance": {
+          "mean": 266.97611661287414,
+          "n": 12,
+          "undefined": 0
+        },
+        "area_ratio": {
+          "mean": 1.0459280367719717,
+          "n": 12,
+          "undefined": 0
+        }
+      },
+      "current_UD": {
+        "dice": {
+          "mean": 0.6828190522626713,
+          "n": 12,
+          "undefined": 0
+        },
+        "iou": {
+          "mean": 0.5673944691106388,
+          "n": 12,
+          "undefined": 0
+        },
+        "precision": {
+          "mean": 0.6732098954931119,
+          "n": 12,
+          "undefined": 0
+        },
+        "recall": {
+          "mean": 0.7614101433548752,
+          "n": 12,
+          "undefined": 0
+        },
+        "hausdorff_95": {
+          "mean": 1104.9045670387693,
+          "n": 12,
+          "undefined": 0
+        },
+        "mean_surface_distance": {
+          "mean": 350.59782709455453,
+          "n": 12,
+          "undefined": 0
+        },
+        "area_ratio": {
+          "mean": 1.053401961830873,
+          "n": 12,
+          "undefined": 0
+        }
+      },
+      "current_RB": {
+        "dice": {
+          "mean": 0.7458293196446572,
+          "n": 12,
+          "undefined": 0
+        },
+        "iou": {
+          "mean": 0.62941708858474,
+          "n": 12,
+          "undefined": 0
+        },
+        "precision": {
+          "mean": 0.9234495533493527,
+          "n": 12,
+          "undefined": 0
+        },
+        "recall": {
+          "mean": 0.6771264208660774,
+          "n": 12,
+          "undefined": 0
+        },
+        "hausdorff_95": {
+          "mean": 555.0368378293505,
+          "n": 12,
+          "undefined": 0
+        },
+        "mean_surface_distance": {
+          "mean": 146.69887890824043,
+          "n": 12,
+          "undefined": 0
+        },
+        "area_ratio": {
+          "mean": 0.745996949281314,
+          "n": 12,
+          "undefined": 0
+        }
+      }
+    },
+    "Z_and_L13": {
+      "historical_1019": {
+        "dice": {
+          "mean": 0.726126522599089,
+          "n": 13,
+          "undefined": 0
+        },
+        "iou": {
+          "mean": 0.5808548930113032,
+          "n": 13,
+          "undefined": 0
+        },
+        "precision": {
+          "mean": 0.6170927644832589,
+          "n": 13,
+          "undefined": 0
+        },
+        "recall": {
+          "mean": 0.9205641190504994,
+          "n": 13,
+          "undefined": 0
+        },
+        "hausdorff_95": {
+          "mean": 1050.1702328211206,
+          "n": 13,
+          "undefined": 0
+        },
+        "mean_surface_distance": {
+          "mean": 333.75031183786507,
+          "n": 13,
+          "undefined": 0
+        },
+        "area_ratio": {
+          "mean": 1.5964410833802718,
+          "n": 13,
+          "undefined": 0
+        }
+      },
+      "current_UD": {
+        "dice": {
+          "mean": 0.7200420364533178,
+          "n": 13,
+          "undefined": 0
+        },
+        "iou": {
+          "mean": 0.5758307141568405,
+          "n": 13,
+          "undefined": 0
+        },
+        "precision": {
+          "mean": 0.5971674249219094,
+          "n": 13,
+          "undefined": 0
+        },
+        "recall": {
+          "mean": 0.9520498422348441,
+          "n": 13,
+          "undefined": 0
+        },
+        "hausdorff_95": {
+          "mean": 1053.0335720948553,
+          "n": 13,
+          "undefined": 0
+        },
+        "mean_surface_distance": {
+          "mean": 350.5324072192821,
+          "n": 13,
+          "undefined": 0
+        },
+        "area_ratio": {
+          "mean": 1.7243274362448748,
+          "n": 13,
+          "undefined": 0
+        }
+      },
+      "current_RB": {
+        "dice": {
+          "mean": 0.8579833198477752,
+          "n": 13,
+          "undefined": 0
+        },
+        "iou": {
+          "mean": 0.7536195864768376,
+          "n": 13,
+          "undefined": 0
+        },
+        "precision": {
+          "mean": 0.8031578646332621,
+          "n": 13,
+          "undefined": 0
+        },
+        "recall": {
+          "mean": 0.925398745282372,
+          "n": 13,
+          "undefined": 0
+        },
+        "hausdorff_95": {
+          "mean": 508.90923189931993,
+          "n": 13,
+          "undefined": 0
+        },
+        "mean_surface_distance": {
+          "mean": 107.12098944756826,
+          "n": 13,
+          "undefined": 0
+        },
+        "area_ratio": {
+          "mean": 1.1610118558549813,
+          "n": 13,
+          "undefined": 0
+        }
+      }
+    }
+  },
+  "current_3seed_reference": {
+    "current_UD": {
+      "dice": {
+        "mean": 0.6902673127491133,
+        "sd": 0.01460616854482806,
+        "values": [
+          0.7021750040418074,
+          0.6946573215883219,
+          0.6739696126172108
+        ],
+        "nonfinite_count": 0,
+        "finite_mean": 0.6902673127491133
+      },
+      "iou": {
+        "mean": 0.5635712715118907,
+        "sd": 0.018787331645930064,
+        "values": [
+          0.5717813165346637,
+          0.5768561943976928,
+          0.5420763036033158
+        ],
+        "nonfinite_count": 0,
+        "finite_mean": 0.5635712715118907
+      },
+      "precision": {
+        "mean": 0.6491118295870882,
+        "sd": 0.0375359132671238,
+        "values": [
+          0.6336678107960866,
+          0.691906000271629,
+          0.6217616776935491
+        ],
+        "nonfinite_count": 0,
+        "finite_mean": 0.6491118295870882
+      },
+      "recall": {
+        "mean": 0.8109684476947215,
+        "sd": 0.04367418100900447,
+        "values": [
+          0.860542786772459,
+          0.7781673674025797,
+          0.7941951889091261
+        ],
+        "nonfinite_count": 0,
+        "finite_mean": 0.8109684476947215
+      },
+      "hausdorff_95": {
+        "mean": 1048.2752612591312,
+        "sd": 82.82030907809504,
+        "values": [
+          1077.931649667934,
+          954.7096708207874,
+          1112.1844632886725
+        ],
+        "nonfinite_count": 0,
+        "finite_mean": 1048.2752612591312
+      },
+      "mean_surface_distance": {
+        "mean": 335.117080695758,
+        "sd": 46.97137433494015,
+        "values": [
+          350.5638087594128,
+          282.367513725989,
+          372.41991960187215
+        ],
+        "nonfinite_count": 0,
+        "finite_mean": 335.117080695758
+      },
+      "area_ratio": {
+        "mean": 1.2782126232101572,
+        "sd": 0.13454776439084468,
+        "values": [
+          1.402283208526154,
+          1.1351960469300544,
+          1.2971586141742628
+        ],
+        "nonfinite_count": 0,
+        "finite_mean": 1.2782126232101572
+      },
+      "n_images": 25,
+      "empty_predictions_by_seed": [
+        0,
+        0,
+        0
+      ]
+    },
+    "current_RB": {
+      "dice": {
+        "mean": 0.7712255643193515,
+        "sd": 0.029143843835195946,
+        "values": [
+          0.8041493997502784,
+          0.7487321104083391,
+          0.7607951827994368
+        ],
+        "nonfinite_count": 0,
+        "finite_mean": 0.7712255643193515
+      },
+      "iou": {
+        "mean": 0.657412916230888,
+        "sd": 0.03401121035351825,
+        "values": [
+          0.6940023874886307,
+          0.6267621952297211,
+          0.6514741659743123
+        ],
+        "nonfinite_count": 0,
+        "finite_mean": 0.657412916230888
+      },
+      "precision": {
+        "mean": 0.8801392067724243,
+        "sd": 0.019528238242233105,
+        "values": [
+          0.8608978752169857,
+          0.8795775123706135,
+          0.8999422327296736
+        ],
+        "nonfinite_count": 0,
+        "finite_mean": 0.8801392067724243
+      },
+      "recall": {
+        "mean": 0.7455454036504531,
+        "sd": 0.05332645461599328,
+        "values": [
+          0.8062280295625506,
+          0.7061528506566571,
+          0.7242553307321516
+        ],
+        "nonfinite_count": 0,
+        "finite_mean": 0.7455454036504531
+      },
+      "hausdorff_95": {
+        "mean": 545.2703655738818,
+        "sd": 17.801358990093853,
+        "values": [
+          531.0504827457346,
+          539.5259465931508,
+          565.2346673827599
+        ],
+        "nonfinite_count": 0,
+        "finite_mean": 545.2703655738818
+      },
+      "mean_surface_distance": {
+        "mean": 137.80586264846923,
+        "sd": 10.121995334125712,
+        "values": [
+          126.1183763886909,
+          143.56721500410552,
+          143.73199655261132
+        ],
+        "nonfinite_count": 0,
+        "finite_mean": 137.80586264846923
+      },
+      "area_ratio": {
+        "mean": 0.8703458748245074,
+        "sd": 0.07922034889002028,
+        "values": [
+          0.961804700699621,
+          0.8230913207735544,
+          0.8261416030003467
+        ],
+        "nonfinite_count": 0,
+        "finite_mean": 0.8703458748245074
+      },
+      "n_images": 25,
+      "empty_predictions_by_seed": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "case_count": 25,
+  "patient_count_test": 1,
+  "historical_seeds": 1,
+  "historical_replay_exact": true,
+  "historical_model_different_from_current_UD_in_cases": 25,
+  "current_UD_vs_historical": {
+    "Dice_delta_mean": -0.04054878537887635,
+    "improved": 8,
+    "worse": 17,
+    "tied": 0
+  },
+  "current_RB_vs_historical": {
+    "Dice_delta_mean": 0.061425610329594836,
+    "improved": 20,
+    "worse": 5,
+    "tied": 0
+  },
+  "historical_TF32_sensitivity": {
+    "original_runtime_Dice_mean": 0.7427038475771581,
+    "mean_Dice_delta": -1.9941843525614898e-05,
+    "max_absolute_per_frame_Dice_delta": 0.0006064345914535973
+  }
+}

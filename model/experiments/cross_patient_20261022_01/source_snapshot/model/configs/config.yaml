@@ -1,0 +1,110 @@
+# ICG Pipeline Configuration
+
+# Data Configuration
+data:
+  train_data_dir: "data/train"
+  val_data_dir: "data/val"
+  test_data_dir: "data/test"
+  image_size: [256, 256]
+  # 1=grayscale, 3=RGB; ensure this matches the source camera and model.
+  in_channels: 1
+  out_channels: 2
+  annotation: "binary foreground mask; define the foreground clinically before training"
+  batch_size: 8
+  num_workers: 4
+  pin_memory: true
+  augmentations:
+    horizontal_flip: 0.5
+    vertical_flip: 0.5
+    rotation: 15
+    brightness: 0.2
+    contrast: 0.2
+    gaussian_noise: 0.01
+
+# Model Configuration
+model:
+  name: "unet"
+  in_channels: 1
+  out_channels: 2
+  base_filters: 64
+  depth: 4
+  dropout: 0.1
+  use_batchnorm: true
+
+# Training Configuration
+training:
+  epochs: 100
+  seed: 42
+  learning_rate: 1e-4
+  weight_decay: 1e-5
+  optimizer: "adamw"
+  scheduler: "cosine_annealing"
+  scheduler_params:
+    T_max: 100
+    eta_min: 1e-6
+  loss_function: "dice_ce"
+  loss_params:
+    dice_weight: 0.5
+    ce_weight: 0.5
+  gradient_clip: 1.0
+  mixed_precision: true
+  early_stopping:
+    patience: 15
+    min_delta: 1e-4
+  checkpoint_dir: "checkpoints"
+  save_top_k: 3
+  monitor_metric: "val_dice"
+  monitor_mode: "max"
+
+# Inference Configuration
+inference:
+  model_path: "checkpoints/best_model.pt"
+  output_dir: "predictions"
+  save_overlay: true
+  overlay_alpha: 0.5
+  min_contour_area: 100
+  min_mean_probability: 0.55
+
+# Tracking Configuration
+tracking:
+  enabled: true
+  num_points: 100
+  optical_flow:
+    min_valid_fraction: 0.6
+    max_forward_backward_error: 2.0
+    max_displacement: 50.0
+    min_local_std: 2.0
+    min_valid_points: 8
+    pyr_scale: 0.5
+    levels: 3
+    winsize: 21
+    iterations: 3
+    poly_n: 5
+    poly_sigma: 1.2
+
+# Evaluation Configuration
+evaluation:
+  metrics:
+    - "dice"
+    - "iou"
+    - "precision"
+    - "recall"
+    - "hausdorff"
+    - "hausdorff_95"
+    - "surface_distance"
+  save_predictions: true
+  save_metrics: true
+
+# Logging Configuration
+logging:
+  level: "INFO"
+  log_dir: "logs"
+  use_tensorboard: true
+  use_wandb: false
+  wandb_project: "icg-unet"
+  log_interval: 10
+
+# Device Configuration
+device:
+  use_cuda: true
+  device_id: 0

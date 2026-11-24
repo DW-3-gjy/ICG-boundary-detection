@@ -11,7 +11,7 @@ import cv2
 import numpy as np
 import torch
 
-from ..data import contour_to_points, extract_contours, postprocess_mask, preprocess_image
+from ..data import contour_to_points, extract_contours, postprocess_mask, preprocess_image, read_image, write_image
 from ..models import create_model
 from ..tracking import OpticalFlowTracker, GatedContourTracker
 from ..utils import get_device, load_checkpoint, load_config
@@ -289,19 +289,15 @@ def run_inference(
     if path.suffix.lower() in {".mp4", ".avi", ".mov", ".mkv", ".m4v"}:
         output = output_path or str(predictor.output_dir / f"{path.stem}_overlay.mp4")
         return predictor.predict_video(str(path), output)
-    image = cv2.imread(str(path), cv2.IMREAD_COLOR)
-    if image is None:
-        raise ValueError(f"Could not load image: {path}")
+    image = read_image(path)
     result = predictor.predict_image(image)
     result["tracking_status"] = "segmentation_supported" if result["selected_contour"] is not None else "no_segmentation"
     mask_path = predictor.output_dir / f"{path.stem}_mask.png"
-    if not cv2.imwrite(str(mask_path), result["mask"]):
-        raise OSError(f"Could not write mask: {mask_path}")
+    write_image(mask_path, result["mask"])
     if predictor.save_overlay or output_path:
         overlay_path = Path(output_path) if output_path else predictor.output_dir / f"{path.stem}_overlay.png"
         overlay_path.parent.mkdir(parents=True, exist_ok=True)
-        if not cv2.imwrite(str(overlay_path), predictor.create_overlay(image, result)):
-            raise OSError(f"Could not write overlay: {overlay_path}")
+        write_image(overlay_path, predictor.create_overlay(image, result))
         result["overlay_path"] = str(overlay_path)
     result["mask_path"] = str(mask_path)
     return result

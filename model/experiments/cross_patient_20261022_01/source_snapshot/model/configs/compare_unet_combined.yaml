@@ -1,0 +1,10 @@
+extends: comparison_base.yaml
+experiment: {variant: combined}
+training:
+  checkpoint_dir: checkpoints/comparison/unet_combined
+  loss_function: tversky_ce_boundary
+  loss_params: {tversky_weight: 0.5, ce_weight: 0.4, boundary_weight: 0.1, boundary_width: 2, fp_weight: 0.7, fn_weight: 0.3}
+inference:
+  model_path: checkpoints/comparison/unet_combined/best_model.pt
+  output_dir: predictions/comparison/unet_combined
+logging: {log_dir: logs/comparison/unet_combined}

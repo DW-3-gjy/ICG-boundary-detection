@@ -1,0 +1,32 @@
+{
+  "python": "3.12.14",
+  "packages": {
+    "torch": "2.7.1+cu128",
+    "torchvision": "0.22.1+cu128",
+    "numpy": "2.5.4",
+    "opencv-python": "5.0.0.93",
+    "scipy": "1.18.1",
+    "PyYAML": "6.0.3"
+  },
+  "preprocessing": {
+    "normalization": "imagenet",
+    "image_size": [
+      288,
+      512
+    ],
+    "in_channels": 3
+  },
+  "encoder_weights": "IMAGENET1K_V1",
+  "split_manifest": null,
+  "run_id": "unet_resnet18_tversky_seed_43",
+  "condition_id": "unet_resnet18_tversky",
+  "family": "primary_factorial",
+  "seed": 43,
+  "best_epoch": 21,
+  "best_validation_dice": 0.8349959254264832,
+  "optimizer_updates": 480,
+  "expected_updates": 480,
+  "training_seconds": 150.46186650000072,
+  "checkpoint_sha256": "0146643787b38bbf6f465919cefbe194561451b7fe8ce9a59e8c4fa1eb90cfb4",
+  "protocol_sha256": "0c00e48cfd63f5365be099b8dc27fd61d288f9841c431ffbeea1789123e3371c"
+}

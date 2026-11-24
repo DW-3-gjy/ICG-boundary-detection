@@ -1,0 +1,1402 @@
+[
+  {
+    "filename": "p2_revised_00006.png",
+    "index": 1,
+    "subgroup": "Z",
+    "seed": 42,
+    "models": {
+      "historical_1019": {
+        "mask_sha256": "2f261a3d4d32a9a28a0cc26be1740e54bed394600ee64f7727cf5f7d4a4951ef",
+        "metrics": {
+          "dice": 0.8105755765784022,
+          "iou": 0.6814855661418714,
+          "precision": 0.753819746673729,
+          "recall": 0.876573670070941,
+          "hausdorff_95": 925.938577725176,
+          "mean_surface_distance": 215.06751418155258,
+          "median_surface_distance": 93.30058949438637,
+          "std_surface_distance": 277.35426950650344,
+          "max_surface_distance": 1293.841180361794,
+          "area_ratio": 1.1628425415212313
+        },
+        "empty_prediction": false
+      },
+      "current_UD": {
+        "mask_sha256": "2d0f639cfce7a86ba4e1532f07d4d11931b8a554f395a9cb749ac9f105eb6308",
+        "metrics": {
+          "dice": 0.8120418114121667,
+          "iou": 0.6835609360776411,
+          "precision": 0.7081088881344956,
+          "recall": 0.9517327031274524,
+          "hausdorff_95": 950.6853579329327,
+          "mean_surface_distance": 224.74881280766843,
+          "median_surface_distance": 94.93682109698007,
+          "std_surface_distance": 293.5449548344797,
+          "max_surface_distance": 1298.655458541641,
+          "area_ratio": 1.344048520044478
+        },
+        "empty_prediction": false
+      },
+      "current_RB": {
+        "mask_sha256": "2f0c51a5a6ca59b2f8f4ef26626b26e903059b520b9759cf0ca9591548e80f88",
+        "metrics": {
+          "dice": 0.8638152395514652,
+          "iou": 0.7602770866337623,
+          "precision": 0.8064901135826136,
+          "recall": 0.9299132529928735,
+          "hausdorff_95": 913.6556986509252,
+          "mean_surface_distance": 137.57466290766507,
+          "median_surface_distance": 33.0,
+          "std_surface_distance": 250.17320949689866,
+          "max_surface_distance": 1298.2973465273662,
+          "area_ratio": 1.1530373867349906
+        },
+        "empty_prediction": false
+      }
+    }
+  },
+  {
+    "filename": "p2_revised_00007.png",
+    "index": 2,
+    "subgroup": "Z",
+    "seed": 42,
+    "models": {
+      "historical_1019": {
+        "mask_sha256": "10a678b0cc101371fa0af90eb5e32ca5b035784ebeead683f762116ab84f7d72",
+        "metrics": {
+          "dice": 0.7998571979704667,
+          "iou": 0.6664683541141141,
+          "precision": 0.7316856326650402,
+          "recall": 0.8820370942061282,
+          "hausdorff_95": 1304.954405333765,
+          "mean_surface_distance": 294.93553307322867,
+          "median_surface_distance": 153.73353570382747,
+          "std_surface_distance": 357.76779983860956,
+          "max_surface_distance": 1598.260304205795,
+          "area_ratio": 1.2054864204364866
+        },
+        "empty_prediction": false
+      },
+      "current_UD": {
+        "mask_sha256": "1ea55ccce37ac4b12cc27cfcb95e7c603bd19a0b6b4884244b4601c748fa7df6",
+        "metrics": {
+          "dice": 0.8168271335668674,
+          "iou": 0.6903700691086481,
+          "precision": 0.7278363089893728,
+          "recall": 0.9306107039717769,
+          "hausdorff_95": 1161.693720302948,
+          "mean_surface_distance": 280.7706962204468,
+          "median_surface_distance": 174.65108063569585,
+          "std_surface_distance": 340.90127377789076,
+          "max_surface_distance": 1598.260304205795,
+          "area_ratio": 1.2785988998873121
+        },
+        "empty_prediction": false
+      },
+      "current_RB": {
+        "mask_sha256": "f80ba594cc8e7b903e6f780651127dd55f659edd945d14fe82b1ea6d69c3ea5c",
+        "metrics": {
+          "dice": 0.8907565578257975,
+          "iou": 0.8030307180179354,
+          "precision": 0.9131296199950276,
+          "recall": 0.8694536238783043,
+          "hausdorff_95": 453.97290344590715,
+          "mean_surface_distance": 99.19910544405796,
+          "median_surface_distance": 44.204072210600685,
+          "std_surface_distance": 128.79186658857338,
+          "max_surface_distance": 573.021814593476,
+          "area_ratio": 0.9521688978647108
+        },
+        "empty_prediction": false
+      }
+    }
+  },
+  {
+    "filename": "p2_revised_00021.png",
+    "index": 3,
+    "subgroup": "Z",
+    "seed": 42,
+    "models": {
+      "historical_1019": {
+        "mask_sha256": "41539844f5fc550532701edd16bbb4f3b37df6c74bdd54c7813f1f54d52cdcec",
+        "metrics": {
+          "dice": 0.5455007495170862,
+          "iou": 0.37504367866542454,
+          "precision": 0.6760049856912724,
+          "recall": 0.45723125833457456,
+          "hausdorff_95": 1451.4467609938288,
+          "mean_surface_distance": 372.11470310100987,
+          "median_surface_distance": 229.43626565998673,
+          "std_surface_distance": 415.6886492304581,
+          "max_surface_distance": 1697.0707115497573,
+          "area_ratio": 0.676372612647141
+        },
+        "empty_prediction": false
+      },
+      "current_UD": {
+        "mask_sha256": "63e18aa8adcabf65d0c651b9e2a79e22f2759e85e5e6fb6ee579727d4c4cd4d5",
+        "metrics": {
+          "dice": 0.2877421535261111,
+          "iou": 0.1680483778298297,
+          "precision": 0.6523716825806348,
+          "recall": 0.18457680354534906,
+          "hausdorff_95": 1573.0405589139193,
+          "mean_surface_distance": 641.0073384212872,
+          "median_surface_distance": 338.07099846038255,
+          "std_surface_distance": 604.0522919014913,
+          "max_surface_distance": 1697.0707115497573,
+          "area_ratio": 0.2829319672721595
+        },
+        "empty_prediction": false
+      },
+      "current_RB": {
+        "mask_sha256": "e546394cb42c95c2d96aa6c68c421d8de3c9bc6b63b79796310e663162187ef4",
+        "metrics": {
+          "dice": 0.5440635736829484,
+          "iou": 0.3736863532286043,
+          "precision": 0.9981737621603537,
+          "recall": 0.373942013171176,
+          "hausdorff_95": 578.526387083575,
+          "mean_surface_distance": 241.19827152953457,
+          "median_surface_distance": 216.3735196336766,
+          "std_surface_distance": 185.22234200980793,
+          "max_surface_distance": 1685.0044510326968,
+          "area_ratio": 0.3746261696577115
+        },
+        "empty_prediction": false
+      }
+    }
+  },
+  {
+    "filename": "p2_revised_00023.png",
+    "index": 4,
+    "subgroup": "Z",
+    "seed": 42,
+    "models": {
+      "historical_1019": {
+        "mask_sha256": "c07a3043a043b54e9017e5ff8bd1851bc2d69f10743eba584310de20ac548f4b",
+        "metrics": {
+          "dice": 0.7105653103958205,
+          "iou": 0.5510673135481187,
+          "precision": 0.771478986155101,
+          "recall": 0.6585668403184894,
+          "hausdorff_95": 1837.4495910163373,
+          "mean_surface_distance": 554.7813388592007,
+          "median_surface_distance": 129.80754985747168,
+          "std_surface_distance": 704.4043280898877,
+          "max_surface_distance": 1999.2248497855362,
+          "area_ratio": 0.8536419683971002
+        },
+        "empty_prediction": false
+      },
+      "current_UD": {
+        "mask_sha256": "3490c3f77403bee21eea5c73175178b3a1fa694ddeb3c34a5441fdecece88a58",
+        "metrics": {
+          "dice": 0.504349998360767,
+          "iou": 0.33721124448113277,
+          "precision": 0.8647376722502731,
+          "recall": 0.35598842596498526,
+          "hausdorff_95": 1737.82581112124,
+          "mean_surface_distance": 677.7031937420004,
+          "median_surface_distance": 342.1067084989711,
+          "std_surface_distance": 671.5042315792019,
+          "max_surface_distance": 2054.288197892399,
+          "area_ratio": 0.4116721606893639
+        },
+        "empty_prediction": false
+      },
+      "current_RB": {
+        "mask_sha256": "713e1d32eb84a41a1aa878f053d4868609cd1f6f489abd3899e1777b0d8363a5",
+        "metrics": {
+          "dice": 0.4344413504868811,
+          "iou": 0.27749924962711525,
+          "precision": 0.9994523418339414,
+          "recall": 0.2775414520268767,
+          "hausdorff_95": 879.9104999430554,
+          "mean_surface_distance": 338.67582274510556,
+          "median_surface_distance": 276.3277040037788,
+          "std_surface_distance": 280.1140993316376,
+          "max_surface_distance": 1732.8084141069953,
+          "area_ratio": 0.27769353315765394
+        },
+        "empty_prediction": false
+      }
+    }
+  },
+  {
+    "filename": "p2_revised_00025.png",
+    "index": 5,
+    "subgroup": "Z",
+    "seed": 42,
+    "models": {
+      "historical_1019": {
+        "mask_sha256": "a7df85e27ed90b54bfb43f21bb7da2be70805f1fbc1df39db66e1eaa5672ef51",
+        "metrics": {
+          "dice": 0.40436676773850944,
+          "iou": 0.253420873646278,
+          "precision": 0.7742196002405288,
+          "recall": 0.2736441053113878,
+          "hausdorff_95": 1703.8844737179797,
+          "mean_surface_distance": 464.9142599487813,
+          "median_surface_distance": 211.68136431911054,
+          "std_surface_distance": 588.6119402697105,
+          "max_surface_distance": 2164.2192587628456,
+          "area_ratio": 0.3534450758236598
+        },
+        "empty_prediction": false
+      },
+      "current_UD": {
+        "mask_sha256": "ba3a58cee44a3ebaa2473c32028b5a0ca5fa82f93822d3fefd22e5143df9f811",
+        "metrics": {
+          "dice": 0.0011054810386689003,
+          "iou": 0.0005530462105921039,
+          "precision": 0.055725735426305,
+          "recall": 0.0005582780489525106,
+          "hausdorff_95": 1842.9504605331163,
+          "mean_surface_distance": 761.0768771700659,
+          "median_surface_distance": 437.2687960511246,
+          "std_surface_distance": 694.302380002208,
+          "max_surface_distance": 2171.5837538533942,
+          "area_ratio": 0.010018316396516984
+        },
+        "empty_prediction": false
+      },
+      "current_RB": {
+        "mask_sha256": "49dcaafa06b082da7779f96ceaf6e891a8084a38522b3ef316a8f3a2edd04cf6",
+        "metrics": {
+          "dice": 0.3514981293500355,
+          "iou": 0.21322276644534263,
+          "precision": 0.9940437742467243,
+          "recall": 0.21349553104340677,
+          "hausdorff_95": 699.7938046826238,
+          "mean_surface_distance": 194.99123654873375,
+          "median_surface_distance": 140.82968150664732,
+          "std_surface_distance": 192.38097859458378,
+          "max_surface_distance": 1694.3128400623068,
+          "area_ratio": 0.21477477810759715
+        },
+        "empty_prediction": false
+      }
+    }
+  },
+  {
+    "filename": "p2_revised_00046.png",
+    "index": 6,
+    "subgroup": "Z",
+    "seed": 42,
+    "models": {
+      "historical_1019": {
+        "mask_sha256": "6b1ef259bc85f4eead5a5554da1e72e168c151c2b7adb1db103f340521139d86",
+        "metrics": {
+          "dice": 0.8571097020784539,
+          "iou": 0.7499492327804547,
+          "precision": 0.7754878345487068,
+          "recall": 0.9579344980575764,
+          "hausdorff_95": 705.639424795092,
+          "mean_surface_distance": 191.86033621884985,
+          "median_surface_distance": 70.40596565632774,
+          "std_surface_distance": 246.70643353984752,
+          "max_surface_distance": 1115.044842147615,
+          "area_ratio": 1.2352669576242943
+        },
+        "empty_prediction": false
+      },
+      "current_UD": {
+        "mask_sha256": "060c68131c13f8c7b311adc3328f06a5cdecbfbd87ea444e8f3f5f93d00acf40",
+        "metrics": {
+          "dice": 0.8378358027377861,
+          "iou": 0.7209272189864117,
+          "precision": 0.7346358903196764,
+          "recall": 0.9747690540717987,
+          "hausdorff_95": 818.762523933514,
+          "mean_surface_distance": 212.95091378201383,
+          "median_surface_distance": 105.89145385724005,
+          "std_surface_distance": 251.21238595168717,
+          "max_surface_distance": 1102.7660676680255,
+          "area_ratio": 1.3268737165124118
+        },
+        "empty_prediction": false
+      },
+      "current_RB": {
+        "mask_sha256": "2e61756f986dc9fd3a6ad8682deb5518f7064cb7cd7a02aa0156d6a2364ba1cf",
+        "metrics": {
+          "dice": 0.8924657290238299,
+          "iou": 0.805813194599614,
+          "precision": 0.9575274638325598,
+          "recall": 0.8356830359690358,
+          "hausdorff_95": 469.9159036548466,
+          "mean_surface_distance": 109.97266502427084,
+          "median_surface_distance": 45.45327270945405,
+          "std_surface_distance": 143.10148213822714,
+          "max_surface_distance": 1097.2848308438424,
+          "area_ratio": 0.8727509836888934
+        },
+        "empty_prediction": false
+      }
+    }
+  },
+  {
+    "filename": "p2_revised_00047.png",
+    "index": 7,
+    "subgroup": "Z",
+    "seed": 42,
+    "models": {
+      "historical_1019": {
+        "mask_sha256": "84c0abd0f10ea6918486caf25b7aea1b44860f5478b7075d274a4d691c3ce54b",
+        "metrics": {
+          "dice": 0.8668320531451308,
+          "iou": 0.7649634421367775,
+          "precision": 0.803865048121325,
+          "recall": 0.9405018633892316,
+          "hausdorff_95": 614.8468914751156,
+          "mean_surface_distance": 150.30913436623837,
+          "median_surface_distance": 55.65968020030299,
+          "std_surface_distance": 211.55279039404815,
+          "max_surface_distance": 1111.2605455067683,
+          "area_ratio": 1.1699748180211071
+        },
+        "empty_prediction": false
+      },
+      "current_UD": {
+        "mask_sha256": "ed68689d212c6f4e9a9d6cae0e343c7512e9cb7a9891991497183b63bb150356",
+        "metrics": {
+          "dice": 0.8529888130951773,
+          "iou": 0.7436621567719666,
+          "precision": 0.7637433167870901,
+          "recall": 0.9658511644010718,
+          "hausdorff_95": 672.3649203136862,
+          "mean_surface_distance": 201.25145379975004,
+          "median_surface_distance": 98.73196037757987,
+          "std_surface_distance": 231.94231065055448,
+          "max_surface_distance": 1110.1072020305066,
+          "area_ratio": 1.264627975357313
+        },
+        "empty_prediction": false
+      },
+      "current_RB": {
+        "mask_sha256": "6df07ac38d9763f51f224dd8e1c3c6748394e4bc42c2b0143bdeb90dd2088457",
+        "metrics": {
+          "dice": 0.8748856746724694,
+          "iou": 0.7775971338893239,
+          "precision": 0.9549531339160027,
+          "recall": 0.8072059844687081,
+          "hausdorff_95": 544.6300853103563,
+          "mean_surface_distance": 114.68520367639339,
+          "median_surface_distance": 68.3593446428504,
+          "std_surface_distance": 139.52892889932573,
+          "max_surface_distance": 1191.8934516138597,
+          "area_ratio": 0.8452833503551412
+        },
+        "empty_prediction": false
+      }
+    }
+  },
+  {
+    "filename": "p2_revised_00048.png",
+    "index": 8,
+    "subgroup": "Z",
+    "seed": 42,
+    "models": {
+      "historical_1019": {
+        "mask_sha256": "d1998ed9cad511ea7c6ee19c6d27418e32122724d9ebac05cb8a15efe4b4de36",
+        "metrics": {
+          "dice": 0.8597280039124321,
+          "iou": 0.7539674804452912,
+          "precision": 0.7826930413789808,
+          "recall": 0.9535824024601527,
+          "hausdorff_95": 683.6344041494582,
+          "mean_surface_distance": 173.89964686143307,
+          "median_surface_distance": 70.0,
+          "std_surface_distance": 230.88429653194416,
+          "max_surface_distance": 1113.2030362876308,
+          "area_ratio": 1.2183350969623354
+        },
+        "empty_prediction": false
+      },
+      "current_UD": {
+        "mask_sha256": "f9f42340440e64f597eab38751215e6b0081fb8a7c54379b0a273d7c3b6e51a0",
+        "metrics": {
+          "dice": 0.845557056937163,
+          "iou": 0.732437286760888,
+          "precision": 0.7437531293286702,
+          "recall": 0.9796502674009389,
+          "hausdorff_95": 761.6614882475436,
+          "mean_surface_distance": 212.36457161313228,
+          "median_surface_distance": 110.60289327137876,
+          "std_surface_distance": 250.03293127504153,
+          "max_surface_distance": 1132.157232896562,
+          "area_ratio": 1.3171712881198472
+        },
+        "empty_prediction": false
+      },
+      "current_RB": {
+        "mask_sha256": "61fa7d24dc98919bd4c84d24daf70ef759afe5e858e79ae46df178b388c01298",
+        "metrics": {
+          "dice": 0.8894035638457765,
+          "iou": 0.80083415981924,
+          "precision": 0.9659354264868278,
+          "recall": 0.8241087463579123,
+          "hausdorff_95": 379.8491747614574,
+          "mean_surface_distance": 104.69664366343433,
+          "median_surface_distance": 51.42956348249516,
+          "std_surface_distance": 124.71634770788907,
+          "max_surface_distance": 1196.281739390851,
+          "area_ratio": 0.8531716756214308
+        },
+        "empty_prediction": false
+      }
+    }
+  },
+  {
+    "filename": "p2_revised_00049.png",
+    "index": 9,
+    "subgroup": "Z",
+    "seed": 42,
+    "models": {
+      "historical_1019": {
+        "mask_sha256": "1bf4fd4fa5363720cabd666bb683795ca145f4827e3b8746c48eae48a53e108f",
+        "metrics": {
+          "dice": 0.884555500003089,
+          "iou": 0.7930071823435169,
+          "precision": 0.8359904146841531,
+          "recall": 0.9391111660770378,
+          "hausdorff_95": 588.4749749055235,
+          "mean_surface_distance": 139.25226294828872,
+          "median_surface_distance": 54.230987451824994,
+          "std_surface_distance": 201.85038246991098,
+          "max_surface_distance": 1224.0326793023135,
+          "area_ratio": 1.1233515954030182
+        },
+        "empty_prediction": false
+      },
+      "current_UD": {
+        "mask_sha256": "b2f1c14c8d8ac899530ca5b9058aa29bbede2debf7bc71e9f4e97f180f521c70",
+        "metrics": {
+          "dice": 0.8726675012988102,
+          "iou": 0.7740994802369796,
+          "precision": 0.802176262297775,
+          "recall": 0.9567411278510632,
+          "hausdorff_95": 623.132562551975,
+          "mean_surface_distance": 179.59345650462498,
+          "median_surface_distance": 87.96590248499699,
+          "std_surface_distance": 213.54525098089547,
+          "max_surface_distance": 1262.9366571606035,
+          "area_ratio": 1.1926819239335293
+        },
+        "empty_prediction": false
+      },
+      "current_RB": {
+        "mask_sha256": "26ddff8e8f320bfb6f011ad93ccda7bbf76cf636aa85ccac444698c79bfbabd9",
+        "metrics": {
+          "dice": 0.9011646292227854,
+          "iou": 0.8201088654303315,
+          "precision": 0.9647427585572057,
+          "recall": 0.8454482064379009,
+          "hausdorff_95": 475.7870152135056,
+          "mean_surface_distance": 87.2503244698938,
+          "median_surface_distance": 39.20459156782532,
+          "std_surface_distance": 110.9280010328634,
+          "max_surface_distance": 653.1653695657785,
+          "area_ratio": 0.8763457397723777
+        },
+        "empty_prediction": false
+      }
+    }
+  },
+  {
+    "filename": "p2_revised_00050.png",
+    "index": 10,
+    "subgroup": "Z",
+    "seed": 42,
+    "models": {
+      "historical_1019": {
+        "mask_sha256": "651c36056124a6777e89fa015f9b13d90dfe83af3baf4f5b81cf0ee636cb9377",
+        "metrics": {
+          "dice": 0.8530080503480348,
+          "iou": 0.743691401327534,
+          "precision": 0.7639255739980377,
+          "recall": 0.965609141974154,
+          "hausdorff_95": 703.4856052538338,
+          "mean_surface_distance": 190.91255841825438,
+          "median_surface_distance": 79.2464510246358,
+          "std_surface_distance": 240.12494316626552,
+          "max_surface_distance": 1113.439715476325,
+          "area_ratio": 1.2640094465232519
+        },
+        "empty_prediction": false
+      },
+      "current_UD": {
+        "mask_sha256": "b71389ca73628d4ab3c9ae849e7df2dae88b02bced1b23ac3842236fec85f21b",
+        "metrics": {
+          "dice": 0.836536306347633,
+          "iou": 0.7190050801856994,
+          "precision": 0.7262702383224413,
+          "recall": 0.986278099843604,
+          "hausdorff_95": 799.3177400609684,
+          "mean_surface_distance": 231.16676661530065,
+          "median_surface_distance": 133.18783707090913,
+          "std_surface_distance": 252.61199662077263,
+          "max_surface_distance": 1178.073851674843,
+          "area_ratio": 1.3580042906918741
+        },
+        "empty_prediction": false
+      },
+      "current_RB": {
+        "mask_sha256": "902118bbb6cf3341fb2f910d19ab06e3763ab6f3faf0267f47de9be7f14b374e",
+        "metrics": {
+          "dice": 0.8981743537527926,
+          "iou": 0.8151692210214784,
+          "precision": 0.9490467224811385,
+          "recall": 0.8524783996419883,
+          "hausdorff_95": 449.1153500210147,
+          "mean_surface_distance": 96.93595792168882,
+          "median_surface_distance": 48.82622246293481,
+          "std_surface_distance": 122.1510211651824,
+          "max_surface_distance": 526.6896619452484,
+          "area_ratio": 0.8982470298335606
+        },
+        "empty_prediction": false
+      }
+    }
+  },
+  {
+    "filename": "p2_revised_00061.png",
+    "index": 11,
+    "subgroup": "Z",
+    "seed": 42,
+    "models": {
+      "historical_1019": {
+        "mask_sha256": "9e372fd12b3b4ca8f494e493738960febe73188b6eefc4254158b37e2dbd3e0b",
+        "metrics": {
+          "dice": 0.8220580354901905,
+          "iou": 0.6978765170594334,
+          "precision": 0.7659902160340316,
+          "recall": 0.8869820352662046,
+          "hausdorff_95": 674.4507763356742,
+          "mean_surface_distance": 136.20327448846982,
+          "median_surface_distance": 73.97972695272672,
+          "std_surface_distance": 196.73696380965447,
+          "max_surface_distance": 1667.8249308605505,
+          "area_ratio": 1.1579547841468134
+        },
+        "empty_prediction": false
+      },
+      "current_UD": {
+        "mask_sha256": "135e3ed9987f4f33490c4d9a663adaf5de7677b44d5e0b495dfef0d5a2a06b04",
+        "metrics": {
+          "dice": 0.8116784962892668,
+          "iou": 0.683046207406601,
+          "precision": 0.6983374776345745,
+          "recall": 0.9689383671438975,
+          "hausdorff_95": 1144.6971870295624,
+          "mean_surface_distance": 261.0949702538796,
+          "median_surface_distance": 90.80198235721508,
+          "std_surface_distance": 371.8099024872735,
+          "max_surface_distance": 1667.8249308605505,
+          "area_ratio": 1.3874930075728262
+        },
+        "empty_prediction": false
+      },
+      "current_RB": {
+        "mask_sha256": "6fa942668aa53512660e2b327fb27c59e472b31c0b59ae58b03d5070bf6690d7",
+        "metrics": {
+          "dice": 0.8027565316845217,
+          "iou": 0.6705039976656326,
+          "precision": 0.8111110860326819,
+          "recall": 0.7945723287823584,
+          "hausdorff_95": 375.67978308410113,
+          "mean_surface_distance": 91.10753280178315,
+          "median_surface_distance": 39.05124837953327,
+          "std_surface_distance": 116.4909125953332,
+          "max_surface_distance": 1063.0169330730344,
+          "area_ratio": 0.9796097507047703
+        },
+        "empty_prediction": false
+      }
+    }
+  },
+  {
+    "filename": "p2_revised_00063.png",
+    "index": 12,
+    "subgroup": "Z",
+    "seed": 42,
+    "models": {
+      "historical_1019": {
+        "mask_sha256": "ce408b26860c95f108b609ebd07b9333132c922a4fd5af5f953e5388a829bd4d",
+        "metrics": {
+          "dice": 0.7142929945513168,
+          "iou": 0.5555643638280928,
+          "precision": 0.6730780984246933,
+          "recall": 0.7608845850529186,
+          "hausdorff_95": 1309.2183545776945,
+          "mean_surface_distance": 319.46283688918203,
+          "median_surface_distance": 149.0,
+          "std_surface_distance": 406.7456772980212,
+          "max_surface_distance": 1569.9484067955864,
+          "area_ratio": 1.1304551237572213
+        },
+        "empty_prediction": false
+      },
+      "current_UD": {
+        "mask_sha256": "6673f40f908158dcab29eb7579cf51ae87750178156e1bfe62947d57a1e51596",
+        "metrics": {
+          "dice": 0.7144980725416372,
+          "iou": 0.5558125252712768,
+          "precision": 0.600822143846034,
+          "recall": 0.8812267248876127,
+          "hausdorff_95": 1172.7224735238246,
+          "mean_surface_distance": 323.44487420448394,
+          "median_surface_distance": 148.10300353208066,
+          "std_surface_distance": 382.6915392489945,
+          "max_surface_distance": 1576.624558986698,
+          "area_ratio": 1.4667014754928427
+        },
+        "empty_prediction": false
+      },
+      "current_RB": {
+        "mask_sha256": "81cbb9826984257f0058cd3209ae309272980180f50dc99810d070c8372a73d4",
+        "metrics": {
+          "dice": 0.6065265026365835,
+          "iou": 0.4352623166384989,
+          "precision": 0.7667884370671562,
+          "recall": 0.5016744756223879,
+          "hausdorff_95": 439.605448100838,
+          "mean_surface_distance": 144.099120166324,
+          "median_surface_distance": 96.0,
+          "std_surface_distance": 139.1633527409515,
+          "max_surface_distance": 591.2444502910788,
+          "area_ratio": 0.6542540958769307
+        },
+        "empty_prediction": false
+      }
+    }
+  },
+  {
+    "filename": "p2_revised_00008.png",
+    "index": 13,
+    "subgroup": "Z_and_L",
+    "seed": 42,
+    "models": {
+      "historical_1019": {
+        "mask_sha256": "8614f7019037c3395b77dfee44d2237ac0602c3e8e5323e15a157fdf70bd4b04",
+        "metrics": {
+          "dice": 0.8304951492976571,
+          "iou": 0.7101254422321979,
+          "precision": 0.7908186488642351,
+          "recall": 0.8743631990668572,
+          "hausdorff_95": 1016.0425187918896,
+          "mean_surface_distance": 228.95518900101297,
+          "median_surface_distance": 105.00476179678711,
+          "std_surface_distance": 315.51334968794214,
+          "max_surface_distance": 1740.5958749807492,
+          "area_ratio": 1.105643120989414
+        },
+        "empty_prediction": false
+      },
+      "current_UD": {
+        "mask_sha256": "da894aa70a304fe1e29d777426f65486d38a28978e8765755d2a7670661a5e76",
+        "metrics": {
+          "dice": 0.8298671629455077,
+          "iou": 0.7092076528973642,
+          "precision": 0.7578040230421451,
+          "recall": 0.9170762457565839,
+          "hausdorff_95": 1085.8929954769642,
+          "mean_surface_distance": 249.30996089351248,
+          "median_surface_distance": 100.84641788382967,
+          "std_surface_distance": 337.1921094002644,
+          "max_surface_distance": 1744.0530381843323,
+          "area_ratio": 1.2101760057634752
+        },
+        "empty_prediction": false
+      },
+      "current_RB": {
+        "mask_sha256": "0304c850055acdb9d2da7f193dbaac37df848b21809e52a5132de9ca7d19a6bc",
+        "metrics": {
+          "dice": 0.8342976036865427,
+          "iou": 0.715703773385953,
+          "precision": 0.8370403458308097,
+          "recall": 0.8315727772031177,
+          "hausdorff_95": 340.0599205412807,
+          "mean_surface_distance": 111.25348079350756,
+          "median_surface_distance": 74.33034373659252,
+          "std_surface_distance": 113.40087916798352,
+          "max_surface_distance": 1439.0774822781434,
+          "area_ratio": 0.993467974805603
+        },
+        "empty_prediction": false
+      }
+    }
+  },
+  {
+    "filename": "p2_revised_00009.png",
+    "index": 14,
+    "subgroup": "Z_and_L",
+    "seed": 42,
+    "models": {
+      "historical_1019": {
+        "mask_sha256": "c633d79b77b67de9c383318c5e16283206adc0305bd66d5692dc583530d927e7",
+        "metrics": {
+          "dice": 0.8112228185253784,
+          "iou": 0.6824010682297327,
+          "precision": 0.6939856380538908,
+          "recall": 0.9761222209039174,
+          "hausdorff_95": 982.8422050172168,
+          "mean_surface_distance": 254.50011466571195,
+          "median_surface_distance": 83.5224520712844,
+          "std_surface_distance": 332.01545140393426,
+          "max_surface_distance": 1311.7259622344905,
+          "area_ratio": 1.406545276126003
+        },
+        "empty_prediction": false
+      },
+      "current_UD": {
+        "mask_sha256": "98e717a97b8aeba7bf547adff60d0cacc6595c2949728a980b301b94251bfbb1",
+        "metrics": {
+          "dice": 0.7711796286209142,
+          "iou": 0.6275771842514855,
+          "precision": 0.6281712310337908,
+          "recall": 0.9984953983748855,
+          "hausdorff_95": 1051.9082654971462,
+          "mean_surface_distance": 357.0481919077201,
+          "median_surface_distance": 166.42265437561815,
+          "std_surface_distance": 370.24094996209516,
+          "max_surface_distance": 1331.5750072752191,
+          "area_ratio": 1.5895274234888832
+        },
+        "empty_prediction": false
+      },
+      "current_RB": {
+        "mask_sha256": "b8f12df57b891c3402b27d21bb60780c7374a4f66a8a6fec3a3089f997c2305d",
+        "metrics": {
+          "dice": 0.8348177479607218,
+          "iou": 0.7164696737353087,
+          "precision": 0.7412973516257617,
+          "recall": 0.955341465297546,
+          "hausdorff_95": 911.9866153845694,
+          "mean_surface_distance": 147.7136863438779,
+          "median_surface_distance": 31.906112267087632,
+          "std_surface_distance": 251.01028199200772,
+          "max_surface_distance": 1316.7087756979522,
+          "area_ratio": 1.2887425851480692
+        },
+        "empty_prediction": false
+      }
+    }
+  },
+  {
+    "filename": "p2_revised_00010.png",
+    "index": 15,
+    "subgroup": "Z_and_L",
+    "seed": 42,
+    "models": {
+      "historical_1019": {
+        "mask_sha256": "185d1b3dbfd6e6ef3ca4ee91b2ee2247e77b7f637d11fc5f45c076e225588c27",
+        "metrics": {
+          "dice": 0.7560587385667413,
+          "iou": 0.6077929577604467,
+          "precision": 0.6134510128412252,
+          "recall": 0.9850517393641569,
+          "hausdorff_95": 1082.262260247912,
+          "mean_surface_distance": 416.6306645091983,
+          "median_surface_distance": 335.4400095397089,
+          "std_surface_distance": 364.6315113596431,
+          "max_surface_distance": 1322.8714979165588,
+          "area_ratio": 1.6057545243946143
+        },
+        "empty_prediction": false
+      },
+      "current_UD": {
+        "mask_sha256": "ff3b6ff75f562e427bec5e1942d5685049d185d528915b53d1e7e07b8fa2ea7b",
+        "metrics": {
+          "dice": 0.7097666231635973,
+          "iou": 0.5501071634838324,
+          "precision": 0.5522356677169604,
+          "recall": 0.9930422234167837,
+          "hausdorff_95": 1210.80941934382,
+          "mean_surface_distance": 399.1330780105332,
+          "median_surface_distance": 216.6217902243447,
+          "std_surface_distance": 396.43270251879255,
+          "max_surface_distance": 1364.1004361849607,
+          "area_ratio": 1.7982218126589191
+        },
+        "empty_prediction": false
+      },
+      "current_RB": {
+        "mask_sha256": "040b421e76543d7d8ce978b538c12e84954eba941636ccf4f623cd49d93ec517",
+        "metrics": {
+          "dice": 0.8025864285092159,
+          "iou": 0.6702666878161656,
+          "precision": 0.6991512047739117,
+          "recall": 0.9419409354255347,
+          "hausdorff_95": 785.9412506072572,
+          "mean_surface_distance": 161.7908517702266,
+          "median_surface_distance": 69.0,
+          "std_surface_distance": 215.3280261394039,
+          "max_surface_distance": 885.9762976513537,
+          "area_ratio": 1.3472635518524207
+        },
+        "empty_prediction": false
+      }
+    }
+  },
+  {
+    "filename": "p2_revised_00022.png",
+    "index": 16,
+    "subgroup": "Z_and_L",
+    "seed": 42,
+    "models": {
+      "historical_1019": {
+        "mask_sha256": "ef5dddcd1b5f70f5b148542d9d764089405070d409c375c9e80eaa8a28422d8f",
+        "metrics": {
+          "dice": 0.7249717463080146,
+          "iou": 0.5685926913453371,
+          "precision": 0.5863218626655938,
+          "recall": 0.9495050049878059,
+          "hausdorff_95": 1360.5294734251552,
+          "mean_surface_distance": 473.24096038181574,
+          "median_surface_distance": 378.23537611963377,
+          "std_surface_distance": 455.0958620250816,
+          "max_surface_distance": 1630.8280105516951,
+          "area_ratio": 1.6194262323277493
+        },
+        "empty_prediction": false
+      },
+      "current_UD": {
+        "mask_sha256": "526f7909d769a8f281f91eb32543d2103d17d7a0cf3f290cd5468627f28a4204",
+        "metrics": {
+          "dice": 0.6618535819111696,
+          "iou": 0.49460475547698607,
+          "precision": 0.5107989210334897,
+          "recall": 0.939762306078243,
+          "hausdorff_95": 1499.5023174074533,
+          "mean_surface_distance": 548.7240061919854,
+          "median_surface_distance": 422.9846332906197,
+          "std_surface_distance": 524.2145396549118,
+          "max_surface_distance": 1630.8280105516951,
+          "area_ratio": 1.8397891369405937
+        },
+        "empty_prediction": false
+      },
+      "current_RB": {
+        "mask_sha256": "b13d79d52b50dc68aa1583657b0c11312f21e2c4cb588898dc69dd6af088f127",
+        "metrics": {
+          "dice": 0.9083592538434873,
+          "iou": 0.8321045701543283,
+          "precision": 0.8830263064301775,
+          "recall": 0.9351886760001599,
+          "hausdorff_95": 224.5096879710485,
+          "mean_surface_distance": 66.07221605529037,
+          "median_surface_distance": 29.410882339705484,
+          "std_surface_distance": 93.3419128195652,
+          "max_surface_distance": 1624.7710607959511,
+          "area_ratio": 1.0590722713356953
+        },
+        "empty_prediction": false
+      }
+    }
+  },
+  {
+    "filename": "p2_revised_00024.png",
+    "index": 17,
+    "subgroup": "Z_and_L",
+    "seed": 42,
+    "models": {
+      "historical_1019": {
+        "mask_sha256": "c217d826b84f1d197ad3cc044150ca2cf55f96c35e5d4dc504a52b6f50e8d6f2",
+        "metrics": {
+          "dice": 0.6491092284311047,
+          "iou": 0.48050459895976816,
+          "precision": 0.4986903556696122,
+          "recall": 0.929460285670852,
+          "hausdorff_95": 1161.0925887741519,
+          "mean_surface_distance": 422.7508255202163,
+          "median_surface_distance": 251.01792764661252,
+          "std_surface_distance": 418.3403760000024,
+          "max_surface_distance": 1418.4442181488844,
+          "area_ratio": 1.8638024078548054
+        },
+        "empty_prediction": false
+      },
+      "current_UD": {
+        "mask_sha256": "eea4d971c2d89ee1eded7996016ae25eeba7ab622d6a06b3934171bbe7dd080c",
+        "metrics": {
+          "dice": 0.6044959694505038,
+          "iou": 0.4331739330143941,
+          "precision": 0.4504906662082733,
+          "recall": 0.9184932074681235,
+          "hausdorff_95": 1225.1469299639125,
+          "mean_surface_distance": 357.9647042494391,
+          "median_surface_distance": 226.9614468119268,
+          "std_surface_distance": 380.5689786913256,
+          "max_surface_distance": 1440.3030931022818,
+          "area_ratio": 2.0388728920825927
+        },
+        "empty_prediction": false
+      },
+      "current_RB": {
+        "mask_sha256": "dfbb8a8c7c97d2de2032476d442000caba3624facf1a24fb9dc8f8ab06c09087",
+        "metrics": {
+          "dice": 0.850152746440328,
+          "iou": 0.7393614619754781,
+          "precision": 0.7906451445389896,
+          "recall": 0.9193470474305752,
+          "hausdorff_95": 506.5168126178728,
+          "mean_surface_distance": 121.88235499237899,
+          "median_surface_distance": 51.85556864985669,
+          "std_surface_distance": 149.86287265063123,
+          "max_surface_distance": 1256.688107686231,
+          "area_ratio": 1.1627808679792389
+        },
+        "empty_prediction": false
+      }
+    }
+  },
+  {
+    "filename": "p2_revised_00031.png",
+    "index": 18,
+    "subgroup": "Z_and_L",
+    "seed": 42,
+    "models": {
+      "historical_1019": {
+        "mask_sha256": "d3dbd84a0856e6b4dd86782c987d46406b79322578f4806867bc6194e168babc",
+        "metrics": {
+          "dice": 0.567352979041971,
+          "iou": 0.3960172818163185,
+          "precision": 0.40898842908777927,
+          "recall": 0.9258527337414475,
+          "hausdorff_95": 1224.6538481540463,
+          "mean_surface_distance": 504.5702107639502,
+          "median_surface_distance": 474.208814764129,
+          "std_surface_distance": 395.38102273315127,
+          "max_surface_distance": 1578.3263287419368,
+          "area_ratio": 2.2637626590236435
+        },
+        "empty_prediction": false
+      },
+      "current_UD": {
+        "mask_sha256": "779076d34b3321fe63d120f031fb5d59d7a1dcd07309201942758253e86dbe08",
+        "metrics": {
+          "dice": 0.5345448409236158,
+          "iou": 0.36476369653001756,
+          "precision": 0.3712530535975178,
+          "recall": 0.9542709949589973,
+          "hausdorff_95": 1342.6606783619836,
+          "mean_surface_distance": 545.000003890332,
+          "median_surface_distance": 484.02221022069625,
+          "std_surface_distance": 447.0114086820665,
+          "max_surface_distance": 1578.3263287419368,
+          "area_ratio": 2.570405780402746
+        },
+        "empty_prediction": false
+      },
+      "current_RB": {
+        "mask_sha256": "bebc55b804ceeb10bdf06681a5180aa17e9bb568f0fbc3f4d2b7c5bec3061bdc",
+        "metrics": {
+          "dice": 0.8886343012317499,
+          "iou": 0.7995876624739093,
+          "precision": 0.8446489679767138,
+          "recall": 0.9374523993525162,
+          "hausdorff_95": 327.7148150450327,
+          "mean_surface_distance": 86.70744178709107,
+          "median_surface_distance": 23.0,
+          "std_surface_distance": 144.27903472268275,
+          "max_surface_distance": 1586.6896356880889,
+          "area_ratio": 1.109872189387909
+        },
+        "empty_prediction": false
+      }
+    }
+  },
+  {
+    "filename": "p2_revised_00032.png",
+    "index": 19,
+    "subgroup": "Z_and_L",
+    "seed": 42,
+    "models": {
+      "historical_1019": {
+        "mask_sha256": "3800ccc518f6433eca9e7d1c46bc8557d1affcf6b66dafa9dab5f0eda1e8a4bc",
+        "metrics": {
+          "dice": 0.785761032598925,
+          "iou": 0.6471222335096014,
+          "precision": 0.6754755808999338,
+          "recall": 0.9390864463498763,
+          "hausdorff_95": 869.1057760366588,
+          "mean_surface_distance": 250.1469857761696,
+          "median_surface_distance": 110.16351483136329,
+          "std_surface_distance": 300.07127839980546,
+          "max_surface_distance": 1202.2948889519575,
+          "area_ratio": 1.3902596524641577
+        },
+        "empty_prediction": false
+      },
+      "current_UD": {
+        "mask_sha256": "a490af1eed4fe690b3270c6fc52ea7453820e0a001667965f836cdb98121da0e",
+        "metrics": {
+          "dice": 0.8100332850203119,
+          "iou": 0.6807192796432,
+          "precision": 0.702435188013385,
+          "recall": 0.9565575036648326,
+          "hausdorff_95": 737.2219813769481,
+          "mean_surface_distance": 242.18055548671794,
+          "median_surface_distance": 116.05602095539895,
+          "std_surface_distance": 262.7144827297744,
+          "max_surface_distance": 1202.2948889519575,
+          "area_ratio": 1.3617733279709965
+        },
+        "empty_prediction": false
+      },
+      "current_RB": {
+        "mask_sha256": "0ba42b0903da1edfa72358f11374844f6840049cfb13f31627110f2074ccd9b8",
+        "metrics": {
+          "dice": 0.881917211738661,
+          "iou": 0.7887763061893732,
+          "precision": 0.809798640761164,
+          "recall": 0.9681369859149321,
+          "hausdorff_95": 439.14666204075115,
+          "mean_surface_distance": 72.6420912025192,
+          "median_surface_distance": 30.066592756745816,
+          "std_surface_distance": 102.6290989702394,
+          "max_surface_distance": 584.0,
+          "area_ratio": 1.1955280451014263
+        },
+        "empty_prediction": false
+      }
+    }
+  },
+  {
+    "filename": "p2_revised_00033.png",
+    "index": 20,
+    "subgroup": "Z_and_L",
+    "seed": 42,
+    "models": {
+      "historical_1019": {
+        "mask_sha256": "1658c6cbde9c4a5600cf9571207db1673c1a5f0ddd6c7f2985bc0e4e9aeffc6a",
+        "metrics": {
+          "dice": 0.8527104275259716,
+          "iou": 0.7432390636020606,
+          "precision": 0.8305575827971572,
+          "recall": 0.8760773881709498,
+          "hausdorff_95": 694.6764713797323,
+          "mean_surface_distance": 212.24912693943887,
+          "median_surface_distance": 109.0,
+          "std_surface_distance": 222.27935017700486,
+          "max_surface_distance": 966.6850572963255,
+          "area_ratio": 1.0548063208579748
+        },
+        "empty_prediction": false
+      },
+      "current_UD": {
+        "mask_sha256": "a6f05ca3794210f6fc8138fe199b92283d33103e8c237d05fdf2b06eb9cecea1",
+        "metrics": {
+          "dice": 0.865221999463694,
+          "iou": 0.7624592643273072,
+          "precision": 0.8179477113389757,
+          "recall": 0.9182960420639018,
+          "hausdorff_95": 561.2443754590292,
+          "mean_surface_distance": 161.4517832104602,
+          "median_surface_distance": 81.83825505634978,
+          "std_surface_distance": 188.12041100036433,
+          "max_surface_distance": 966.6850572963255,
+          "area_ratio": 1.1226830631516576
+        },
+        "empty_prediction": false
+      },
+      "current_RB": {
+        "mask_sha256": "f701344973daa55e807992f52f381b90b6e5b3e0ed06cd47f75fd6c97b4c1465",
+        "metrics": {
+          "dice": 0.8903521916168068,
+          "iou": 0.8023736764857998,
+          "precision": 0.8783059043443999,
+          "recall": 0.9027335124846912,
+          "hausdorff_95": 517.5997463248146,
+          "mean_surface_distance": 79.81470093174158,
+          "median_surface_distance": 27.073972741361768,
+          "std_surface_distance": 130.8439473737114,
+          "max_surface_distance": 691.1765331664552,
+          "area_ratio": 1.0278121870973094
+        },
+        "empty_prediction": false
+      }
+    }
+  },
+  {
+    "filename": "p2_revised_00034.png",
+    "index": 21,
+    "subgroup": "Z_and_L",
+    "seed": 42,
+    "models": {
+      "historical_1019": {
+        "mask_sha256": "a6b7ae5dcefc9a9d4dda5617ed4364d2e6e297b19160b6ca924daf4a0f12c363",
+        "metrics": {
+          "dice": 0.7119528870307085,
+          "iou": 0.5527382343876693,
+          "precision": 0.5924716987101645,
+          "recall": 0.8917978841336506,
+          "hausdorff_95": 1118.0010509832066,
+          "mean_surface_distance": 326.9291537315686,
+          "median_surface_distance": 168.2468423616712,
+          "std_surface_distance": 363.04675032999836,
+          "max_surface_distance": 1469.8139338025069,
+          "area_ratio": 1.50521600622486
+        },
+        "empty_prediction": false
+      },
+      "current_UD": {
+        "mask_sha256": "ab60b9f2118082ef842e767fe130d76c69561b93573e0b7532aac83fbc3b03f3",
+        "metrics": {
+          "dice": 0.7608864793823295,
+          "iou": 0.6140571196439756,
+          "precision": 0.6379927466199827,
+          "recall": 0.942420858490267,
+          "hausdorff_95": 1151.2189192145674,
+          "mean_surface_distance": 327.59219928396215,
+          "median_surface_distance": 191.8593234638338,
+          "std_surface_distance": 341.73833943309575,
+          "max_surface_distance": 1469.8139338025069,
+          "area_ratio": 1.4771654748165017
+        },
+        "empty_prediction": false
+      },
+      "current_RB": {
+        "mask_sha256": "a1a32d0b485a5c061f4a5802e2526d6419a489d4d3523a91bac5eee0482f5345",
+        "metrics": {
+          "dice": 0.8496239641700719,
+          "iou": 0.7385619464483789,
+          "precision": 0.7987801492123637,
+          "recall": 0.9073803822494195,
+          "hausdorff_95": 465.53646472212296,
+          "mean_surface_distance": 99.48297995854897,
+          "median_surface_distance": 41.6293165929973,
+          "std_surface_distance": 138.87438215584902,
+          "max_surface_distance": 1439.6544724342714,
+          "area_ratio": 1.1359576012801333
+        },
+        "empty_prediction": false
+      }
+    }
+  },
+  {
+    "filename": "p2_revised_00035.png",
+    "index": 22,
+    "subgroup": "Z_and_L",
+    "seed": 42,
+    "models": {
+      "historical_1019": {
+        "mask_sha256": "9878f84de782cb51c157e8512d8f467e7597b8520cf4bd2a58f5f6de5d4ecf37",
+        "metrics": {
+          "dice": 0.8987535812838131,
+          "iou": 0.8161239537392391,
+          "precision": 0.9056007382502569,
+          "recall": 0.892009188669785,
+          "hausdorff_95": 439.65099766347043,
+          "mean_surface_distance": 123.1918062463571,
+          "median_surface_distance": 64.0,
+          "std_surface_distance": 141.7960690894312,
+          "max_surface_distance": 808.9907292423072,
+          "area_ratio": 0.9849916756839936
+        },
+        "empty_prediction": false
+      },
+      "current_UD": {
+        "mask_sha256": "d78d8b1b2d7c53aa03d7d01080965bbb65253bb6781f0d19a8b3dfb477738906",
+        "metrics": {
+          "dice": 0.9162946545697228,
+          "iou": 0.8455201023355018,
+          "precision": 0.8955731561525349,
+          "recall": 0.9379977605380074,
+          "hausdorff_95": 380.76751419927604,
+          "mean_surface_distance": 98.29047012062755,
+          "median_surface_distance": 45.0,
+          "std_surface_distance": 131.10722630575506,
+          "max_surface_distance": 808.9907292423072,
+          "area_ratio": 1.0473714560268212
+        },
+        "empty_prediction": false
+      },
+      "current_RB": {
+        "mask_sha256": "29af693ddf73c10df4907250790499e9c04befc19c76f9809179e96439106407",
+        "metrics": {
+          "dice": 0.9438552750859032,
+          "iou": 0.8936798649093131,
+          "precision": 0.9175228829923505,
+          "recall": 0.9717437764074045,
+          "hausdorff_95": 297.69401631365326,
+          "mean_surface_distance": 43.47465716176496,
+          "median_surface_distance": 20.615528128088304,
+          "std_surface_distance": 70.33977335634411,
+          "max_surface_distance": 467.4719242906466,
+          "area_ratio": 1.0590948677358678
+        },
+        "empty_prediction": false
+      }
+    }
+  },
+  {
+    "filename": "p2_revised_00060.png",
+    "index": 23,
+    "subgroup": "Z_and_L",
+    "seed": 42,
+    "models": {
+      "historical_1019": {
+        "mask_sha256": "2326610d29e36e3cf9177a5340d7219eea1530558a8b9bbbd7a2dd29072677e0",
+        "metrics": {
+          "dice": 0.5713749949272915,
+          "iou": 0.39994749699786003,
+          "precision": 0.41068579508460157,
+          "recall": 0.9386351596356666,
+          "hausdorff_95": 1307.2218442011406,
+          "mean_surface_distance": 450.13045886641277,
+          "median_surface_distance": 418.1243832981778,
+          "std_surface_distance": 376.4927673620163,
+          "max_surface_distance": 1607.9120000796063,
+          "area_ratio": 2.285531106432782
+        },
+        "empty_prediction": false
+      },
+      "current_UD": {
+        "mask_sha256": "6f4b5a8afa15e66b24524695ed4dad6af7d788bee8d0efb225163fa1df14a98a",
+        "metrics": {
+          "dice": 0.5683208492226425,
+          "iou": 0.396961043201719,
+          "precision": 0.39856354634304086,
+          "recall": 0.9899728683022024,
+          "hausdorff_95": 1076.7228982191984,
+          "mean_surface_distance": 468.58435230912215,
+          "median_surface_distance": 427.41724341945826,
+          "std_surface_distance": 359.61294450080555,
+          "max_surface_distance": 1607.9120000796063,
+          "area_ratio": 2.4838520165375133
+        },
+        "empty_prediction": false
+      },
+      "current_RB": {
+        "mask_sha256": "4c60c6eaf3095b77dd33d3097d546abf1c512887f2b26f783d1640d2f8cb163d",
+        "metrics": {
+          "dice": 0.8095241898555313,
+          "iou": 0.6800005367243571,
+          "precision": 0.7154924495707735,
+          "recall": 0.9320113676245783,
+          "hausdorff_95": 734.4104077650718,
+          "mean_surface_distance": 164.57242817324882,
+          "median_surface_distance": 59.23259222916147,
+          "std_surface_distance": 209.55521223417196,
+          "max_surface_distance": 958.2927527639974,
+          "area_ratio": 1.3026152381954637
+        },
+        "empty_prediction": false
+      }
+    }
+  },
+  {
+    "filename": "p2_revised_00062.png",
+    "index": 24,
+    "subgroup": "Z_and_L",
+    "seed": 42,
+    "models": {
+      "historical_1019": {
+        "mask_sha256": "5d962ea659659c14d3a176531b32a95d2a5216e7c0a26380a6e513d7b38798a4",
+        "metrics": {
+          "dice": 0.6984900242559078,
+          "iou": 0.536676658092179,
+          "precision": 0.5951286021197747,
+          "recall": 0.8453012088848918,
+          "hausdorff_95": 1035.3833719417669,
+          "mean_surface_distance": 259.3190715011,
+          "median_surface_distance": 138.84163640637487,
+          "std_surface_distance": 304.67688316777947,
+          "max_surface_distance": 1537.1174320786295,
+          "area_ratio": 1.4203673052750572
+        },
+        "empty_prediction": false
+      },
+      "current_UD": {
+        "mask_sha256": "be84fbedc515bdc540470fd39d7b328458898d251426e39618292517d78c63e3",
+        "metrics": {
+          "dice": 0.7503356842065115,
+          "iou": 0.6004297912036737,
+          "precision": 0.6312395865819133,
+          "recall": 0.9248220416909456,
+          "hausdorff_95": 1130.8202539241483,
+          "mean_surface_distance": 372.75313514675094,
+          "median_surface_distance": 208.0,
+          "std_surface_distance": 374.061932650407,
+          "max_surface_distance": 1394.3457247038841,
+          "area_ratio": 1.4650887893435915
+        },
+        "empty_prediction": false
+      },
+      "current_RB": {
+        "mask_sha256": "091c680101eb64eb4ab2809c5bed2570df1783d3bbcd3edc1671e3452e0a90af",
+        "metrics": {
+          "dice": 0.8571083112748102,
+          "iou": 0.7499471032385322,
+          "precision": 0.8176180279205404,
+          "recall": 0.9006068888720503,
+          "hausdorff_95": 385.68024302656937,
+          "mean_surface_distance": 89.5661151110289,
+          "median_surface_distance": 33.60059523282288,
+          "std_surface_distance": 121.48003611877071,
+          "max_surface_distance": 488.72282533149604,
+          "area_ratio": 1.1015007718978564
+        },
+        "empty_prediction": false
+      }
+    }
+  },
+  {
+    "filename": "p2_revised_00064.png",
+    "index": 25,
+    "subgroup": "Z_and_L",
+    "seed": 42,
+    "models": {
+      "historical_1019": {
+        "mask_sha256": "a90ced23bd8ccdd53c67b5ab7697ecc4dfd9e9f12f4462f63008fb705d85a811",
+        "metrics": {
+          "dice": 0.5813911859946748,
+          "iou": 0.40983192847453126,
+          "precision": 0.4200299932381419,
+          "recall": 0.9440710880766353,
+          "hausdorff_95": 1360.7506200582222,
+          "mean_surface_distance": 416.13948598929375,
+          "median_surface_distance": 316.4253466459348,
+          "std_surface_distance": 401.465262179576,
+          "max_surface_distance": 1644.7118288624301,
+          "area_ratio": 2.247627796288479
+        },
+        "empty_prediction": false
+      },
+      "current_UD": {
+        "mask_sha256": "3ff292299c3a7c24c5511006567a24912f4cc1ded4c6bacf019699a27e00afff",
+        "metrics": {
+          "dice": 0.5777457150126085,
+          "iou": 0.4062182980294705,
+          "precision": 0.40867102630281205,
+          "recall": 0.9854404982492013,
+          "hausdorff_95": 1235.5198887886688,
+          "mean_surface_distance": 428.88885314950386,
+          "median_surface_distance": 374.06015558997996,
+          "std_surface_distance": 368.5951336714492,
+          "max_surface_distance": 1597.5747243869378,
+          "area_ratio": 2.4113294919990826
+        },
+        "empty_prediction": false
+      },
+      "current_RB": {
+        "mask_sha256": "da3afb84bea9d4b43e715f8be1af394c1c1c209213fd3d2d502b255affb3e5af",
+        "metrics": {
+          "dice": 0.8025539326072466,
+          "iou": 0.6702213606619912,
+          "precision": 0.7077248642544517,
+          "recall": 0.9267274744083098,
+          "hausdorff_95": 679.0233723311147,
+          "mean_surface_distance": 147.59985853716233,
+          "median_surface_distance": 54.20332093147061,
+          "std_surface_distance": 198.2767555571955,
+          "max_surface_distance": 934.0021413251685,
+          "area_ratio": 1.309445974297766
+        },
+        "empty_prediction": false
+      }
+    }
+  }
+]

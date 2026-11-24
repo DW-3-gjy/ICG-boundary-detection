@@ -1,0 +1,10 @@
+extends: compare_unet_control.yaml
+model:
+  name: unet_resnet18
+  encoder_weights: IMAGENET1K_V1
+  freeze_encoder_batchnorm: true
+training: {checkpoint_dir: checkpoints/comparison/resnet18_control}
+inference:
+  model_path: checkpoints/comparison/resnet18_control/best_model.pt
+  output_dir: predictions/comparison/resnet18_control
+logging: {log_dir: logs/comparison/resnet18_control}

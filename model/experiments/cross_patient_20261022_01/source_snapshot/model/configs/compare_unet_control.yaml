@@ -1,0 +1,7 @@
+extends: comparison_base.yaml
+experiment: {variant: control}
+training: {checkpoint_dir: checkpoints/comparison/unet_control}
+inference:
+  model_path: checkpoints/comparison/unet_control/best_model.pt
+  output_dir: predictions/comparison/unet_control
+logging: {log_dir: logs/comparison/unet_control}

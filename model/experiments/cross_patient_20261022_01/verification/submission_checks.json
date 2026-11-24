@@ -1,0 +1,16 @@
+{
+  "software_tests": {
+    "tests": 63,
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0
+  },
+  "clinical_data_used_in_software_tests": false,
+  "command": "python -m pytest model/tests -q -p no:cacheprovider --basetemp <new-ASCII-temp-directory>",
+  "junit_source_sha256": "bc519206706244a59f2625edc4678e9d022814cb3486410d52a0a8b2f2de023f",
+  "public_numeric_verification": "24 runs; all predefined subgroups, means and sample SDs matched",
+  "private_replay_preparation_checked": true,
+  "test_bytes_access_denied_during_preparation": true,
+  "patient_training_or_inference_restarted_for_submission": false,
+  "windows_test_fixture_note": "Existing OpenCV imwrite fixtures require an ASCII temporary directory; Unicode inference has its own passing regression tests."
+}

@@ -22,6 +22,8 @@ __pycache__/
 *.pyc
 *.pyo
 .venv/
+.venv-*/
+.pytest_cache/
 venv/
 env/
 .ipynb_checkpoints/
@@ -34,3 +36,11 @@ Thumbs.db
 
 model/reference/
 first_train/
+
+# Private local replay outputs; only anonymous experiment metadata is versioned.
+model/experiments/**/local/
+
+# Public epoch metrics only; keep all checkpoint binaries excluded.
+!model/experiments/cross_patient_20261022_01/runs/*/checkpoints/
+model/experiments/cross_patient_20261022_01/runs/*/checkpoints/*
+!model/experiments/cross_patient_20261022_01/runs/*/checkpoints/history.json

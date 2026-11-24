@@ -1,0 +1,119 @@
+{
+  "data": {
+    "train_data_dir": "${DATA_ROOT}/resized/train",
+    "val_data_dir": "${DATA_ROOT}/resized/val",
+    "test_data_dir": "${DATA_ROOT}/fullres/test",
+    "image_size": [
+      288,
+      512
+    ],
+    "in_channels": 3,
+    "out_channels": 2,
+    "normalization": "imagenet",
+    "annotation": "existing polygon interior; no foreground reversal",
+    "batch_size": 5,
+    "num_workers": 0,
+    "pin_memory": true,
+    "augmentations": {
+      "horizontal_flip": 0.5,
+      "vertical_flip": 0.0,
+      "rotation": 8,
+      "brightness": 0.05,
+      "contrast": 0.1,
+      "gaussian_noise": 0.005
+    }
+  },
+  "model": {
+    "name": "unet_resnet18",
+    "in_channels": 3,
+    "out_channels": 2,
+    "base_filters": 32,
+    "depth": 4,
+    "dropout": 0.1,
+    "use_batchnorm": true,
+    "encoder_weights": "IMAGENET1K_V1",
+    "freeze_encoder_batchnorm": true
+  },
+  "training": {
+    "epochs": 120,
+    "seed": 44,
+    "learning_rate": 0.0003,
+    "encoder_learning_rate": 3e-05,
+    "weight_decay": 1e-05,
+    "optimizer": "adamw",
+    "scheduler": "cosine_annealing",
+    "scheduler_params": {
+      "T_max": 120,
+      "eta_min": 1e-06
+    },
+    "loss_function": "tversky_ce",
+    "loss_params": {
+      "tversky_weight": 0.5,
+      "ce_weight": 0.5,
+      "fp_weight": 0.7,
+      "fn_weight": 0.3
+    },
+    "gradient_clip": 1.0,
+    "mixed_precision": true,
+    "early_stopping": {
+      "enabled": false
+    },
+    "save_top_k": 0,
+    "checkpoint_dir": "${STUDY_ROOT}/runs/unet_resnet18_tversky_seed_44/checkpoints"
+  },
+  "inference": {
+    "save_overlay": true,
+    "overlay_alpha": 0.5,
+    "min_contour_area": 100,
+    "min_mean_probability": 0.55,
+    "model_path": "${STUDY_ROOT}/runs/unet_resnet18_tversky_seed_44/checkpoints/best_model.pt",
+    "output_dir": "${STUDY_ROOT}/runs/unet_resnet18_tversky_seed_44/predictions"
+  },
+  "tracking": {
+    "enabled": true,
+    "correction_policy": "gated",
+    "working_size": [
+      288,
+      512
+    ],
+    "min_probability": 0.75,
+    "min_temporal_iou": 0.5,
+    "num_points": 100,
+    "optical_flow": {
+      "min_valid_fraction": 0.8,
+      "max_forward_backward_error": 2.0,
+      "max_displacement": 50.0,
+      "min_local_std": 2.0,
+      "min_valid_points": 8
+    }
+  },
+  "evaluation": {
+    "metrics": [
+      "dice",
+      "iou",
+      "precision",
+      "recall",
+      "hausdorff_95",
+      "surface_distance",
+      "area_ratio"
+    ]
+  },
+  "logging": {
+    "level": "INFO",
+    "use_tensorboard": false,
+    "log_dir": "${STUDY_ROOT}/runs/unet_resnet18_tversky_seed_44/logs"
+  },
+  "device": {
+    "use_cuda": true,
+    "device_id": 0
+  },
+  "experiment": {
+    "study": "cross_patient_20261022_01",
+    "condition_id": "unet_resnet18_tversky",
+    "train_patient": "patient_001",
+    "validation_patient": "patient_001",
+    "test_patient": "patient_002",
+    "scope": "two_patient_retrospective_exploratory_cross_patient_test",
+    "test_not_for_model_selection": true
+  }
+}
