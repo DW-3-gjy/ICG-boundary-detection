@@ -1,0 +1,17 @@
+# Retain the executed bytes used by the dated experiment locks.
+audit_independent_z_references.py -text
+evaluate_static_d_color_context.py -text
+evaluate_static_d_locked_regions.py -text
+evaluate_static_d_mask_geometry.py -text
+evaluate_static_d_region_ensemble.py -text
+evaluate_static_d_sam2_large.py -text
+evaluate_static_d_sam2_regions.py -text
+lock_static_d_sam2_large.py -text
+refit_static_d_sam2_large_decoder.py -text
+refit_static_d_sam2_regions.py -text
+static_d_baseline.py -text
+train_static_d_region_dice.py -text
+train_static_d_region_refiner.py -text
+train_static_d_sam2_decoder.py -text
+train_static_d_sam2_large_precision.py -text
+train_static_d_sam2_prompt_recovery.py -text

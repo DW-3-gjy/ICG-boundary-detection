@@ -1,0 +1,2306 @@
+{
+  "historical": {
+    "scope": "historical",
+    "frames": 11,
+    "patient_count": 2,
+    "aggregation": "Dice at original size, image mean within patient, equal patient weights",
+    "overall": {
+      "old_d": 0.8409612167275982,
+      "d_ensemble": 0.8718534885285779,
+      "lab": 0.8800318633397146,
+      "candidate": 0.9012273417374068
+    },
+    "patients": [
+      {
+        "patient": "A",
+        "frames": 7,
+        "old_d": 0.911429113513845,
+        "d_ensemble": 0.9316761650394271,
+        "lab": 0.9352362194718149,
+        "candidate": 0.9483174693957228
+      },
+      {
+        "patient": "B",
+        "frames": 4,
+        "old_d": 0.7704933199413512,
+        "d_ensemble": 0.8120308120177288,
+        "lab": 0.8248275072076144,
+        "candidate": 0.8541372140790908
+      }
+    ],
+    "per_image": [
+      {
+        "patient": "A",
+        "image": "A01",
+        "old_d": 0.9001383437314022,
+        "d_ensemble": 0.9183157781837188,
+        "lab": 0.9081722444111554,
+        "candidate": 0.9344210863194111
+      },
+      {
+        "patient": "A",
+        "image": "A02",
+        "old_d": 0.9394372672319287,
+        "d_ensemble": 0.9563760360434448,
+        "lab": 0.9806373180238497,
+        "candidate": 0.9870326436272503
+      },
+      {
+        "patient": "A",
+        "image": "A03",
+        "old_d": 0.928397104547555,
+        "d_ensemble": 0.9475350343408042,
+        "lab": 0.9736807503761306,
+        "candidate": 0.9844497953676844
+      },
+      {
+        "patient": "A",
+        "image": "A04",
+        "old_d": 0.883218985210155,
+        "d_ensemble": 0.9082954691335184,
+        "lab": 0.94058465412129,
+        "candidate": 0.9489272897147298
+      },
+      {
+        "patient": "A",
+        "image": "A05",
+        "old_d": 0.9380309675766427,
+        "d_ensemble": 0.9544838195865687,
+        "lab": 0.9671713527408424,
+        "candidate": 0.9688173123987481
+      },
+      {
+        "patient": "A",
+        "image": "A06",
+        "old_d": 0.9141422852236161,
+        "d_ensemble": 0.9167103109088639,
+        "lab": 0.84727370887116,
+        "candidate": 0.8687921328116402
+      },
+      {
+        "patient": "A",
+        "image": "A07",
+        "old_d": 0.8766388410756156,
+        "d_ensemble": 0.9200167070790704,
+        "lab": 0.9291335077582761,
+        "candidate": 0.9457820255305954
+      },
+      {
+        "patient": "B",
+        "image": "B01",
+        "old_d": 0.7831771895532907,
+        "d_ensemble": 0.8414168115942029,
+        "lab": 0.8880633812429194,
+        "candidate": 0.9486882542278335
+      },
+      {
+        "patient": "B",
+        "image": "B02",
+        "old_d": 0.8428056389262324,
+        "d_ensemble": 0.8964454404707125,
+        "lab": 0.8878782843677291,
+        "candidate": 0.9198557503614895
+      },
+      {
+        "patient": "B",
+        "image": "B03",
+        "old_d": 0.8493827093312406,
+        "d_ensemble": 0.8770043671685958,
+        "lab": 0.9050338408363787,
+        "candidate": 0.9199416492056335
+      },
+      {
+        "patient": "B",
+        "image": "B04",
+        "old_d": 0.6066077419546408,
+        "d_ensemble": 0.6332566288374039,
+        "lab": 0.6183345223834305,
+        "candidate": 0.6280632025214069
+      }
+    ],
+    "locked_manifest_sha256": "17d5cbd12844d2029bef2183fe5607772b714a85517a40487a33e9a7b0628e47"
+  },
+  "development": {
+    "scope": "development-only",
+    "per_image": [
+      {
+        "image": "V01",
+        "patient": "P01",
+        "fold": "fold_1",
+        "stratum": "L_visible_fluorescence",
+        "scores": {
+          "large": {
+            "dice": 0.9664603057225565,
+            "fn_over_reference": 0.043354876240499794,
+            "fp_over_reference": 0.02304326715538979
+          },
+          "dice_adapted": {
+            "dice": 0.9667067677692897,
+            "fn_over_reference": 0.015321139109110118,
+            "fp_over_reference": 0.05250323759192414
+          },
+          "dice_blend": {
+            "dice": 0.9680705998748435,
+            "fn_over_reference": 0.02270738863491736,
+            "fp_over_reference": 0.041759741823685706
+          },
+          "precision_adapted": {
+            "dice": 0.967155487143729,
+            "fn_over_reference": 0.020223118753255866,
+            "fp_over_reference": 0.046323149763346075
+          },
+          "precision_blend": {
+            "dice": 0.9677662796610834,
+            "fn_over_reference": 0.02656095021687826,
+            "fp_over_reference": 0.03828438022525791
+          }
+        }
+      },
+      {
+        "image": "V02",
+        "patient": "P01",
+        "fold": "fold_1",
+        "stratum": "L_visible_fluorescence",
+        "scores": {
+          "large": {
+            "dice": 0.9442065914003237,
+            "fn_over_reference": 0.0543498576731246,
+            "fp_over_reference": 0.0574075591119821
+          },
+          "dice_adapted": {
+            "dice": 0.9513844833485071,
+            "fn_over_reference": 0.021348235965949716,
+            "fp_over_reference": 0.07866950021354996
+          },
+          "dice_blend": {
+            "dice": 0.9495228775165835,
+            "fn_over_reference": 0.03363073910557163,
+            "fp_over_reference": 0.06911463059832962
+          },
+          "precision_adapted": {
+            "dice": 0.950460598593317,
+            "fn_over_reference": 0.028767208269672644,
+            "fp_over_reference": 0.0724769489317332
+          },
+          "precision_blend": {
+            "dice": 0.9486302088224091,
+            "fn_over_reference": 0.03783333876818654,
+            "fp_over_reference": 0.06637228320304267
+          }
+        }
+      },
+      {
+        "image": "V03",
+        "patient": "P01",
+        "fold": "fold_1",
+        "stratum": "L_visible_fluorescence",
+        "scores": {
+          "large": {
+            "dice": 0.9535450617220366,
+            "fn_over_reference": 0.03789358754479558,
+            "fp_over_reference": 0.05585047511486303
+          },
+          "dice_adapted": {
+            "dice": 0.9760863071451767,
+            "fn_over_reference": 0.01572143904537231,
+            "fp_over_reference": 0.03250736002281397
+          },
+          "dice_blend": {
+            "dice": 0.9735900070767609,
+            "fn_over_reference": 0.02117950724588001,
+            "fp_over_reference": 0.03192424710421894
+          },
+          "precision_adapted": {
+            "dice": 0.9759581158448539,
+            "fn_over_reference": 0.01987689352153889,
+            "fp_over_reference": 0.028412076673331683
+          },
+          "precision_blend": {
+            "dice": 0.9729118218499204,
+            "fn_over_reference": 0.024490013234001136,
+            "fp_over_reference": 0.029831021242595762
+          }
+        }
+      },
+      {
+        "image": "V04",
+        "patient": "P01",
+        "fold": "fold_1",
+        "stratum": "L_visible_fluorescence",
+        "scores": {
+          "large": {
+            "dice": 0.9556417577708661,
+            "fn_over_reference": 0.023505720067271967,
+            "fp_over_reference": 0.0671465969801908
+          },
+          "dice_adapted": {
+            "dice": 0.9629214303762383,
+            "fn_over_reference": 0.014373764304811468,
+            "fp_over_reference": 0.061531932360285764
+          },
+          "dice_blend": {
+            "dice": 0.9611148076066695,
+            "fn_over_reference": 0.016395916506241046,
+            "fp_over_reference": 0.06319422969234498
+          },
+          "precision_adapted": {
+            "dice": 0.9624938746965281,
+            "fn_over_reference": 0.02003068285131354,
+            "fp_over_reference": 0.05634352163726072
+          },
+          "precision_blend": {
+            "dice": 0.9606333630199483,
+            "fn_over_reference": 0.02035153409613279,
+            "fp_over_reference": 0.05994021301550951
+          }
+        }
+      },
+      {
+        "image": "V05",
+        "patient": "P01",
+        "fold": "fold_1",
+        "stratum": "L_visible_fluorescence",
+        "scores": {
+          "large": {
+            "dice": 0.930782931693282,
+            "fn_over_reference": 0.12945466867834407,
+            "fp_over_reference": 2.0407863007236247e-05
+          },
+          "dice_adapted": {
+            "dice": 0.9478957172888645,
+            "fn_over_reference": 0.09595539885269842,
+            "fp_over_reference": 0.0034323177969379664
+          },
+          "dice_blend": {
+            "dice": 0.942765192782098,
+            "fn_over_reference": 0.10672410610000517,
+            "fp_over_reference": 0.0017365667614762195
+          },
+          "precision_adapted": {
+            "dice": 0.9421669042696645,
+            "fn_over_reference": 0.10749153666937031,
+            "fp_over_reference": 0.0020782798164811055
+          },
+          "precision_blend": {
+            "dice": 0.9389070937625625,
+            "fn_over_reference": 0.11432864537825974,
+            "fp_over_reference": 0.0009292696690271761
+          }
+        }
+      },
+      {
+        "image": "V06",
+        "patient": "P01",
+        "fold": "fold_1",
+        "stratum": "L_visible_fluorescence",
+        "scores": {
+          "large": {
+            "dice": 0.9627149861315194,
+            "fn_over_reference": 0.06930646344929393,
+            "fp_over_reference": 0.002783245171607824
+          },
+          "dice_adapted": {
+            "dice": 0.9734032669448056,
+            "fn_over_reference": 0.040297932900937895,
+            "fp_over_reference": 0.01214680518026139
+          },
+          "dice_blend": {
+            "dice": 0.9715368725402886,
+            "fn_over_reference": 0.04785442498335037,
+            "fp_over_reference": 0.007935615781726555
+          },
+          "precision_adapted": {
+            "dice": 0.9651246625186914,
+            "fn_over_reference": 0.06022234146796696,
+            "fp_over_reference": 0.00769647621754383
+          },
+          "precision_blend": {
+            "dice": 0.9668264078124723,
+            "fn_over_reference": 0.05888082683962484,
+            "fp_over_reference": 0.0057022325348581706
+          }
+        }
+      },
+      {
+        "image": "V07",
+        "patient": "P01",
+        "fold": "fold_1",
+        "stratum": "Z_label",
+        "scores": {
+          "large": {
+            "dice": 0.9679901716520525,
+            "fn_over_reference": 0.05501396530018353,
+            "fp_over_reference": 0.00748427414025105
+          },
+          "dice_adapted": {
+            "dice": 0.9817391770244572,
+            "fn_over_reference": 0.021576179838025424,
+            "fp_over_reference": 0.014822131634446234
+          },
+          "dice_blend": {
+            "dice": 0.9791896847093755,
+            "fn_over_reference": 0.029802442774462336,
+            "fp_over_reference": 0.011435975839086558
+          },
+          "precision_adapted": {
+            "dice": 0.9803255014612633,
+            "fn_over_reference": 0.02707191162254098,
+            "fp_over_reference": 0.011980162866076439
+          },
+          "precision_blend": {
+            "dice": 0.9775642431770807,
+            "fn_over_reference": 0.03434352564473626,
+            "fp_over_reference": 0.00998140539549984
+          }
+        }
+      },
+      {
+        "image": "V08",
+        "patient": "P02",
+        "fold": "fold_1",
+        "stratum": "Z_label",
+        "scores": {
+          "large": {
+            "dice": 0.4254674175779147,
+            "fn_over_reference": 0.2361704806990744,
+            "fp_over_reference": 1.826713435312268
+          },
+          "dice_adapted": {
+            "dice": 0.4367879942281563,
+            "fn_over_reference": 0.21233707596403378,
+            "fp_over_reference": 1.8189514263783009
+          },
+          "dice_blend": {
+            "dice": 0.43465650686332935,
+            "fn_over_reference": 0.21694833954644202,
+            "fp_over_reference": 1.8200309948799598
+          },
+          "precision_adapted": {
+            "dice": 0.4380055329891025,
+            "fn_over_reference": 0.21692112885149983,
+            "fp_over_reference": 1.7925785677176111
+          },
+          "precision_blend": {
+            "dice": 0.43572828915109135,
+            "fn_over_reference": 0.21977192375183593,
+            "fp_over_reference": 1.8010316017417376
+          }
+        }
+      },
+      {
+        "image": "V09",
+        "patient": "P02",
+        "fold": "fold_1",
+        "stratum": "Z_label",
+        "scores": {
+          "large": {
+            "dice": 0.717792372180767,
+            "fn_over_reference": 0.15149076167998815,
+            "fp_over_reference": 0.5157099180973412
+          },
+          "dice_adapted": {
+            "dice": 0.6606620814446941,
+            "fn_over_reference": 0.13291030950759078,
+            "fp_over_reference": 0.7578216366305652
+          },
+          "dice_blend": {
+            "dice": 0.6996072230928015,
+            "fn_over_reference": 0.13971961748427278,
+            "fp_over_reference": 0.5990435184372298
+          },
+          "precision_adapted": {
+            "dice": 0.6903458819425206,
+            "fn_over_reference": 0.1376952805843727,
+            "fp_over_reference": 0.6358769659425663
+          },
+          "precision_blend": {
+            "dice": 0.7122928756656344,
+            "fn_over_reference": 0.1427032555361673,
+            "fp_over_reference": 0.5498500170777393
+          }
+        }
+      },
+      {
+        "image": "V10",
+        "patient": "P02",
+        "fold": "fold_1",
+        "stratum": "Z_label",
+        "scores": {
+          "large": {
+            "dice": 0.715242335345674,
+            "fn_over_reference": 0.22075210379419652,
+            "fp_over_reference": 0.3997279772768413
+          },
+          "dice_adapted": {
+            "dice": 0.7063801692374118,
+            "fn_over_reference": 0.19420118583231566,
+            "fp_over_reference": 0.4756888301913076
+          },
+          "dice_blend": {
+            "dice": 0.7189360553734817,
+            "fn_over_reference": 0.20351111378150238,
+            "fp_over_reference": 0.4192544480192819
+          },
+          "precision_adapted": {
+            "dice": 0.722520729776801,
+            "fn_over_reference": 0.20157886458450136,
+            "fp_over_reference": 0.41167776558667624
+          },
+          "precision_blend": {
+            "dice": 0.7251311072217757,
+            "fn_over_reference": 0.20887808996267532,
+            "fp_over_reference": 0.39088876957172497
+          }
+        }
+      },
+      {
+        "image": "V11",
+        "patient": "P02",
+        "fold": "fold_1",
+        "stratum": "Z_label",
+        "scores": {
+          "large": {
+            "dice": 0.7735741075998197,
+            "fn_over_reference": 0.13132446450065124,
+            "fp_over_reference": 0.37719988087052353
+          },
+          "dice_adapted": {
+            "dice": 0.7153138053511141,
+            "fn_over_reference": 0.1145042882494143,
+            "fp_over_reference": 0.5903287589261329
+          },
+          "dice_blend": {
+            "dice": 0.7458629974426635,
+            "fn_over_reference": 0.12012073525395303,
+            "fp_over_reference": 0.4794796731899662
+          },
+          "precision_adapted": {
+            "dice": 0.7396536394817872,
+            "fn_over_reference": 0.12183939754521911,
+            "fp_over_reference": 0.4963578358511101
+          },
+          "precision_blend": {
+            "dice": 0.7641354432890163,
+            "fn_over_reference": 0.12416365754941883,
+            "fp_over_reference": 0.4165225584290281
+          }
+        }
+      },
+      {
+        "image": "V12",
+        "patient": "P02",
+        "fold": "fold_1",
+        "stratum": "Z_label",
+        "scores": {
+          "large": {
+            "dice": 0.7627427742585671,
+            "fn_over_reference": 0.21903629477563907,
+            "fp_over_reference": 0.26681368862510757
+          },
+          "dice_adapted": {
+            "dice": 0.7390300661415973,
+            "fn_over_reference": 0.19410963637472306,
+            "fp_over_reference": 0.37505030590052646
+          },
+          "dice_blend": {
+            "dice": 0.7583416462340229,
+            "fn_over_reference": 0.2008922945588325,
+            "fp_over_reference": 0.3084059974118715
+          },
+          "precision_adapted": {
+            "dice": 0.7578151443295629,
+            "fn_over_reference": 0.19982926482245575,
+            "fp_over_reference": 0.3116127021551929
+          },
+          "precision_blend": {
+            "dice": 0.764921689022838,
+            "fn_over_reference": 0.20504752806628862,
+            "fp_over_reference": 0.2835674166819109
+          }
+        }
+      },
+      {
+        "image": "V13",
+        "patient": "P02",
+        "fold": "fold_1",
+        "stratum": "Z_label",
+        "scores": {
+          "large": {
+            "dice": 0.942683849495576,
+            "fn_over_reference": 0.10579736498022656,
+            "fp_over_reference": 0.0029395203237289917
+          },
+          "dice_adapted": {
+            "dice": 0.963179072341939,
+            "fn_over_reference": 0.0518479747599082,
+            "fp_over_reference": 0.02064495647731742
+          },
+          "dice_blend": {
+            "dice": 0.9532963935387307,
+            "fn_over_reference": 0.07947554778202341,
+            "fp_over_reference": 0.010720559212096036
+          },
+          "precision_adapted": {
+            "dice": 0.9613230054209592,
+            "fn_over_reference": 0.060394032351802115,
+            "fp_over_reference": 0.01521246975463645
+          },
+          "precision_blend": {
+            "dice": 0.9516017449687028,
+            "fn_over_reference": 0.0843338937442768,
+            "fp_over_reference": 0.00880725898771399
+          }
+        }
+      },
+      {
+        "image": "V14",
+        "patient": "P02",
+        "fold": "fold_1",
+        "stratum": "Z_label",
+        "scores": {
+          "large": {
+            "dice": 0.8921086669228534,
+            "fn_over_reference": 0.06120360598498821,
+            "fp_over_reference": 0.16587185733871207
+          },
+          "dice_adapted": {
+            "dice": 0.8690610336063203,
+            "fn_over_reference": 0.04395040784321461,
+            "fp_over_reference": 0.2441401648030703
+          },
+          "dice_blend": {
+            "dice": 0.8807461248445436,
+            "fn_over_reference": 0.04721896188750914,
+            "fp_over_reference": 0.21079598195254048
+          },
+          "precision_adapted": {
+            "dice": 0.8684240158530013,
+            "fn_over_reference": 0.060771817118784675,
+            "fp_over_reference": 0.22383540296093188
+          },
+          "precision_blend": {
+            "dice": 0.8797769665616507,
+            "fn_over_reference": 0.05993645909019675,
+            "fp_over_reference": 0.1969861356321159
+          }
+        }
+      },
+      {
+        "image": "V15",
+        "patient": "P02",
+        "fold": "fold_1",
+        "stratum": "Z_label",
+        "scores": {
+          "large": {
+            "dice": 0.9455494259196091,
+            "fn_over_reference": 0.10209118297727118,
+            "fp_over_reference": 0.0013230843650877929
+          },
+          "dice_adapted": {
+            "dice": 0.9568025309594218,
+            "fn_over_reference": 0.07062155221199824,
+            "fp_over_reference": 0.013297115279497984
+          },
+          "dice_blend": {
+            "dice": 0.9552185984920715,
+            "fn_over_reference": 0.08379603888735676,
+            "fp_over_reference": 0.002108690167351517
+          },
+          "precision_adapted": {
+            "dice": 0.9496882984047988,
+            "fn_over_reference": 0.09106217505050603,
+            "fp_over_reference": 0.005243546930619084
+          },
+          "precision_blend": {
+            "dice": 0.9485834486582317,
+            "fn_over_reference": 0.09649931862851126,
+            "fp_over_reference": 0.001446495704998368
+          }
+        }
+      },
+      {
+        "image": "V16",
+        "patient": "P02",
+        "fold": "fold_1",
+        "stratum": "Z_label",
+        "scores": {
+          "large": {
+            "dice": 0.9233562052166848,
+            "fn_over_reference": 0.13680576325072413,
+            "fp_over_reference": 0.006494258053678902
+          },
+          "dice_adapted": {
+            "dice": 0.9337895570495479,
+            "fn_over_reference": 0.08142097295569914,
+            "fp_over_reference": 0.04884290460953536
+          },
+          "dice_blend": {
+            "dice": 0.9372215021909522,
+            "fn_over_reference": 0.10564167223175913,
+            "fp_over_reference": 0.01417306140174778
+          },
+          "precision_adapted": {
+            "dice": 0.9376241259299467,
+            "fn_over_reference": 0.09767300609223988,
+            "fp_over_reference": 0.022382426325686964
+          },
+          "precision_blend": {
+            "dice": 0.934297807027555,
+            "fn_over_reference": 0.11434216510092961,
+            "fp_over_reference": 0.010221248274138504
+          }
+        }
+      },
+      {
+        "image": "V17",
+        "patient": "P02",
+        "fold": "fold_1",
+        "stratum": "Z_label",
+        "scores": {
+          "large": {
+            "dice": 0.850063775401307,
+            "fn_over_reference": 0.12074684155373186,
+            "fp_over_reference": 0.18942259010255383
+          },
+          "dice_adapted": {
+            "dice": 0.8146772429217091,
+            "fn_over_reference": 0.054707350672899176,
+            "fp_over_reference": 0.37536294168207135
+          },
+          "dice_blend": {
+            "dice": 0.8587259864386962,
+            "fn_over_reference": 0.07124665905264273,
+            "fp_over_reference": 0.23434258397993665
+          },
+          "precision_adapted": {
+            "dice": 0.8294674195629034,
+            "fn_over_reference": 0.07446692020581414,
+            "fp_over_reference": 0.3060990686557323
+          },
+          "precision_blend": {
+            "dice": 0.8706094819770445,
+            "fn_over_reference": 0.08587029470982327,
+            "fp_over_reference": 0.18584674618219496
+          }
+        }
+      },
+      {
+        "image": "V18",
+        "patient": "P02",
+        "fold": "fold_1",
+        "stratum": "Z_label",
+        "scores": {
+          "large": {
+            "dice": 0.9033287296541848,
+            "fn_over_reference": 0.03320363539006376,
+            "fp_over_reference": 0.17372310050227893
+          },
+          "dice_adapted": {
+            "dice": 0.9036798639206468,
+            "fn_over_reference": 0.013708062594888715,
+            "fp_over_reference": 0.19654288448867108
+          },
+          "dice_blend": {
+            "dice": 0.9033610468137371,
+            "fn_over_reference": 0.018938464818831692,
+            "fp_over_reference": 0.1909637887831319
+          },
+          "precision_adapted": {
+            "dice": 0.9107574487918247,
+            "fn_over_reference": 0.019444270765698823,
+            "fp_over_reference": 0.17271950455065033
+          },
+          "precision_blend": {
+            "dice": 0.9077096952578494,
+            "fn_over_reference": 0.023037016017455517,
+            "fp_over_reference": 0.17562608515816255
+          }
+        }
+      },
+      {
+        "image": "V19",
+        "patient": "P02",
+        "fold": "fold_1",
+        "stratum": "Z_label",
+        "scores": {
+          "large": {
+            "dice": 0.9586829681688531,
+            "fn_over_reference": 0.06849890304433201,
+            "fp_over_reference": 0.011792208306436949
+          },
+          "dice_adapted": {
+            "dice": 0.9623164332556143,
+            "fn_over_reference": 0.013003001454097968,
+            "fp_over_reference": 0.06429707570531046
+          },
+          "dice_blend": {
+            "dice": 0.9629083422445112,
+            "fn_over_reference": 0.019966625039139773,
+            "fp_over_reference": 0.0555360182306686
+          },
+          "precision_adapted": {
+            "dice": 0.9626188639174937,
+            "fn_over_reference": 0.016196181833622224,
+            "fp_over_reference": 0.06021143032495
+          },
+          "precision_blend": {
+            "dice": 0.9629699841535154,
+            "fn_over_reference": 0.023441142897036214,
+            "fp_over_reference": 0.051663980935738874
+          }
+        }
+      },
+      {
+        "image": "V20",
+        "patient": "P02",
+        "fold": "fold_1",
+        "stratum": "Z_label",
+        "scores": {
+          "large": {
+            "dice": 0.9291987373671889,
+            "fn_over_reference": 0.1272974445039787,
+            "fp_over_reference": 0.005695510279993092
+          },
+          "dice_adapted": {
+            "dice": 0.9463563053161521,
+            "fn_over_reference": 0.024856195229091296,
+            "fp_over_reference": 0.08569480177303865
+          },
+          "dice_blend": {
+            "dice": 0.9657495663170037,
+            "fn_over_reference": 0.04497247893298853,
+            "fp_over_reference": 0.022767870980883596
+          },
+          "precision_adapted": {
+            "dice": 0.9496296354056336,
+            "fn_over_reference": 0.029289677496490675,
+            "fp_over_reference": 0.07368738016269091
+          },
+          "precision_blend": {
+            "dice": 0.9659562670353687,
+            "fn_over_reference": 0.04962294145518472,
+            "fp_over_reference": 0.017366391086982513
+          }
+        }
+      },
+      {
+        "image": "V21",
+        "patient": "P02",
+        "fold": "fold_1",
+        "stratum": "Z_label",
+        "scores": {
+          "large": {
+            "dice": 0.7613587873473888,
+            "fn_over_reference": 0.374070986829114,
+            "fp_over_reference": 0.018312896354196702
+          },
+          "dice_adapted": {
+            "dice": 0.8461670765813836,
+            "fn_over_reference": 0.23270283636261963,
+            "fp_over_reference": 0.0462859569381753
+          },
+          "dice_blend": {
+            "dice": 0.8164946065994598,
+            "fn_over_reference": 0.28535230416236346,
+            "fp_over_reference": 0.035878737677960744
+          },
+          "precision_adapted": {
+            "dice": 0.8176483386134896,
+            "fn_over_reference": 0.28086647898547307,
+            "fp_over_reference": 0.03989535987082501
+          },
+          "precision_blend": {
+            "dice": 0.7906207277921998,
+            "fn_over_reference": 0.3254197925021887,
+            "fp_over_reference": 0.03187696921084776
+          }
+        }
+      },
+      {
+        "image": "V22",
+        "patient": "P02",
+        "fold": "fold_1",
+        "stratum": "Z_label",
+        "scores": {
+          "large": {
+            "dice": 0.8508156113671974,
+            "fn_over_reference": 0.24047229909180395,
+            "fp_over_reference": 0.025883123154356185
+          },
+          "dice_adapted": {
+            "dice": 0.8968259836853505,
+            "fn_over_reference": 0.13417714466133016,
+            "fp_over_reference": 0.06503747005181731
+          },
+          "dice_blend": {
+            "dice": 0.8723964531881468,
+            "fn_over_reference": 0.1916544397600431,
+            "fp_over_reference": 0.04481548204966291
+          },
+          "precision_adapted": {
+            "dice": 0.8840624271608735,
+            "fn_over_reference": 0.17229259142321193,
+            "fp_over_reference": 0.04480155266237022
+          },
+          "precision_blend": {
+            "dice": 0.8692982411652533,
+            "fn_over_reference": 0.20414561781475773,
+            "fp_over_reference": 0.03517286369630221
+          }
+        }
+      },
+      {
+        "image": "V23",
+        "patient": "P02",
+        "fold": "fold_1",
+        "stratum": "Z_label",
+        "scores": {
+          "large": {
+            "dice": 0.7818712408338548,
+            "fn_over_reference": 0.016992286891707162,
+            "fp_over_reference": 0.5314925313563297
+          },
+          "dice_adapted": {
+            "dice": 0.5658788513796024,
+            "fn_over_reference": 0.002356838523633243,
+            "fp_over_reference": 1.5283524082259852
+          },
+          "dice_blend": {
+            "dice": 0.5923111721137657,
+            "fn_over_reference": 0.004465221165647232,
+            "fp_over_reference": 1.3659914786617309
+          },
+          "precision_adapted": {
+            "dice": 0.5722636243417331,
+            "fn_over_reference": 0.0038430836468134784,
+            "fp_over_reference": 1.4853046827447889
+          },
+          "precision_blend": {
+            "dice": 0.6006575344447562,
+            "fn_over_reference": 0.005731947035991179,
+            "fp_over_reference": 1.3163307356888414
+          }
+        }
+      },
+      {
+        "image": "V24",
+        "patient": "P02",
+        "fold": "fold_1",
+        "stratum": "Z_label",
+        "scores": {
+          "large": {
+            "dice": 0.9027325916851611,
+            "fn_over_reference": 0.015957209418569363,
+            "fp_over_reference": 0.19609958966538218
+          },
+          "dice_adapted": {
+            "dice": 0.8433082122565514,
+            "fn_over_reference": 0.004931219859277413,
+            "fp_over_reference": 0.36484842611554147
+          },
+          "dice_blend": {
+            "dice": 0.8589815454913101,
+            "fn_over_reference": 0.0073718054978208145,
+            "fp_over_reference": 0.3185464744121045
+          },
+          "precision_adapted": {
+            "dice": 0.8509237145697258,
+            "fn_over_reference": 0.00697364830574392,
+            "fp_over_reference": 0.34096983313738943
+          },
+          "precision_blend": {
+            "dice": 0.8679924451039412,
+            "fn_over_reference": 0.008996312343956809,
+            "fp_over_reference": 0.292434822082072
+          }
+        }
+      },
+      {
+        "image": "V25",
+        "patient": "P02",
+        "fold": "fold_1",
+        "stratum": "Z_label",
+        "scores": {
+          "large": {
+            "dice": 0.9442739294444146,
+            "fn_over_reference": 0.019061188302781217,
+            "fp_over_reference": 0.09671848902774526
+          },
+          "dice_adapted": {
+            "dice": 0.9344877869450772,
+            "fn_over_reference": 0.009326480874795082,
+            "fp_over_reference": 0.1295757403408901
+          },
+          "dice_blend": {
+            "dice": 0.9394221856474562,
+            "fn_over_reference": 0.011971750336489341,
+            "fp_over_reference": 0.11545251704321732
+          },
+          "precision_adapted": {
+            "dice": 0.9507767869707421,
+            "fn_over_reference": 0.012159939882286634,
+            "fp_over_reference": 0.09012413432808933
+          },
+          "precision_blend": {
+            "dice": 0.9472490452436513,
+            "fn_over_reference": 0.014148315237112394,
+            "fp_over_reference": 0.09565304667615442
+          }
+        }
+      },
+      {
+        "image": "V26",
+        "patient": "P02",
+        "fold": "fold_1",
+        "stratum": "Z_label",
+        "scores": {
+          "large": {
+            "dice": 0.942905738878529,
+            "fn_over_reference": 0.032570256206841564,
+            "fp_over_reference": 0.08458819162379579
+          },
+          "dice_adapted": {
+            "dice": 0.9336795490165886,
+            "fn_over_reference": 0.02087283730416639,
+            "fp_over_reference": 0.1182244687651176
+          },
+          "dice_blend": {
+            "dice": 0.9391855646221638,
+            "fn_over_reference": 0.023407568413618803,
+            "fp_over_reference": 0.10306566447744873
+          },
+          "precision_adapted": {
+            "dice": 0.9409599751657373,
+            "fn_over_reference": 0.02716108775677302,
+            "fp_over_reference": 0.09491941524966063
+          },
+          "precision_blend": {
+            "dice": 0.9428249272558807,
+            "fn_over_reference": 0.028783235262980864,
+            "fp_over_reference": 0.08901040291705138
+          }
+        }
+      },
+      {
+        "image": "V27",
+        "patient": "P02",
+        "fold": "fold_1",
+        "stratum": "Z_label",
+        "scores": {
+          "large": {
+            "dice": 0.7331907118908416,
+            "fn_over_reference": 0.012359705720223145,
+            "fp_over_reference": 0.7064481011739232
+          },
+          "dice_adapted": {
+            "dice": 0.666030266032114,
+            "fn_over_reference": 0.0019355193624911167,
+            "fp_over_reference": 0.9989899522893728
+          },
+          "dice_blend": {
+            "dice": 0.6992409531937117,
+            "fn_over_reference": 0.003912578293666788,
+            "fp_over_reference": 0.8529660187616643
+          },
+          "precision_adapted": {
+            "dice": 0.6667151099710954,
+            "fn_over_reference": 0.002528674464878669,
+            "fp_over_reference": 0.9947252232377587
+          },
+          "precision_blend": {
+            "dice": 0.7005363251824264,
+            "fn_over_reference": 0.004388599296970867,
+            "fp_over_reference": 0.8468147945232137
+          }
+        }
+      },
+      {
+        "image": "V28",
+        "patient": "P02",
+        "fold": "fold_1",
+        "stratum": "Z_label",
+        "scores": {
+          "large": {
+            "dice": 0.8216165978985658,
+            "fn_over_reference": 0.022239760558976498,
+            "fp_over_reference": 0.40232858043389985
+          },
+          "dice_adapted": {
+            "dice": 0.7916614744258539,
+            "fn_over_reference": 0.008274503861664029,
+            "fp_over_reference": 0.5137027157310793
+          },
+          "dice_blend": {
+            "dice": 0.8091147511856003,
+            "fn_over_reference": 0.011862182244173628,
+            "fp_over_reference": 0.45437807089384324
+          },
+          "precision_adapted": {
+            "dice": 0.8004967198461937,
+            "fn_over_reference": 0.01008138998846834,
+            "fp_over_reference": 0.48334226781375933
+          },
+          "precision_blend": {
+            "dice": 0.8145167324314949,
+            "fn_over_reference": 0.013260722177638835,
+            "fp_over_reference": 0.4361434906549607
+          }
+        }
+      },
+      {
+        "image": "V29",
+        "patient": "P02",
+        "fold": "fold_1",
+        "stratum": "Z_label",
+        "scores": {
+          "large": {
+            "dice": 0.9058305067790717,
+            "fn_over_reference": 0.08394564725263336,
+            "fp_over_reference": 0.10651906665456667
+          },
+          "dice_adapted": {
+            "dice": 0.8589811717197101,
+            "fn_over_reference": 0.02364159043426558,
+            "fp_over_reference": 0.2969356781522327
+          },
+          "dice_blend": {
+            "dice": 0.8972751625241209,
+            "fn_over_reference": 0.0537794856612668,
+            "fp_over_reference": 0.16287723818775907
+          },
+          "precision_adapted": {
+            "dice": 0.8717129806413115,
+            "fn_over_reference": 0.029250232205703757,
+            "fp_over_reference": 0.256473617316074
+          },
+          "precision_blend": {
+            "dice": 0.899435345157937,
+            "fn_over_reference": 0.06011611029039474,
+            "fp_over_reference": 0.15005819399751355
+          }
+        }
+      },
+      {
+        "image": "V30",
+        "patient": "P02",
+        "fold": "fold_1",
+        "stratum": "Z_label",
+        "scores": {
+          "large": {
+            "dice": 0.8285471621409484,
+            "fn_over_reference": 0.0962496964050485,
+            "fp_over_reference": 0.2777798370905341
+          },
+          "dice_adapted": {
+            "dice": 0.782709530175316,
+            "fn_over_reference": 0.0262715441765924,
+            "fp_over_reference": 0.5143681324608979
+          },
+          "dice_blend": {
+            "dice": 0.8005120048366509,
+            "fn_over_reference": 0.06234498676906922,
+            "fp_over_reference": 0.4049832172157563
+          },
+          "precision_adapted": {
+            "dice": 0.7901189182965643,
+            "fn_over_reference": 0.03564578173141238,
+            "fp_over_reference": 0.47668141810792436
+          },
+          "precision_blend": {
+            "dice": 0.8082620058757287,
+            "fn_over_reference": 0.06802407957479556,
+            "fp_over_reference": 0.3741473753628617
+          }
+        }
+      },
+      {
+        "image": "V31",
+        "patient": "P02",
+        "fold": "fold_1",
+        "stratum": "Z_label",
+        "scores": {
+          "large": {
+            "dice": 0.8665737763776344,
+            "fn_over_reference": 0.07525321100986387,
+            "fp_over_reference": 0.20951301484484894
+          },
+          "dice_adapted": {
+            "dice": 0.8610872385726008,
+            "fn_over_reference": 0.06617515801847705,
+            "fp_over_reference": 0.2351187914870141
+          },
+          "dice_blend": {
+            "dice": 0.8650614994533518,
+            "fn_over_reference": 0.06972167176577451,
+            "fp_over_reference": 0.2205013072531599
+          },
+          "precision_adapted": {
+            "dice": 0.8641466944797043,
+            "fn_over_reference": 0.0714195788453856,
+            "fp_over_reference": 0.2205464043867485
+          },
+          "precision_blend": {
+            "dice": 0.8656585358326898,
+            "fn_over_reference": 0.07230536171095518,
+            "fp_over_reference": 0.21563232006337651
+          }
+        }
+      },
+      {
+        "image": "V32",
+        "patient": "P02",
+        "fold": "fold_1",
+        "stratum": "Z_label",
+        "scores": {
+          "large": {
+            "dice": 0.8313863448116977,
+            "fn_over_reference": 0.12322871407835767,
+            "fp_over_reference": 0.23240765692044632
+          },
+          "dice_adapted": {
+            "dice": 0.8528679551227176,
+            "fn_over_reference": 0.03801946673055629,
+            "fp_over_reference": 0.29389161549953213
+          },
+          "dice_blend": {
+            "dice": 0.8435430588515213,
+            "fn_over_reference": 0.08393515074881497,
+            "fp_over_reference": 0.2558808259308305
+          },
+          "precision_adapted": {
+            "dice": 0.852884927335737,
+            "fn_over_reference": 0.059671395880565616,
+            "fp_over_reference": 0.2647252641834236
+          },
+          "precision_blend": {
+            "dice": 0.8420122840994143,
+            "fn_over_reference": 0.09541310762428468,
+            "fp_over_reference": 0.24404421303203655
+          }
+        }
+      },
+      {
+        "image": "V33",
+        "patient": "P03",
+        "fold": "fold_2",
+        "stratum": "L_visible_fluorescence",
+        "scores": {
+          "large": {
+            "dice": 0.5633663429825818,
+            "fn_over_reference": 0.0801534665501785,
+            "fp_over_reference": 1.3456894535953308
+          },
+          "dice_adapted": {
+            "dice": 0.5696710649598827,
+            "fn_over_reference": 0.03452066714673436,
+            "fp_over_reference": 1.4241235177716174
+          },
+          "dice_blend": {
+            "dice": 0.5745885506239754,
+            "fn_over_reference": 0.044842898042231225,
+            "fp_over_reference": 1.369507480796323
+          },
+          "precision_adapted": {
+            "dice": 0.5818965087477157,
+            "fn_over_reference": 0.049485749783911376,
+            "fp_over_reference": 1.3164386732914457
+          },
+          "precision_blend": {
+            "dice": 0.5805592229010189,
+            "fn_over_reference": 0.05566303436129088,
+            "fp_over_reference": 1.3088607388776885
+          }
+        }
+      },
+      {
+        "image": "V34",
+        "patient": "P03",
+        "fold": "fold_2",
+        "stratum": "L_visible_fluorescence",
+        "scores": {
+          "large": {
+            "dice": 0.9088547480100582,
+            "fn_over_reference": 0.053497717604062085,
+            "fp_over_reference": 0.136343814779236
+          },
+          "dice_adapted": {
+            "dice": 0.8920561625140345,
+            "fn_over_reference": 0.02317877805144058,
+            "fp_over_reference": 0.21322299947273765
+          },
+          "dice_blend": {
+            "dice": 0.8945853035037008,
+            "fn_over_reference": 0.03319901986984565,
+            "fp_over_reference": 0.1946496413893724
+          },
+          "precision_adapted": {
+            "dice": 0.9037785886951243,
+            "fn_over_reference": 0.03518844212031694,
+            "fp_over_reference": 0.17025021487746567
+          },
+          "precision_blend": {
+            "dice": 0.9059777912469476,
+            "fn_over_reference": 0.042518201385327664,
+            "fp_over_reference": 0.15621636896808258
+          }
+        }
+      },
+      {
+        "image": "V35",
+        "patient": "P03",
+        "fold": "fold_2",
+        "stratum": "L_visible_fluorescence",
+        "scores": {
+          "large": {
+            "dice": 0.943951137447716,
+            "fn_over_reference": 0.06007150003899908,
+            "fp_over_reference": 0.051548521831479545
+          },
+          "dice_adapted": {
+            "dice": 0.9390863095682283,
+            "fn_over_reference": 0.024946498941342796,
+            "fp_over_reference": 0.1015468947174581
+          },
+          "dice_blend": {
+            "dice": 0.9442495943838738,
+            "fn_over_reference": 0.03425565732048929,
+            "fp_over_reference": 0.07978334072852351
+          },
+          "precision_adapted": {
+            "dice": 0.946387919480428,
+            "fn_over_reference": 0.03507851212561527,
+            "fp_over_reference": 0.07424547107017097
+          },
+          "precision_blend": {
+            "dice": 0.9464004899009013,
+            "fn_over_reference": 0.04284268700059867,
+            "fp_over_reference": 0.06557476124038776
+          }
+        }
+      },
+      {
+        "image": "V36",
+        "patient": "P03",
+        "fold": "fold_2",
+        "stratum": "Z_label",
+        "scores": {
+          "large": {
+            "dice": 0.9394201203775665,
+            "fn_over_reference": 0.07409669735797411,
+            "fp_over_reference": 0.0453197583882019
+          },
+          "dice_adapted": {
+            "dice": 0.9445582224985988,
+            "fn_over_reference": 0.050523865086919716,
+            "fp_over_reference": 0.060937013365852374
+          },
+          "dice_blend": {
+            "dice": 0.9433722645411396,
+            "fn_over_reference": 0.05790151292500296,
+            "fp_over_reference": 0.05520103610578631
+          },
+          "precision_adapted": {
+            "dice": 0.9453060800003098,
+            "fn_over_reference": 0.06301130855511056,
+            "fp_over_reference": 0.04541406945681211
+          },
+          "precision_blend": {
+            "dice": 0.9435091072788975,
+            "fn_over_reference": 0.06625681561966759,
+            "fp_over_reference": 0.04555553605972742
+          }
+        }
+      },
+      {
+        "image": "V37",
+        "patient": "P04",
+        "fold": "fold_2",
+        "stratum": "Z_label",
+        "scores": {
+          "large": {
+            "dice": 0.8720734871670185,
+            "fn_over_reference": 0.04725419826890143,
+            "fp_over_reference": 0.23226685087493068
+          },
+          "dice_adapted": {
+            "dice": 0.87765925015261,
+            "fn_over_reference": 0.010367102427899589,
+            "fp_over_reference": 0.26553138720019603
+          },
+          "dice_blend": {
+            "dice": 0.8772058232259634,
+            "fn_over_reference": 0.023873990678555876,
+            "fp_over_reference": 0.24940871349126428
+          },
+          "precision_adapted": {
+            "dice": 0.8771675829972465,
+            "fn_over_reference": 0.01889516736740296,
+            "fp_over_reference": 0.2558789584924718
+          },
+          "precision_blend": {
+            "dice": 0.8753251418663754,
+            "fn_over_reference": 0.03141964277557629,
+            "fp_over_reference": 0.2444952438241392
+          }
+        }
+      },
+      {
+        "image": "V38",
+        "patient": "P04",
+        "fold": "fold_2",
+        "stratum": "Z_label",
+        "scores": {
+          "large": {
+            "dice": 0.8715776917564481,
+            "fn_over_reference": 0.13438817827482744,
+            "fp_over_reference": 0.1206983601720884
+          },
+          "dice_adapted": {
+            "dice": 0.8956827573298355,
+            "fn_over_reference": 0.0794270259090681,
+            "fp_over_reference": 0.13500522378640112
+          },
+          "dice_blend": {
+            "dice": 0.8846368763909744,
+            "fn_over_reference": 0.10528857047701458,
+            "fp_over_reference": 0.1280652676753314
+          },
+          "precision_adapted": {
+            "dice": 0.8830942276491301,
+            "fn_over_reference": 0.10986945856632536,
+            "fp_over_reference": 0.1258050485956607
+          },
+          "precision_blend": {
+            "dice": 0.8778768853454352,
+            "fn_over_reference": 0.12128955288342363,
+            "fp_over_reference": 0.1231885931362336
+          }
+        }
+      },
+      {
+        "image": "V39",
+        "patient": "P04",
+        "fold": "fold_2",
+        "stratum": "L_visible_fluorescence",
+        "scores": {
+          "large": {
+            "dice": 0.8655131065892989,
+            "fn_over_reference": 0.11003595019639639,
+            "fp_over_reference": 0.16653640762021923
+          },
+          "dice_adapted": {
+            "dice": 0.8513834011121605,
+            "fn_over_reference": 0.08000625503507566,
+            "fp_over_reference": 0.2411800429269663
+          },
+          "dice_blend": {
+            "dice": 0.8569877424032556,
+            "fn_over_reference": 0.09293668695109954,
+            "fp_over_reference": 0.2098008337012447
+          },
+          "precision_adapted": {
+            "dice": 0.8518260173913473,
+            "fn_over_reference": 0.10273472474269503,
+            "fp_over_reference": 0.20942143526396312
+          },
+          "precision_blend": {
+            "dice": 0.8540918777991315,
+            "fn_over_reference": 0.10457677405343829,
+            "fp_over_reference": 0.20136108782992546
+          }
+        }
+      },
+      {
+        "image": "V40",
+        "patient": "P04",
+        "fold": "fold_2",
+        "stratum": "L_visible_fluorescence",
+        "scores": {
+          "large": {
+            "dice": 0.8297369681195671,
+            "fn_over_reference": 0.04612635026856414,
+            "fp_over_reference": 0.345345708647159
+          },
+          "dice_adapted": {
+            "dice": 0.8362665374129263,
+            "fn_over_reference": 0.006862672460557314,
+            "fp_over_reference": 0.3820320308132465
+          },
+          "dice_blend": {
+            "dice": 0.8351027995395188,
+            "fn_over_reference": 0.019598938696291705,
+            "fp_over_reference": 0.3675758867901262
+          },
+          "precision_adapted": {
+            "dice": 0.8364817786549062,
+            "fn_over_reference": 0.013768866455725387,
+            "fp_over_reference": 0.3718145733931098
+          },
+          "precision_blend": {
+            "dice": 0.8337954514092716,
+            "fn_over_reference": 0.026377158655163855,
+            "fp_over_reference": 0.36177690135999613
+          }
+        }
+      },
+      {
+        "image": "V41",
+        "patient": "P04",
+        "fold": "fold_2",
+        "stratum": "L_visible_fluorescence",
+        "scores": {
+          "large": {
+            "dice": 0.8055427392140555,
+            "fn_over_reference": 0.06730170310073551,
+            "fp_over_reference": 0.3830032829058516
+          },
+          "dice_adapted": {
+            "dice": 0.8169817842764154,
+            "fn_over_reference": 0.008680555555555556,
+            "fp_over_reference": 0.43546524898035804
+          },
+          "dice_blend": {
+            "dice": 0.8130114588775031,
+            "fn_over_reference": 0.033733244167989215,
+            "fp_over_reference": 0.4107397310534309
+          },
+          "precision_adapted": {
+            "dice": 0.8138457820600834,
+            "fn_over_reference": 0.02434741847130497,
+            "fp_over_reference": 0.421982457038516
+          },
+          "precision_blend": {
+            "dice": 0.81006656511836,
+            "fn_over_reference": 0.043819807078619086,
+            "fp_over_reference": 0.40456455101622896
+          }
+        }
+      },
+      {
+        "image": "V42",
+        "patient": "P04",
+        "fold": "fold_2",
+        "stratum": "Z_label",
+        "scores": {
+          "large": {
+            "dice": 0.953376738877647,
+            "fn_over_reference": 0.03031761060156484,
+            "fp_over_reference": 0.06452371162304321
+          },
+          "dice_adapted": {
+            "dice": 0.954917088850832,
+            "fn_over_reference": 0.019000593854723764,
+            "fp_over_reference": 0.0736279905134896
+          },
+          "dice_blend": {
+            "dice": 0.9545245067560676,
+            "fn_over_reference": 0.022707446759011134,
+            "fp_over_reference": 0.07041297202058466
+          },
+          "precision_adapted": {
+            "dice": 0.9547256835218442,
+            "fn_over_reference": 0.024866417153474738,
+            "fp_over_reference": 0.0676177533266032
+          },
+          "precision_blend": {
+            "dice": 0.9542086157278712,
+            "fn_over_reference": 0.026843750032312177,
+            "fp_over_reference": 0.0665575692695518
+          }
+        }
+      },
+      {
+        "image": "V43",
+        "patient": "P04",
+        "fold": "fold_2",
+        "stratum": "L_visible_fluorescence",
+        "scores": {
+          "large": {
+            "dice": 0.969164400023535,
+            "fn_over_reference": 0.045265384747686696,
+            "fp_over_reference": 0.015487599325788587
+          },
+          "dice_adapted": {
+            "dice": 0.9622580645713319,
+            "fn_over_reference": 0.03288397371951429,
+            "fp_over_reference": 0.04298097760654948
+          },
+          "dice_blend": {
+            "dice": 0.9667140799495333,
+            "fn_over_reference": 0.03692236249183035,
+            "fp_over_reference": 0.02939905747996285
+          },
+          "precision_adapted": {
+            "dice": 0.9628620084470808,
+            "fn_over_reference": 0.04601940077740704,
+            "fp_over_reference": 0.027571462969970074
+          },
+          "precision_blend": {
+            "dice": 0.9682996145001688,
+            "fn_over_reference": 0.04322348732413746,
+            "fp_over_reference": 0.01942279247359912
+          }
+        }
+      },
+      {
+        "image": "V44",
+        "patient": "P04",
+        "fold": "fold_2",
+        "stratum": "Z_label",
+        "scores": {
+          "large": {
+            "dice": 0.9547199280139059,
+            "fn_over_reference": 0.0337179296159709,
+            "fp_over_reference": 0.05793894361360637
+          },
+          "dice_adapted": {
+            "dice": 0.959647618639345,
+            "fn_over_reference": 0.013205050327834022,
+            "fp_over_reference": 0.0697827576144157
+          },
+          "dice_blend": {
+            "dice": 0.9588973328567307,
+            "fn_over_reference": 0.019094777842528585,
+            "fp_over_reference": 0.06499727135593773
+          },
+          "precision_adapted": {
+            "dice": 0.962013449742023,
+            "fn_over_reference": 0.01793631635696483,
+            "fp_over_reference": 0.05962021153824113
+          },
+          "precision_blend": {
+            "dice": 0.9591586768863093,
+            "fn_over_reference": 0.023776231791039645,
+            "fp_over_reference": 0.05935968994845111
+          }
+        }
+      },
+      {
+        "image": "V45",
+        "patient": "P04",
+        "fold": "fold_2",
+        "stratum": "L_visible_fluorescence",
+        "scores": {
+          "large": {
+            "dice": 0.9423547309689234,
+            "fn_over_reference": 0.07928635168153597,
+            "fp_over_reference": 0.03335655064321958
+          },
+          "dice_adapted": {
+            "dice": 0.9449392715205515,
+            "fn_over_reference": 0.059353627481635585,
+            "fp_over_reference": 0.05026754304939673
+          },
+          "dice_blend": {
+            "dice": 0.9483079984998621,
+            "fn_over_reference": 0.06533670865583525,
+            "fp_over_reference": 0.03655975606810614
+          },
+          "precision_adapted": {
+            "dice": 0.9362304288306752,
+            "fn_over_reference": 0.0958422302195374,
+            "fp_over_reference": 0.027327774669806116
+          },
+          "precision_blend": {
+            "dice": 0.9486423184582874,
+            "fn_over_reference": 0.07785741003183622,
+            "fp_over_reference": 0.021988663773097904
+          }
+        }
+      },
+      {
+        "image": "V46",
+        "patient": "P04",
+        "fold": "fold_2",
+        "stratum": "Z_label",
+        "scores": {
+          "large": {
+            "dice": 0.8816950604081615,
+            "fn_over_reference": 0.17334659523958662,
+            "fp_over_reference": 0.04849241805440941
+          },
+          "dice_adapted": {
+            "dice": 0.8765513141683097,
+            "fn_over_reference": 0.1678062741540385,
+            "fp_over_reference": 0.06659693796261303
+          },
+          "dice_blend": {
+            "dice": 0.8775545092564232,
+            "fn_over_reference": 0.1713337674561733,
+            "fp_over_reference": 0.05991441698409622
+          },
+          "precision_adapted": {
+            "dice": 0.8652377727134734,
+            "fn_over_reference": 0.19605270514721432,
+            "fp_over_reference": 0.05437956096980632
+          },
+          "precision_blend": {
+            "dice": 0.8689892396611084,
+            "fn_over_reference": 0.190833562095611,
+            "fp_over_reference": 0.053149919936706064
+          }
+        }
+      },
+      {
+        "image": "V47",
+        "patient": "P04",
+        "fold": "fold_2",
+        "stratum": "L_visible_fluorescence",
+        "scores": {
+          "large": {
+            "dice": 0.9584919505928365,
+            "fn_over_reference": 0.06107715292856175,
+            "fp_over_reference": 0.020244043147525728
+          },
+          "dice_adapted": {
+            "dice": 0.973903179257907,
+            "fn_over_reference": 0.019717512520594463,
+            "fp_over_reference": 0.032818010305927486
+          },
+          "dice_blend": {
+            "dice": 0.9725520998198535,
+            "fn_over_reference": 0.02776459563287422,
+            "fp_over_reference": 0.02711332882097519
+          },
+          "precision_adapted": {
+            "dice": 0.9727728520772218,
+            "fn_over_reference": 0.027051360523955945,
+            "fp_over_reference": 0.027412775623990766
+          },
+          "precision_blend": {
+            "dice": 0.9691540651977475,
+            "fn_over_reference": 0.03650212551258776,
+            "fp_over_reference": 0.02482969712694985
+          }
+        }
+      },
+      {
+        "image": "V48",
+        "patient": "P04",
+        "fold": "fold_2",
+        "stratum": "L_visible_fluorescence",
+        "scores": {
+          "large": {
+            "dice": 0.9189800381570296,
+            "fn_over_reference": 0.03379751490783513,
+            "fp_over_reference": 0.13656894622170282
+          },
+          "dice_adapted": {
+            "dice": 0.9106351139397227,
+            "fn_over_reference": 0.0189620988525448,
+            "fp_over_reference": 0.1735855833416188
+          },
+          "dice_blend": {
+            "dice": 0.9145312584074098,
+            "fn_over_reference": 0.02349680547618892,
+            "fp_over_reference": 0.15902401801635055
+          },
+          "precision_adapted": {
+            "dice": 0.9105907581848812,
+            "fn_over_reference": 0.022981099139124772,
+            "fp_over_reference": 0.16888230026356413
+          },
+          "precision_blend": {
+            "dice": 0.9141925736994961,
+            "fn_over_reference": 0.026336802682636246,
+            "fp_over_reference": 0.15644204599522551
+          }
+        }
+      },
+      {
+        "image": "V49",
+        "patient": "P04",
+        "fold": "fold_2",
+        "stratum": "L_visible_fluorescence",
+        "scores": {
+          "large": {
+            "dice": 0.9126039156909671,
+            "fn_over_reference": 0.07905382292208218,
+            "fp_over_reference": 0.09733614944625542
+          },
+          "dice_adapted": {
+            "dice": 0.911201689065993,
+            "fn_over_reference": 0.06531117740589812,
+            "fp_over_reference": 0.11686317475169723
+          },
+          "dice_blend": {
+            "dice": 0.9117525905799413,
+            "fn_over_reference": 0.07005360987041796,
+            "fp_over_reference": 0.10996311983532678
+          },
+          "precision_adapted": {
+            "dice": 0.9097915296291569,
+            "fn_over_reference": 0.07060548415584106,
+            "fp_over_reference": 0.11369884252771434
+          },
+          "precision_blend": {
+            "dice": 0.9104619211199793,
+            "fn_over_reference": 0.07368145144021299,
+            "fp_over_reference": 0.1085135011327518
+          }
+        }
+      },
+      {
+        "image": "V50",
+        "patient": "P04",
+        "fold": "fold_2",
+        "stratum": "L_visible_fluorescence",
+        "scores": {
+          "large": {
+            "dice": 0.8838308784925729,
+            "fn_over_reference": 0.062099653107302324,
+            "fp_over_reference": 0.18445217487559232
+          },
+          "dice_adapted": {
+            "dice": 0.8968532524381764,
+            "fn_over_reference": 0.02400575604213501,
+            "fp_over_reference": 0.20049168906303158
+          },
+          "dice_blend": {
+            "dice": 0.8920518596710784,
+            "fn_over_reference": 0.03808494394533062,
+            "fp_over_reference": 0.1947197754883113
+          },
+          "precision_adapted": {
+            "dice": 0.8928256320961776,
+            "fn_over_reference": 0.035530863031917055,
+            "fp_over_reference": 0.19601797786463207
+          },
+          "precision_blend": {
+            "dice": 0.8889796022067226,
+            "fn_over_reference": 0.04594374836198603,
+            "fp_over_reference": 0.19235126833151286
+          }
+        }
+      },
+      {
+        "image": "V51",
+        "patient": "P04",
+        "fold": "fold_2",
+        "stratum": "L_visible_fluorescence",
+        "scores": {
+          "large": {
+            "dice": 0.9635880478945669,
+            "fn_over_reference": 0.06154734874218521,
+            "fp_over_reference": 0.00937692863024485
+          },
+          "dice_adapted": {
+            "dice": 0.9758066843015618,
+            "fn_over_reference": 0.020755949389468308,
+            "fp_over_reference": 0.027801128243577507
+          },
+          "dice_blend": {
+            "dice": 0.9746910027016512,
+            "fn_over_reference": 0.03137497728615839,
+            "fp_over_reference": 0.018927996712836473
+          },
+          "precision_adapted": {
+            "dice": 0.974822831383923,
+            "fn_over_reference": 0.02907924224987354,
+            "fp_over_reference": 0.02107353391360719
+          },
+          "precision_blend": {
+            "dice": 0.973007615318366,
+            "fn_over_reference": 0.03861946498466918,
+            "fp_over_reference": 0.014720206397200017
+          }
+        }
+      },
+      {
+        "image": "V52",
+        "patient": "P04",
+        "fold": "fold_2",
+        "stratum": "Z_label",
+        "scores": {
+          "large": {
+            "dice": 0.9468243232300234,
+            "fn_over_reference": 0.06135331773065521,
+            "fp_over_reference": 0.04407948823548301
+          },
+          "dice_adapted": {
+            "dice": 0.932797257999945,
+            "fn_over_reference": 0.033513854261591876,
+            "fp_over_reference": 0.10574581560053735
+          },
+          "dice_blend": {
+            "dice": 0.9383486234610058,
+            "fn_over_reference": 0.04197602608081073,
+            "fp_over_reference": 0.08391214655086142
+          },
+          "precision_adapted": {
+            "dice": 0.9421577607065578,
+            "fn_over_reference": 0.04224975362961794,
+            "fp_over_reference": 0.07534927541699026
+          },
+          "precision_blend": {
+            "dice": 0.9403359317873085,
+            "fn_over_reference": 0.04882046185132728,
+            "fp_over_reference": 0.07188372253254724
+          }
+        }
+      },
+      {
+        "image": "V53",
+        "patient": "P04",
+        "fold": "fold_2",
+        "stratum": "Z_label",
+        "scores": {
+          "large": {
+            "dice": 0.9444840833075617,
+            "fn_over_reference": 0.07527886483526172,
+            "fp_over_reference": 0.033429672261017354
+          },
+          "dice_adapted": {
+            "dice": 0.9594484103932982,
+            "fn_over_reference": 0.04282287859686245,
+            "fp_over_reference": 0.03808830617888408
+          },
+          "dice_blend": {
+            "dice": 0.9554716361733087,
+            "fn_over_reference": 0.05223217359798544,
+            "fp_over_reference": 0.036106504389953206
+          },
+          "precision_adapted": {
+            "dice": 0.9608894760967103,
+            "fn_over_reference": 0.05363156570385658,
+            "fp_over_reference": 0.02340739911280664
+          },
+          "precision_blend": {
+            "dice": 0.9534857446504118,
+            "fn_over_reference": 0.06176728196158156,
+            "fp_over_reference": 0.029773040416657817
+          }
+        }
+      },
+      {
+        "image": "V54",
+        "patient": "P04",
+        "fold": "fold_2",
+        "stratum": "Z_label",
+        "scores": {
+          "large": {
+            "dice": 0.9340631314078891,
+            "fn_over_reference": 0.049329758879623625,
+            "fp_over_reference": 0.0848886181345773
+          },
+          "dice_adapted": {
+            "dice": 0.9318952692872414,
+            "fn_over_reference": 0.02795848765087101,
+            "fp_over_reference": 0.11411890585450309
+          },
+          "dice_blend": {
+            "dice": 0.9355008545322684,
+            "fn_over_reference": 0.03395203177512985,
+            "fp_over_reference": 0.09925846852419028
+          },
+          "precision_adapted": {
+            "dice": 0.9418090589376668,
+            "fn_over_reference": 0.03544925343845556,
+            "fp_over_reference": 0.08374288027939858
+          },
+          "precision_blend": {
+            "dice": 0.9388407424082608,
+            "fn_over_reference": 0.039486349263126,
+            "fp_over_reference": 0.08565585885006421
+          }
+        }
+      },
+      {
+        "image": "V55",
+        "patient": "P04",
+        "fold": "fold_2",
+        "stratum": "Z_label",
+        "scores": {
+          "large": {
+            "dice": 0.9491294741620142,
+            "fn_over_reference": 0.0657987691160672,
+            "fp_over_reference": 0.0343420633989436
+          },
+          "dice_adapted": {
+            "dice": 0.961929538461867,
+            "fn_over_reference": 0.04790490052756699,
+            "fp_over_reference": 0.02745758376222595
+          },
+          "dice_blend": {
+            "dice": 0.9559195370857293,
+            "fn_over_reference": 0.054970838120828446,
+            "fp_over_reference": 0.03218570865321905
+          },
+          "precision_adapted": {
+            "dice": 0.9632007027723377,
+            "fn_over_reference": 0.05503144155485862,
+            "fp_over_reference": 0.017174026636618638
+          },
+          "precision_blend": {
+            "dice": 0.9557325992246036,
+            "fn_over_reference": 0.05932441969569324,
+            "fp_over_reference": 0.027815566837659962
+          }
+        }
+      },
+      {
+        "image": "V56",
+        "patient": "P04",
+        "fold": "fold_2",
+        "stratum": "Z_label",
+        "scores": {
+          "large": {
+            "dice": 0.9264271877792708,
+            "fn_over_reference": 0.04207022132318836,
+            "fp_over_reference": 0.1100790002387885
+          },
+          "dice_adapted": {
+            "dice": 0.9168648441520918,
+            "fn_over_reference": 0.02255801247951232,
+            "fp_over_reference": 0.15469775751339904
+          },
+          "dice_blend": {
+            "dice": 0.924005284957171,
+            "fn_over_reference": 0.027313154246122188,
+            "fp_over_reference": 0.13268389527811358
+          },
+          "precision_adapted": {
+            "dice": 0.9262192405258505,
+            "fn_over_reference": 0.027641957265609078,
+            "fp_over_reference": 0.1272702098213337
+          },
+          "precision_blend": {
+            "dice": 0.9277040832815636,
+            "fn_over_reference": 0.031052819767187458,
+            "fp_over_reference": 0.11996715720409916
+          }
+        }
+      },
+      {
+        "image": "V57",
+        "patient": "P04",
+        "fold": "fold_2",
+        "stratum": "L_visible_fluorescence",
+        "scores": {
+          "large": {
+            "dice": 0.8861332273220637,
+            "fn_over_reference": 0.15564021049415858,
+            "fp_over_reference": 0.061357688344608835
+          },
+          "dice_adapted": {
+            "dice": 0.9066228080335426,
+            "fn_over_reference": 0.09027381507635547,
+            "fp_over_reference": 0.09711983055843482
+          },
+          "dice_blend": {
+            "dice": 0.8989057007106056,
+            "fn_over_reference": 0.12009518316578024,
+            "fp_over_reference": 0.0778195943885253
+          },
+          "precision_adapted": {
+            "dice": 0.9017854685718165,
+            "fn_over_reference": 0.12114857350411676,
+            "fp_over_reference": 0.07028494157566147
+          },
+          "precision_blend": {
+            "dice": 0.8939902254136065,
+            "fn_over_reference": 0.13869962998514934,
+            "fp_over_reference": 0.06556716282952292
+          }
+        }
+      },
+      {
+        "image": "V58",
+        "patient": "P04",
+        "fold": "fold_2",
+        "stratum": "Z_label",
+        "scores": {
+          "large": {
+            "dice": 0.877498756103047,
+            "fn_over_reference": 0.14602796970869494,
+            "fp_over_reference": 0.09240572660438892
+          },
+          "dice_adapted": {
+            "dice": 0.886357001958759,
+            "fn_over_reference": 0.09232966668509203,
+            "fp_over_reference": 0.14042164612238128
+          },
+          "dice_blend": {
+            "dice": 0.879951327988738,
+            "fn_over_reference": 0.12377159913769277,
+            "fp_over_reference": 0.11530993311591399
+          },
+          "precision_adapted": {
+            "dice": 0.8817258426166891,
+            "fn_over_reference": 0.12314896910065778,
+            "fp_over_reference": 0.11209153722845613
+          },
+          "precision_blend": {
+            "dice": 0.8804921797429217,
+            "fn_over_reference": 0.13257907246697254,
+            "fp_over_reference": 0.1028882869935327
+          }
+        }
+      },
+      {
+        "image": "V59",
+        "patient": "P04",
+        "fold": "fold_2",
+        "stratum": "L_visible_fluorescence",
+        "scores": {
+          "large": {
+            "dice": 0.9200710264099567,
+            "fn_over_reference": 0.10425463349614894,
+            "fp_over_reference": 0.05137684643872481
+          },
+          "dice_adapted": {
+            "dice": 0.9271518545737455,
+            "fn_over_reference": 0.07429183644201487,
+            "fp_over_reference": 0.07117758712322526
+          },
+          "dice_blend": {
+            "dice": 0.9264502444601865,
+            "fn_over_reference": 0.08295126498451987,
+            "fp_over_reference": 0.06265549734686475
+          },
+          "precision_adapted": {
+            "dice": 0.9246435280047332,
+            "fn_over_reference": 0.0892479268426425,
+            "fp_over_reference": 0.05920076936704376
+          },
+          "precision_blend": {
+            "dice": 0.9242150535565236,
+            "fn_over_reference": 0.09243000194028969,
+            "fp_over_reference": 0.05641012662499262
+          }
+        }
+      },
+      {
+        "image": "V60",
+        "patient": "P04",
+        "fold": "fold_2",
+        "stratum": "Z_label",
+        "scores": {
+          "large": {
+            "dice": 0.7490391103633397,
+            "fn_over_reference": 0.3782232298576819,
+            "fp_over_reference": 0.038421640166884964
+          },
+          "dice_adapted": {
+            "dice": 0.8437646866888583,
+            "fn_over_reference": 0.21897531764698916,
+            "fp_over_reference": 0.07026085892259115
+          },
+          "dice_blend": {
+            "dice": 0.8249219074871162,
+            "fn_over_reference": 0.25791119406447005,
+            "fp_over_reference": 0.05708466539604581
+          },
+          "precision_adapted": {
+            "dice": 0.817584406690023,
+            "fn_over_reference": 0.27064125556554636,
+            "fp_over_reference": 0.05482094017389279
+          },
+          "precision_blend": {
+            "dice": 0.8001783957647942,
+            "fn_over_reference": 0.3005054517925723,
+            "fp_over_reference": 0.048851950297733905
+          }
+        }
+      },
+      {
+        "image": "V61",
+        "patient": "P04",
+        "fold": "fold_2",
+        "stratum": "L_visible_fluorescence",
+        "scores": {
+          "large": {
+            "dice": 0.8977114947973668,
+            "fn_over_reference": 0.10775026369457308,
+            "fp_over_reference": 0.09558208154787405
+          },
+          "dice_adapted": {
+            "dice": 0.9047534211378614,
+            "fn_over_reference": 0.07974679036307626,
+            "fp_over_reference": 0.11400980200125065
+          },
+          "dice_blend": {
+            "dice": 0.9004493788274731,
+            "fn_over_reference": 0.09597906364597157,
+            "fp_over_reference": 0.10391189720782275
+          },
+          "precision_adapted": {
+            "dice": 0.9038576929337975,
+            "fn_over_reference": 0.09709354636991818,
+            "fp_over_reference": 0.09498870329306601
+          },
+          "precision_blend": {
+            "dice": 0.9011892163425818,
+            "fn_over_reference": 0.10178610520758812,
+            "fp_over_reference": 0.09518300455743828
+          }
+        }
+      },
+      {
+        "image": "V62",
+        "patient": "P05",
+        "fold": "fold_3",
+        "stratum": "Z_label",
+        "scores": {
+          "large": {
+            "dice": 0.8452613063898173,
+            "fn_over_reference": 0.1614168878380832,
+            "fp_over_reference": 0.14561539739384738
+          },
+          "dice_adapted": {
+            "dice": 0.8470648761588778,
+            "fn_over_reference": 0.12730742633736272,
+            "fp_over_reference": 0.1878168352977991
+          },
+          "dice_blend": {
+            "dice": 0.8474440684428769,
+            "fn_over_reference": 0.1413804959648289,
+            "fp_over_reference": 0.1677549459337297
+          },
+          "precision_adapted": {
+            "dice": 0.8450962314208136,
+            "fn_over_reference": 0.14977766960660463,
+            "fp_over_reference": 0.1619090666759385
+          },
+          "precision_blend": {
+            "dice": 0.8461135412994517,
+            "fn_over_reference": 0.15343308260800698,
+            "fp_over_reference": 0.15450474987347837
+          }
+        }
+      },
+      {
+        "image": "V63",
+        "patient": "P05",
+        "fold": "fold_3",
+        "stratum": "Z_label",
+        "scores": {
+          "large": {
+            "dice": 0.9162252286834155,
+            "fn_over_reference": 0.1453892780297085,
+            "fp_over_reference": 0.010892857751777682
+          },
+          "dice_adapted": {
+            "dice": 0.9384363867124914,
+            "fn_over_reference": 0.09052407598743772,
+            "fp_over_reference": 0.028803402940258075
+          },
+          "dice_blend": {
+            "dice": 0.9325404541920134,
+            "fn_over_reference": 0.10876830963171025,
+            "fp_over_reference": 0.020174268187116897
+          },
+          "precision_adapted": {
+            "dice": 0.9291364269416009,
+            "fn_over_reference": 0.11619421739827251,
+            "fp_over_reference": 0.018618354423905147
+          },
+          "precision_blend": {
+            "dice": 0.9245519974944572,
+            "fn_over_reference": 0.12711143197164088,
+            "fp_over_reference": 0.015352591785028642
+          }
+        }
+      },
+      {
+        "image": "V64",
+        "patient": "P05",
+        "fold": "fold_3",
+        "stratum": "L_visible_fluorescence",
+        "scores": {
+          "large": {
+            "dice": 0.9361027431709649,
+            "fn_over_reference": 0.11012073085354623,
+            "fp_over_reference": 0.011363464385267013
+          },
+          "dice_adapted": {
+            "dice": 0.941439281800041,
+            "fn_over_reference": 0.09361223417940406,
+            "fp_over_reference": 0.01914855573074985
+          },
+          "dice_blend": {
+            "dice": 0.938974220248593,
+            "fn_over_reference": 0.10113051700876265,
+            "fp_over_reference": 0.015708071125769385
+          },
+          "precision_adapted": {
+            "dice": 0.9365544149187475,
+            "fn_over_reference": 0.10942232032604449,
+            "fp_over_reference": 0.01123958900278075
+          },
+          "precision_blend": {
+            "dice": 0.9352827355303017,
+            "fn_over_reference": 0.11187796761415453,
+            "fp_over_reference": 0.01102995374011169
+          }
+        }
+      },
+      {
+        "image": "V65",
+        "patient": "P05",
+        "fold": "fold_3",
+        "stratum": "L_visible_fluorescence",
+        "scores": {
+          "large": {
+            "dice": 0.9501935377765769,
+            "fn_over_reference": 0.09060941627377384,
+            "fp_over_reference": 0.0047259568980588555
+          },
+          "dice_adapted": {
+            "dice": 0.9645824188703788,
+            "fn_over_reference": 0.05621285975201515,
+            "fp_over_reference": 0.013095178534587967
+          },
+          "dice_blend": {
+            "dice": 0.9583029790300723,
+            "fn_over_reference": 0.07159653246193291,
+            "fp_over_reference": 0.009195575465498604
+          },
+          "precision_adapted": {
+            "dice": 0.9608996112897985,
+            "fn_over_reference": 0.06741585666190154,
+            "fp_over_reference": 0.008480526437982146
+          },
+          "precision_blend": {
+            "dice": 0.9548007549497259,
+            "fn_over_reference": 0.0801636293010452,
+            "fp_over_reference": 0.006924507799487211
+          }
+        }
+      },
+      {
+        "image": "V66",
+        "patient": "P05",
+        "fold": "fold_3",
+        "stratum": "L_visible_fluorescence",
+        "scores": {
+          "large": {
+            "dice": 0.967624217481117,
+            "fn_over_reference": 0.05468643187553942,
+            "fp_over_reference": 0.008572147107564694
+          },
+          "dice_adapted": {
+            "dice": 0.9801299060106211,
+            "fn_over_reference": 0.01355684025219628,
+            "fp_over_reference": 0.02643932388720567
+          },
+          "dice_blend": {
+            "dice": 0.9784691074887155,
+            "fn_over_reference": 0.02464655972215429,
+            "fp_over_reference": 0.018278106825636645
+          },
+          "precision_adapted": {
+            "dice": 0.9801506957926276,
+            "fn_over_reference": 0.02089889310773646,
+            "fp_over_reference": 0.01875720427382653
+          },
+          "precision_blend": {
+            "dice": 0.9764016463018006,
+            "fn_over_reference": 0.033123965694466004,
+            "fp_over_reference": 0.013612298477710222
+          }
+        }
+      }
+    ]
+  }
+}

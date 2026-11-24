@@ -1,0 +1,70 @@
+{
+  "scope": "development-only",
+  "score_source_sha256": "35e441d60bc16063c25ac690fa784b746cad5f637c0300fbdef5868df9e67611",
+  "manifest_sha256": "caf6ceed643ae77ff1e4af4db18f3763bd5258884330a4a5c622277609cb1772",
+  "aggregation": "per-frame at original size, within-patient mean by stratum, equal patient weights",
+  "strata": {
+    "L_visible_fluorescence": {
+      "frames": 25,
+      "patients": 4,
+      "metrics": {
+        "large": {
+          "dice": 0.9032638374742257,
+          "fp_over_reference": 0.16921712800785413,
+          "fn_over_reference": 0.07182463507153353
+        },
+        "dice_adapted": {
+          "dice": 0.9086308004935951,
+          "fp_over_reference": 0.19801932406,
+          "fn_over_reference": 0.04013163394485082
+        },
+        "dice_blend": {
+          "dice": 0.9081835499041783,
+          "fp_over_reference": 0.18435283972747335,
+          "fn_over_reference": 0.050358391597340055
+        },
+        "precision_adapted": {
+          "dice": 0.9093879949407002,
+          "fp_over_reference": 0.1769745667592929,
+          "fn_over_reference": 0.05206215290416209
+        },
+        "precision_blend": {
+          "dice": 0.9081707773606048,
+          "fp_over_reference": 0.17169949555113653,
+          "fn_over_reference": 0.05862769049281706
+        }
+      }
+    },
+    "Z_label": {
+      "frames": 41,
+      "patients": 5,
+      "metrics": {
+        "large": {
+          "dice": 0.9059330163727003,
+          "fp_over_reference": 0.09688988510525907,
+          "fn_over_reference": 0.09973575164715072
+        },
+        "dice_adapted": {
+          "dice": 0.9106352935066289,
+          "fp_over_reference": 0.13921206694561675,
+          "fn_over_reference": 0.06330121719006118
+        },
+        "dice_blend": {
+          "dice": 0.9109585133638675,
+          "fp_over_reference": 0.12056633827867887,
+          "fn_over_reference": 0.07542725275609372
+        },
+        "precision_adapted": {
+          "dice": 0.9101246738849759,
+          "fp_over_reference": 0.12171091918742967,
+          "fn_over_reference": 0.07718318428687555
+        },
+        "precision_blend": {
+          "dice": 0.9096689261729745,
+          "fp_over_reference": 0.11105671724464111,
+          "fn_over_reference": 0.0846765434161739
+        }
+      }
+    }
+  }
+}
